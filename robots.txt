@@ -1,0 +1,21 @@
+# CoinRaahi — coinraahi.com
+# All standard search crawlers are welcome.
+
+User-agent: *
+Allow: /
+
+# AI search / answer-engine crawlers — explicitly open so the site
+# can be surfaced in AI-assisted search results.
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+Sitemap: https://coinraahi.com/sitemap.xml

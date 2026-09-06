@@ -1,0 +1,28 @@
+# CoinRaahi
+
+> Practical guides to crypto and global digital assets, written for India — exchanges, crypto, US stocks, gold and tokenised assets, with India-specific tax and ownership guidance.
+
+Educational content only. CoinRaahi does not provide financial, investment, legal or tax advice. Last updated: 6 September 2026.
+
+## Core pages
+
+- [Home](https://coinraahi.com/): Overview of what CoinRaahi covers — crypto exchanges, crypto assets, and global assets (US stocks, gold, tokenised assets) for readers in India.
+- [Start Here](https://coinraahi.com/start-here/): The entry-point category for crypto basics, a beginner roadmap and common questions.
+- [Exchanges](https://coinraahi.com/exchanges/): How to understand and compare crypto exchanges used in India by INR access, fees, withdrawals, custody and TDS handling.
+- [Crypto](https://coinraahi.com/crypto/): Bitcoin, Ethereum and stablecoins, plus India's crypto tax rules.
+- [Assets & RWA](https://coinraahi.com/assets-rwa/): US stocks, gold and tokenised assets — and what you actually own in each.
+- [Wallets & Safety](https://coinraahi.com/wallets-safety/): Wallet basics, transfers, account security and scam prevention.
+
+## Articles
+
+- [Binance India Guide](https://coinraahi.com/exchanges/binance/binance-india-guide/): KYC, INR access, fees, withdrawals and tax for Binance users in India.
+- [Binance vs CoinDCX vs CoinSwitch](https://coinraahi.com/exchanges/binance-vs-coindcx-vs-coinswitch/): Which exchange features actually matter in India.
+- [Crypto Tax in India](https://coinraahi.com/crypto/crypto-tax-india/): The 30% tax, 1% TDS and what beginners need to know.
+- [How to Buy USDT in India](https://coinraahi.com/crypto/stablecoins/buy-usdt-india/): Exchange, P2P and transfer routes compared.
+- [How to Invest in US Stocks from India](https://coinraahi.com/assets-rwa/us-stocks-etfs/us-stocks-from-india/): Routes, costs, ownership and taxes.
+- [Gold ETF vs Digital Gold vs PAXG/XAUT](https://coinraahi.com/assets-rwa/gold/gold-etf-vs-digital-gold-vs-paxg-xaut/): What you actually own in each.
+
+## Notes
+
+- India-specific tax references are general and hedged; verify current rates with a professional.
+- The site is a static site on a custom domain (coinraahi.com); URLs use clean directory-style paths.

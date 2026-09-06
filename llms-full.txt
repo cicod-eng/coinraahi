@@ -1,0 +1,63 @@
+# CoinRaahi — Full Guide
+
+> Practical guides to crypto and global digital assets, written for India. CoinRaahi covers crypto exchanges, crypto assets, US stocks, gold and tokenised assets, with India-specific tax and ownership guidance.
+
+Educational content only. CoinRaahi does not provide financial, investment, legal or tax advice. Last updated: 6 September 2026.
+
+## Site scope
+
+CoinRaahi (coinraahi.com) is a static educational site for readers in India. It answers two recurring questions across every asset class: **what do you actually own**, and **how is it taxed in India**. The site is deliberately neutral about platforms — it explains differences rather than selling one exchange — and monetises through disclosed affiliate links on onboarding scenarios only.
+
+Key India tax references used throughout (all hedged, verify with a professional):
+- Section 115BBH — 30% flat tax (plus cess) on virtual digital asset gains, no loss set-off, only acquisition cost deductible.
+- Section 194S — 1% TDS on qualifying VDA transfers (thresholds ₹50,000 / ₹10,000 by payer category).
+- Gold / physical assets — long-term capital gains at 12.5% (no indexation) beyond the qualifying holding period.
+- US stocks — treated as unlisted securities: 12.5% LTCG beyond 24 months, slab rate within, Schedule FA/FSI disclosure.
+
+## Home page
+
+- [Home](https://coinraahi.com/): Introduces the site's five categories and the "what you actually own" framing. Links into every section and the published guides.
+
+## Category pages
+
+- [Start Here](https://coinraahi.com/start-here/): Entry point for crypto basics, a beginner roadmap and common questions (planned).
+- [Exchanges](https://coinraahi.com/exchanges/): How to compare crypto exchanges used in India by INR access, fees, withdrawals, custody and TDS handling. Published: Binance India Guide; Binance vs CoinDCX vs CoinSwitch.
+- [Crypto](https://coinraahi.com/crypto/): Bitcoin, Ethereum and stablecoins, plus India's crypto tax rules. Published: Crypto Tax in India; How to Buy USDT in India.
+- [Assets & RWA](https://coinraahi.com/assets-rwa/): US stocks, gold and tokenised assets. Published: How to Invest in US Stocks from India; Gold ETF vs Digital Gold vs PAXG/XAUT.
+- [Wallets & Safety](https://coinraahi.com/wallets-safety/): Wallet basics, transfers, account security and scam prevention (planned).
+
+## Articles
+
+### Binance India Guide
+- URL: https://coinraahi.com/exchanges/binance/binance-india-guide/
+- Core conclusion: Binance is registered with FIU-IND (PMLA reporting entity, not an RBI/SEBI licence); INR moves through P2P rather than a direct UPI/IMPS wallet; 1% TDS is generally not deducted automatically for Indian residents. Holding funds on the exchange carries third-party and P2P account-freeze risk.
+
+### Binance vs CoinDCX vs CoinSwitch
+- URL: https://coinraahi.com/exchanges/binance-vs-coindcx-vs-coinswitch/
+- Core conclusion: Binance is cheapest on spot fees (0.10%, 0.075% with BNB) but has no direct INR deposit; CoinDCX (~0.2%) offers direct UPI/IMPS and auto-TDS; CoinSwitch is the simplest beginner on-ramp but has the widest spread (~0.5–2%) and, per one source, no crypto withdrawals. The deciding factor in India is INR access.
+
+### Crypto Tax in India
+- URL: https://coinraahi.com/crypto/crypto-tax-india/
+- Core conclusion: The 30% VDA tax applies to the gain (sale minus acquisition cost), not the full amount; losses cannot be set off or carried forward; 1% TDS is credited and refundable; transactions are reported on Schedule VDA.
+
+### How to Buy USDT in India
+- URL: https://coinraahi.com/crypto/stablecoins/buy-usdt-india/
+- Core conclusion: USDT is legal to buy in India on FIU-registered exchanges or P2P. P2P can undercut the spot price but the 1–3% markup usually erases the gap and carries bank-account-freeze risk; TRC-20 is the default withdrawal network. Buying is not the taxable event — selling/transferring is.
+
+### How to Invest in US Stocks from India
+- URL: https://coinraahi.com/assets-rwa/us-stocks-etfs/us-stocks-from-india/
+- Core conclusion: The cleanest route is a direct brokerage under RBI's LRS ($250,000/year) via Vested/INDmoney, giving real share ownership; India-listed US funds are simpler but can trade at a premium; tokenised stocks give price exposure without ownership. US stocks are unlisted securities: 12.5% LTCG beyond 24 months, slab within, dividends taxed twice (US 25% withholding + Indian slab, offset via Form 67), mandatory Schedule FA/FSI disclosure.
+
+### Gold ETF vs Digital Gold vs PAXG/XAUT
+- URL: https://coinraahi.com/assets-rwa/gold/gold-etf-vs-digital-gold-vs-paxg-xaut/
+- Core conclusion: A gold ETF is SEBI-regulated with no purchase GST and capital-gains tax; digital gold carries 3% GST and is unregulated; PAXG/XAUT are virtual digital assets taxed at 30% plus 1% TDS — not gold's 12.5% rate — and are impractical to redeem physically at small scale. For long-term gold exposure, the ETF is the cleanest starting point.
+
+## Static / policy pages
+
+- About: https://coinraahi.com/about.html
+- Editorial Policy: https://coinraahi.com/editorial-policy.html
+- Affiliate Disclosure: https://coinraahi.com/affiliate-disclosure.html
+- Risk Disclosure: https://coinraahi.com/risk-disclosure.html
+- Contact: https://coinraahi.com/contact.html
+- Privacy Policy: https://coinraahi.com/privacy.html
+- Disclaimer: https://coinraahi.com/disclaimer.html
