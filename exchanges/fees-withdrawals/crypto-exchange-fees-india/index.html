@@ -168,6 +168,8 @@
     <p>The useful question is:</p>
     <div class="callout"><p><strong>If I start with ₹10,000, how much crypto do I actually end up with after the full route?</strong></p></div>
 
+    <div class="callout callout-info"><p><strong>CoinRaahi finding &mdash; September 2026:</strong> Public documentation can verify fee structures, but it cannot reliably identify the cheapest Indian exchange for a ₹10,000 crypto purchase. Binance currently publishes a 0.100% Regular User Spot fee; CoinDCX uses VIP-dependent Spot pricing; CoinSwitch&rsquo;s Terms allow service and transaction fees depending on the product and route. Final purchase cost still depends on the actual quote, spread, account tier and withdrawal route.<sup><a href="#source-3">[3]</a></sup></p></div>
+
     <h2>The CoinRaahi total-cost model</h2>
     <p>For most users, think about exchange cost in five parts:</p>
     <div class="callout"><p><strong>Total Cost = Entry Cost + Trading Cost + Spread + Transfer/Withdrawal Cost + Exit Cost</strong></p></div>
@@ -216,7 +218,7 @@
     <p>A fee comparison looks simple until you try to verify the numbers. CoinRaahi reviewed the public fee and support documentation for Binance, CoinDCX and CoinSwitch in September 2026. The result was not a clean <em>0.1% vs 0.2% vs 0%</em> comparison. In fact, the public documentation shows why a single headline fee can be misleading.</p>
 
     <h3>Binance</h3>
-    <p>Binance currently lists its standard Spot fee for a Regular User at <strong>0.100% maker and 0.100% taker</strong>. Its published schedule also shows a lower effective rate when the eligible BNB fee discount is used.<sup><a href="#source-3">[3]</a></sup> That makes Binance&rsquo;s base trading fee relatively easy to verify publicly.</p>
+    <p>Binance currently lists its standard Spot fee for a Regular User at <strong>0.100% maker and 0.100% taker</strong>. When the eligible BNB fee discount is used, its published schedule currently shows <strong>0.075%</strong>.<sup><a href="#source-3">[3]</a></sup> That makes Binance&rsquo;s base trading fee relatively easy to verify publicly.</p>
     <p>But it still does not tell us the complete cost of an INR-to-crypto route. The user may still need to consider:</p>
     <ul>
       <li>entry route;</li>
@@ -225,11 +227,12 @@
       <li>withdrawal fee;</li>
       <li>chosen network.</li>
     </ul>
-    <p>So a 0.1% trading fee is not the same as a 0.1% total cost.</p>
+    <p>Binance&rsquo;s P2P documentation also makes clear that the user trades directly with a marketplace merchant, and that what a merchant shows can depend on price, availability and payment method.<sup><a href="#source-13">[13]</a></sup> So a 0.1% Spot fee is not the same as the real cost of an INR-to-USDT P2P route.</p>
 
     <h3>CoinDCX</h3>
     <p>CoinDCX currently states that Spot trading fees for both INR pairs and crypto-to-crypto pairs depend on the user&rsquo;s <strong>VIP Level</strong>.<sup><a href="#source-4">[4]</a></sup> Its public documentation also says crypto withdrawal minimums and fees vary by token.<sup><a href="#source-11">[11]</a></sup> That means a comparison should not assign one universal CoinDCX trading or withdrawal fee without specifying the user tier, asset and network.</p>
     <p>CoinDCX currently states that, for an INR trading pair, a sale of <strong>₹2,000</strong> produces <strong>1% × ₹2,000 = ₹20</strong> in TDS, with the remaining amount credited after applicable trading fees, GST and TDS. For crypto-to-crypto trades, it states that TDS is calculated on the net transaction value after deducting fees including GST.<sup><a href="#source-10">[10]</a></sup> That is a useful, verifiable reference &mdash; but it is CoinDCX&rsquo;s own stated handling, not a rule you should assume applies identically on every platform.</p>
+    <p>CoinDCX also runs a separate Web3 buy/sell product with its own cost layer: its public documentation shows a <strong>1.5% Web3 platform fee</strong> since October 2025.<sup><a href="#source-14">[14]</a></sup> That is a different layer from the Spot VIP-tier fee above &mdash; one more reason not to treat &ldquo;CoinDCX&rdquo; as a single fee number.</p>
 
     <h3>CoinSwitch</h3>
     <p>CoinSwitch presents an even stronger example of why personalised pricing matters. Its 2026 API documentation states that fee schedules can be <strong>user-specific</strong>, including differences caused by cohorts, volume tiers and promotional discounts, and advises clients to query the effective fee rather than cache one global rate.<sup><a href="#source-5">[5]</a></sup> Its current Terms also allow a separate service fee for certain instant-order services, transaction fees for some fiat or crypto transfers and withdrawals, and a contract note issued on each completed trade that records the total price plus any service fee or tax invoice.<sup><a href="#source-12">[12]</a></sup></p>
@@ -245,12 +248,13 @@
     <div class="table-wrap">
       <table class="compare">
         <tr><th>Metric</th><th>Binance</th><th>CoinDCX</th><th>CoinSwitch</th></tr>
-        <tr><td>Public base Spot fee</td><td>Yes</td><td>Tier dependent</td><td>User/tier dependent</td></tr>
-        <tr><td>Final ₹10,000 buy quote available publicly</td><td>Not reliably comparable</td><td>No reliable executable quote</td><td>No reliable executable quote</td></tr>
-        <tr><td>Withdrawal fee fixed globally</td><td>No</td><td>No</td><td>No</td></tr>
-        <tr><td>User-specific pricing possible</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
-        <tr><td>Platform tax documentation</td><td>Some context dependent</td><td>Detailed TDS order documentation</td><td>Contract note / tax documentation</td></tr>
-        <tr><td>Safe to declare cheapest from public pages?</td><td><strong>No</strong></td><td><strong>No</strong></td><td><strong>No</strong></td></tr>
+        <tr><td>Spot fee structure</td><td>Regular user 0.100% maker / 0.100% taker</td><td>VIP-level dependent</td><td>Fees can be service / user specific</td></tr>
+        <tr><td>Discount / tier impact</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
+        <tr><td>INR / P2P availability</td><td>P2P documentation and INR payment support exist</td><td>INR spot pairs supported</td><td>INR services supported</td></tr>
+        <tr><td>Crypto withdrawal fee</td><td>Dynamic / asset-network specific</td><td>Token-specific</td><td>May apply depending on service</td></tr>
+        <tr><td>Minimum withdrawal</td><td>Asset/network specific</td><td>Token-specific</td><td>Depends on supported withdrawal service</td></tr>
+        <tr><td>Public USDT page usable as executable quote?</td><td>No</td><td>No &mdash; current page has loading/error state</td><td>No reliable basis for executable comparison</td></tr>
+        <tr><td>Safe to declare &ldquo;cheapest exchange&rdquo; from public data?</td><td><strong>No</strong></td><td><strong>No</strong></td><td><strong>No</strong></td></tr>
       </table>
     </div>
 
@@ -411,6 +415,8 @@
       <li id="source-10"><a href="https://support.coindcx.com/articles/tax-deducted-at-source-tds/how-is-tds-calculated/6a578711de4d65eafa537189" target="_blank" rel="noopener">CoinDCX Help &amp; Support &mdash; How is TDS calculated?</a>.</li>
       <li id="source-11"><a href="https://support.coindcx.com/articles/crypto-withdrawals/what-is-the-minimum-withdrawal-amount-and-fee/659b7faf94970840015b0c8e" target="_blank" rel="noopener">CoinDCX Help &amp; Support &mdash; Minimum withdrawal amount and fee</a>.</li>
       <li id="source-12"><a href="https://coinswitch.co/bc/terms-of-use" target="_blank" rel="noopener">CoinSwitch &mdash; Terms of Use</a>.</li>
+      <li id="source-13"><a href="https://www.binance.com/en-IN/support/faq/detail/abce98b40df840aea0f835685d08954b" target="_blank" rel="noopener">Binance Support &mdash; How to Buy Crypto with P2P on Binance Wallet</a>.</li>
+      <li id="source-14"><a href="https://support.coindcx.com/articles/web3-fee-update/what-is-the-new-web3-platform-fee/68dd1a54f82e364b08186857" target="_blank" rel="noopener">CoinDCX Help &amp; Support &mdash; What is the new Web3 platform fee?</a>.</li>
     </ol>
 
     <h2>Related guides</h2>
