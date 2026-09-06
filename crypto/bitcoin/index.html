@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bitcoin Guide for India: How BTC Works, Wallets, Fees &amp; Risks | CoinRaahi</title>
+  <meta name="description" content="Understand Bitcoin in plain English: how BTC works, mining, supply, transactions, wallets, fees, custody, risks and India-specific considerations.">
+  <link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="48" fill="%231F3A5F"/><text x="50" y="68" font-size="54" font-weight="bold" text-anchor="middle" fill="%23E88A1A" font-family="Arial">R</text></svg>'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="canonical" href="https://coinraahi.com/crypto/bitcoin/">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is Bitcoin legal in India?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Bitcoin is used within India's broader VDA tax/compliance environment, but it is not legal tender."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need to buy one whole Bitcoin?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Bitcoin is divisible."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Bitcoin safer than stablecoins?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "They have different risk structures. Bitcoin has no central stablecoin issuer, but its price is far more volatile."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where should I keep Bitcoin?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "That depends on your custody needs, experience and balance size."
+      }
+    }
+  ]
+}
+  </script>
+</head>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="../../index.html" class="logo" aria-label="CoinRaahi home">
+        <svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true">
+          <circle cx="16" cy="16" r="15" fill="#1F3A5F"/>
+          <path d="M16 6 L21 21 L16 17.5 L11 21 Z" fill="#E88A1A"/>
+        </svg>
+        <span><span class="coin">Coin</span><span class="raahi">Raahi</span></span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links">
+        <li class="has-dropdown"><a href="../../start-here/">Start Here</a>
+          <ul class="dropdown-menu">
+          <li><a href="../../start-here/crypto-basics/">Crypto Basics</a></li>
+          <li><a href="../../start-here/beginner-roadmap/">Beginner Roadmap</a></li>
+          <li><a href="../../start-here/common-questions/">Common Questions</a></li>
+          </ul>
+          </li>
+        <li class="has-dropdown"><a href="../../exchanges/">Exchanges</a>
+          <ul class="dropdown-menu">
+          <li><a href="../../exchanges/binance/">Binance</a></li>
+          <li><a href="../../exchanges/coindcx/">CoinDCX</a></li>
+          <li><a href="../../exchanges/coinswitch/">CoinSwitch</a></li>
+          <li><a href="../../exchanges/comparisons/">Exchange Comparisons</a></li>
+          <li><a href="../../exchanges/account-kyc/">KYC &amp; Account</a></li>
+          <li><a href="../../exchanges/fees-withdrawals/">Fees &amp; Withdrawals</a></li>
+          </ul>
+          </li>
+        <li class="has-dropdown"><a href="../../crypto/" class="active">Crypto</a>
+          <ul class="dropdown-menu">
+          <li><a href="../../crypto/bitcoin/">Bitcoin</a></li>
+          <li><a href="../../crypto/ethereum/">Ethereum</a></li>
+          <li><a href="../../crypto/stablecoins/">Stablecoins</a></li>
+          <li><a href="../../crypto/blockchain-basics/">Blockchain Basics</a></li>
+          </ul>
+          </li>
+        <li class="has-dropdown"><a href="../../assets-rwa/">Assets &amp; RWA</a>
+          <ul class="dropdown-menu">
+          <li><a href="../../assets-rwa/us-stocks-etfs/">US Stocks &amp; ETFs</a></li>
+          <li><a href="../../assets-rwa/tokenised-stocks/">Tokenised Stocks</a></li>
+          <li><a href="../../assets-rwa/gold/">Gold</a></li>
+          <li><a href="../../assets-rwa/tokenised-assets/">Tokenised Assets</a></li>
+          </ul>
+          </li>
+        <li class="has-dropdown"><a href="../../wallets-safety/">Wallets &amp; Safety</a>
+          <ul class="dropdown-menu">
+          <li><a href="../../wallets-safety/wallet-basics/">Wallet Basics</a></li>
+          <li><a href="../../wallets-safety/transfers/">Transfers</a></li>
+          <li><a href="../../wallets-safety/account-security/">Account Security</a></li>
+          <li><a href="../../wallets-safety/scam-prevention/">Scam Prevention</a></li>
+          </ul>
+          </li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="container page">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../index.html">Home</a> <span class="sep">&#8250;</span> <a href="../">Crypto</a> <span class="sep">&#8250;</span> <span class="current">Bitcoin</span></nav>
+    <h1>Bitcoin Explained for India</h1>
+    <p class="updated">Last updated: 6 September 2026</p>
+
+    <p class="lede">Bitcoin is often described as &ldquo;digital gold&rdquo;, &ldquo;digital money&rdquo; or an investment. Each phrase explains only part of it.</p>
+    <p>A better starting point is: Bitcoin is a blockchain-based asset whose ownership and transfers are recorded by a decentralised network rather than one company or bank.</p>
+
+    <h2>Bitcoin is not a company</h2>
+    <p>There is no Bitcoin CEO issuing shares. Owning BTC does not mean owning equity in a business. This separates Bitcoin from stocks, ETFs and corporate bonds.</p>
+
+    <h2>Where does Bitcoin come from?</h2>
+    <p>New BTC enters circulation through mining. Miners compete to add valid blocks to the network and receive protocol-defined rewards plus transaction fees. The issuance schedule is limited by Bitcoin&rsquo;s protocol.</p>
+
+    <h2>Why does Bitcoin have a supply limit?</h2>
+    <p>Bitcoin&rsquo;s protocol is designed around a maximum supply of 21 million BTC. That does not guarantee price appreciation. Scarcity is one property; market demand is another.</p>
+
+    <h2>How does a Bitcoin transaction work?</h2>
+    <ol>
+      <li>A wallet creates a transaction.</li>
+      <li>The transaction is signed.</li>
+      <li>It is broadcast to the Bitcoin network.</li>
+      <li>Miners include it in a block.</li>
+      <li>Additional blocks increase confirmation depth.</li>
+    </ol>
+
+    <h2>What is a Bitcoin wallet?</h2>
+    <p>A wallet does not contain physical Bitcoin. It manages the keys needed to control Bitcoin recorded on the blockchain.</p>
+
+    <h2>Exchange Bitcoin vs self-custody Bitcoin</h2>
+    <p>If BTC remains on an exchange, the platform normally manages custody. If you withdraw BTC to a self-custody wallet, you control the keys. The market exposure may be similar, but operational responsibility is different.</p>
+
+    <h2>Bitcoin fees</h2>
+    <p>Bitcoin transaction fees depend on network demand and transaction characteristics. An exchange withdrawal fee may be different from the exact network fee paid by the exchange.</p>
+
+    <h2>What can go wrong?</h2>
+    <p>Bitcoin-specific risks include price volatility, exchange failure, key loss, phishing, wrong-address transfers and poor backups. Bitcoin does not eliminate the need for operational security.</p>
+
+    <h2>Bitcoin and India</h2>
+    <p>Indian users should also consider platform KYC, INR access, VDA tax, transaction records and withdrawal support. Use the <a href="../crypto-tax-india/">tax pillar</a> rather than relying on old social-media summaries.</p>
+
+    <h2>Common misconceptions</h2>
+    <p><strong>&ldquo;Bitcoin is anonymous.&rdquo;</strong> Bitcoin transactions are publicly visible, although addresses are pseudonymous.</p>
+    <p><strong>&ldquo;Bitcoin can be reversed by support.&rdquo;</strong> Confirmed transactions generally cannot be reversed by a central administrator.</p>
+    <p><strong>&ldquo;One BTC is too expensive, so I cannot buy Bitcoin.&rdquo;</strong> BTC is divisible; platform minimums vary.</p>
+
+    <h2>Related guides</h2>
+    <ul>
+      <li><a href="../ethereum/">Ethereum Explained for India</a></li>
+      <li><a href="../stablecoins/">Stablecoins Explained for India</a></li>
+      <li><a href="../blockchain-basics/">Blockchain Basics</a></li>
+      <li><a href="../crypto-tax-india/">Crypto Tax in India</a></li>
+      <li><a href="../../wallets-safety/wallet-basics/">Crypto Wallet Basics</a></li>
+    </ul>
+    <h2>Frequently asked questions</h2>
+    <h3>Is Bitcoin legal in India?</h3>
+    <p>Bitcoin is used within India's broader VDA tax/compliance environment, but it is not legal tender.</p>
+    <h3>Do I need to buy one whole Bitcoin?</h3>
+    <p>No. Bitcoin is divisible.</p>
+    <h3>Is Bitcoin safer than stablecoins?</h3>
+    <p>They have different risk structures. Bitcoin has no central stablecoin issuer, but its price is far more volatile.</p>
+    <h3>Where should I keep Bitcoin?</h3>
+    <p>That depends on your custody needs, experience and balance size.</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand">
+          <a href="../../index.html" class="logo">
+            <svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true">
+              <circle cx="16" cy="16" r="15" fill="#E88A1A"/>
+              <path d="M16 6 L21 21 L16 17.5 L11 21 Z" fill="#1F3A5F"/>
+            </svg>
+            <span><span class="coin" style="color:#fff">Coin</span><span class="raahi">Raahi</span></span>
+          </a>
+          <p>Practical guides to crypto and global digital assets, written for India.</p>
+          <p class="contact"><a href="mailto:hello@coinraahi.com">hello@coinraahi.com</a></p>
+        </div>
+        <div class="footer-col">
+          <h4>Start Here</h4>
+          <ul>
+            <li><a href="../../start-here/crypto-basics/">Crypto Basics</a></li>
+            <li><a href="../../start-here/beginner-roadmap/">Beginner Roadmap</a></li>
+            <li><a href="../../start-here/common-questions/">Common Questions</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Exchanges</h4>
+          <ul>
+            <li><a href="../../exchanges/binance/">Binance</a></li>
+            <li><a href="../../exchanges/coindcx/">CoinDCX</a></li>
+            <li><a href="../../exchanges/coinswitch/">CoinSwitch</a></li>
+            <li><a href="../../exchanges/comparisons/">Comparisons</a></li>
+            <li><a href="../../exchanges/account-kyc/">KYC &amp; Account</a></li>
+            <li><a href="../../exchanges/fees-withdrawals/">Fees &amp; Withdrawals</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Crypto</h4>
+          <ul>
+            <li><a href="../../crypto/bitcoin/">Bitcoin</a></li>
+            <li><a href="../../crypto/ethereum/">Ethereum</a></li>
+            <li><a href="../../crypto/stablecoins/">Stablecoins</a></li>
+            <li><a href="../../crypto/blockchain-basics/">Blockchain Basics</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Assets &amp; RWA</h4>
+          <ul>
+            <li><a href="../../assets-rwa/us-stocks-etfs/">US Stocks &amp; ETFs</a></li>
+            <li><a href="../../assets-rwa/tokenised-stocks/">Tokenised Stocks</a></li>
+            <li><a href="../../assets-rwa/gold/">Gold</a></li>
+            <li><a href="../../assets-rwa/tokenised-assets/">Tokenised Assets</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Wallets &amp; Safety</h4>
+          <ul>
+            <li><a href="../../wallets-safety/wallet-basics/">Wallet Basics</a></li>
+            <li><a href="../../wallets-safety/transfers/">Transfers</a></li>
+            <li><a href="../../wallets-safety/account-security/">Account Security</a></li>
+            <li><a href="../../wallets-safety/scam-prevention/">Scam Prevention</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="../../about.html">About</a></li>
+            <li><a href="../../editorial-policy.html">Editorial Policy</a></li>
+            <li><a href="../../affiliate-disclosure.html">Affiliate Disclosure</a></li>
+            <li><a href="../../risk-disclosure.html">Risk Disclosure</a></li>
+            <li><a href="../../contact.html">Contact</a></li>
+            <li><a href="../../privacy.html">Privacy Policy</a></li>
+            <li><a href="../../disclaimer.html">Disclaimer</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="risk">Cryptocurrency and tokenised assets can be highly volatile and involve significant market, custody and counterparty risk. You may lose some or all of the money you invest. In India, income from the transfer of qualifying virtual digital assets is generally subject to the special tax regime under Section 115BBH, while 1% TDS may apply to qualifying transfers under Section 194S, subject to applicable rules and thresholds. CoinRaahi provides educational information only and does not provide financial, investment, legal or tax advice.</p>
+        <div class="legal">
+          <span>&copy; 2026 CoinRaahi. Not financial advice.</span>
+          <span>
+            <a href="../../disclaimer.html">Disclaimer</a>
+            <a href="../../privacy.html">Privacy</a>
+            <a href="../../editorial-policy.html">Editorial Policy</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../js/main.js"></script>
+</body>
+</html>

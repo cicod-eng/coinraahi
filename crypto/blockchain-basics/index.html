@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blockchain Basics: Transactions, Blocks, Networks &amp; Explorers Explained | CoinRaahi</title>
+  <meta name="description" content="Understand blockchain without jargon: transactions, blocks, validators, confirmations, gas fees, explorers, smart contracts and network differences.">
+  <link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="48" fill="%231F3A5F"/><text x="50" y="68" font-size="54" font-weight="bold" text-anchor="middle" fill="%23E88A1A" font-family="Arial">R</text></svg>'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="canonical" href="https://coinraahi.com/crypto/blockchain-basics/">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is blockchain the same as Bitcoin?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Bitcoin uses blockchain technology, but other networks also use blockchain-based systems."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can blockchain transactions be deleted?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Public blockchain history is generally designed to be persistent once finalised."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why do exchanges wait for confirmations?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "To reduce the risk of crediting a transaction before the network considers it sufficiently settled."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is a TXID?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The transaction identifier used to find an on-chain transaction."
+      }
+    }
+  ]
+}
+  </script>
+</head>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="../../index.html" class="logo" aria-label="CoinRaahi home">
+        <svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true">
+          <circle cx="16" cy="16" r="15" fill="#1F3A5F"/>
+          <path d="M16 6 L21 21 L16 17.5 L11 21 Z" fill="#E88A1A"/>
+        </svg>
+        <span><span class="coin">Coin</span><span class="raahi">Raahi</span></span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links">
+        <li class="has-dropdown"><a href="../../start-here/">Start Here</a>
+          <ul class="dropdown-menu">
+          <li><a href="../../start-here/crypto-basics/">Crypto Basics</a></li>
+          <li><a href="../../start-here/beginner-roadmap/">Beginner Roadmap</a></li>
+          <li><a href="../../start-here/common-questions/">Common Questions</a></li>
+          </ul>
+          </li>
+        <li class="has-dropdown"><a href="../../exchanges/">Exchanges</a>
+          <ul class="dropdown-menu">
+          <li><a href="../../exchanges/binance/">Binance</a></li>
+          <li><a href="../../exchanges/coindcx/">CoinDCX</a></li>
+          <li><a href="../../exchanges/coinswitch/">CoinSwitch</a></li>
+          <li><a href="../../exchanges/comparisons/">Exchange Comparisons</a></li>
+          <li><a href="../../exchanges/account-kyc/">KYC &amp; Account</a></li>
+          <li><a href="../../exchanges/fees-withdrawals/">Fees &amp; Withdrawals</a></li>
+          </ul>
+          </li>
+        <li class="has-dropdown"><a href="../../crypto/" class="active">Crypto</a>
+          <ul class="dropdown-menu">
+          <li><a href="../../crypto/bitcoin/">Bitcoin</a></li>
+          <li><a href="../../crypto/ethereum/">Ethereum</a></li>
+          <li><a href="../../crypto/stablecoins/">Stablecoins</a></li>
+          <li><a href="../../crypto/blockchain-basics/">Blockchain Basics</a></li>
+          </ul>
+          </li>
+        <li class="has-dropdown"><a href="../../assets-rwa/">Assets &amp; RWA</a>
+          <ul class="dropdown-menu">
+          <li><a href="../../assets-rwa/us-stocks-etfs/">US Stocks &amp; ETFs</a></li>
+          <li><a href="../../assets-rwa/tokenised-stocks/">Tokenised Stocks</a></li>
+          <li><a href="../../assets-rwa/gold/">Gold</a></li>
+          <li><a href="../../assets-rwa/tokenised-assets/">Tokenised Assets</a></li>
+          </ul>
+          </li>
+        <li class="has-dropdown"><a href="../../wallets-safety/">Wallets &amp; Safety</a>
+          <ul class="dropdown-menu">
+          <li><a href="../../wallets-safety/wallet-basics/">Wallet Basics</a></li>
+          <li><a href="../../wallets-safety/transfers/">Transfers</a></li>
+          <li><a href="../../wallets-safety/account-security/">Account Security</a></li>
+          <li><a href="../../wallets-safety/scam-prevention/">Scam Prevention</a></li>
+          </ul>
+          </li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="container page">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../index.html">Home</a> <span class="sep">&#8250;</span> <a href="../">Crypto</a> <span class="sep">&#8250;</span> <span class="current">Blockchain Basics</span></nav>
+    <h1>Blockchain Basics Without the Jargon</h1>
+    <p class="updated">Last updated: 6 September 2026</p>
+
+    <p class="lede">You do not need to become a developer to understand how a blockchain transaction works. Think of a blockchain as a shared record that many computers agree on.</p>
+
+    <h2>Transaction</h2>
+    <p>A transaction is an instruction. Examples include sending BTC, transferring USDT or interacting with a smart contract.</p>
+
+    <h2>Block</h2>
+    <p>Networks group transactions into blocks or equivalent data structures. Blocks help create an ordered transaction history.</p>
+
+    <h2>Validator or miner</h2>
+    <p>Different networks use different consensus mechanisms. Bitcoin uses mining. Ethereum uses validators under proof of stake. The purpose is similar: agree on valid network state.</p>
+
+    <h2>Confirmation</h2>
+    <p>A transaction can be broadcast before it becomes sufficiently confirmed. Exchanges often wait for multiple confirmations before crediting deposits.</p>
+
+    <h2>Address</h2>
+    <p>A blockchain address identifies a destination. It is not the same thing as a person&rsquo;s verified identity.</p>
+
+    <h2>Network fee</h2>
+    <p>Fees compensate or incentivise network processing. Different blockchains calculate them differently.</p>
+
+    <h2>Blockchain explorer</h2>
+    <p>A block explorer lets you independently inspect transaction status, address, amount, block and confirmations. This is why a TXID can be more useful than an app screenshot.</p>
+
+    <h2>Smart contract</h2>
+    <p>A smart contract is code deployed to a blockchain. It can manage tokens, swaps, lending and tokenised assets. But code can contain risks.</p>
+
+    <h2>Different networks are not interchangeable</h2>
+    <p>Ethereum, TRON, BNB Smart Chain and Bitcoin are separate systems. Even when address formats look similar, the network matters.</p>
+
+    <h2>Related guides</h2>
+    <ul>
+      <li><a href="../bitcoin/">Bitcoin Explained for India</a></li>
+      <li><a href="../ethereum/">Ethereum Explained for India</a></li>
+      <li><a href="../stablecoins/usdt-trc20-vs-erc20-vs-bep20/">USDT TRC20 vs ERC20 vs BEP20</a></li>
+      <li><a href="../../wallets-safety/transfers/crypto-transfer-checklist/">Crypto Transfer Checklist</a></li>
+      <li><a href="../../wallets-safety/wallet-basics/">Crypto Wallet Basics</a></li>
+    </ul>
+    <h2>Frequently asked questions</h2>
+    <h3>Is blockchain the same as Bitcoin?</h3>
+    <p>No. Bitcoin uses blockchain technology, but other networks also use blockchain-based systems.</p>
+    <h3>Can blockchain transactions be deleted?</h3>
+    <p>Public blockchain history is generally designed to be persistent once finalised.</p>
+    <h3>Why do exchanges wait for confirmations?</h3>
+    <p>To reduce the risk of crediting a transaction before the network considers it sufficiently settled.</p>
+    <h3>What is a TXID?</h3>
+    <p>The transaction identifier used to find an on-chain transaction.</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand">
+          <a href="../../index.html" class="logo">
+            <svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true">
+              <circle cx="16" cy="16" r="15" fill="#E88A1A"/>
+              <path d="M16 6 L21 21 L16 17.5 L11 21 Z" fill="#1F3A5F"/>
+            </svg>
+            <span><span class="coin" style="color:#fff">Coin</span><span class="raahi">Raahi</span></span>
+          </a>
+          <p>Practical guides to crypto and global digital assets, written for India.</p>
+          <p class="contact"><a href="mailto:hello@coinraahi.com">hello@coinraahi.com</a></p>
+        </div>
+        <div class="footer-col">
+          <h4>Start Here</h4>
+          <ul>
+            <li><a href="../../start-here/crypto-basics/">Crypto Basics</a></li>
+            <li><a href="../../start-here/beginner-roadmap/">Beginner Roadmap</a></li>
+            <li><a href="../../start-here/common-questions/">Common Questions</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Exchanges</h4>
+          <ul>
+            <li><a href="../../exchanges/binance/">Binance</a></li>
+            <li><a href="../../exchanges/coindcx/">CoinDCX</a></li>
+            <li><a href="../../exchanges/coinswitch/">CoinSwitch</a></li>
+            <li><a href="../../exchanges/comparisons/">Comparisons</a></li>
+            <li><a href="../../exchanges/account-kyc/">KYC &amp; Account</a></li>
+            <li><a href="../../exchanges/fees-withdrawals/">Fees &amp; Withdrawals</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Crypto</h4>
+          <ul>
+            <li><a href="../../crypto/bitcoin/">Bitcoin</a></li>
+            <li><a href="../../crypto/ethereum/">Ethereum</a></li>
+            <li><a href="../../crypto/stablecoins/">Stablecoins</a></li>
+            <li><a href="../../crypto/blockchain-basics/">Blockchain Basics</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Assets &amp; RWA</h4>
+          <ul>
+            <li><a href="../../assets-rwa/us-stocks-etfs/">US Stocks &amp; ETFs</a></li>
+            <li><a href="../../assets-rwa/tokenised-stocks/">Tokenised Stocks</a></li>
+            <li><a href="../../assets-rwa/gold/">Gold</a></li>
+            <li><a href="../../assets-rwa/tokenised-assets/">Tokenised Assets</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Wallets &amp; Safety</h4>
+          <ul>
+            <li><a href="../../wallets-safety/wallet-basics/">Wallet Basics</a></li>
+            <li><a href="../../wallets-safety/transfers/">Transfers</a></li>
+            <li><a href="../../wallets-safety/account-security/">Account Security</a></li>
+            <li><a href="../../wallets-safety/scam-prevention/">Scam Prevention</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="../../about.html">About</a></li>
+            <li><a href="../../editorial-policy.html">Editorial Policy</a></li>
+            <li><a href="../../affiliate-disclosure.html">Affiliate Disclosure</a></li>
+            <li><a href="../../risk-disclosure.html">Risk Disclosure</a></li>
+            <li><a href="../../contact.html">Contact</a></li>
+            <li><a href="../../privacy.html">Privacy Policy</a></li>
+            <li><a href="../../disclaimer.html">Disclaimer</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="risk">Cryptocurrency and tokenised assets can be highly volatile and involve significant market, custody and counterparty risk. You may lose some or all of the money you invest. In India, income from the transfer of qualifying virtual digital assets is generally subject to the special tax regime under Section 115BBH, while 1% TDS may apply to qualifying transfers under Section 194S, subject to applicable rules and thresholds. CoinRaahi provides educational information only and does not provide financial, investment, legal or tax advice.</p>
+        <div class="legal">
+          <span>&copy; 2026 CoinRaahi. Not financial advice.</span>
+          <span>
+            <a href="../../disclaimer.html">Disclaimer</a>
+            <a href="../../privacy.html">Privacy</a>
+            <a href="../../editorial-policy.html">Editorial Policy</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ethereum Guide for India: ETH, Gas, Wallets, Staking &amp; Smart Contracts | CoinRaahi</title>
+  <meta name="description" content="Learn how Ethereum and ETH work, including gas fees, smart contracts, tokens, Layer 2 networks, wallets, staking and key risks for beginners.">
+  <link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="48" fill="%231F3A5F"/><text x="50" y="68" font-size="54" font-weight="bold" text-anchor="middle" fill="%23E88A1A" font-family="Arial">R</text></svg>'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="canonical" href="https://coinraahi.com/crypto/ethereum/">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is ETH a company share?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. ETH is the native asset of the Ethereum network."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why do I need ETH to send USDT on Ethereum?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Because Ethereum network execution fees are normally paid in ETH."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Ethereum the same as ERC20?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Ethereum is the blockchain; ERC20 is a token standard used on Ethereum."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can Ethereum transactions be reversed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Normally not after final confirmation."
+      }
+    }
+  ]
+}
+  </script>
+</head>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="../../index.html" class="logo" aria-label="CoinRaahi home">
+        <svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true">
+          <circle cx="16" cy="16" r="15" fill="#1F3A5F"/>
+          <path d="M16 6 L21 21 L16 17.5 L11 21 Z" fill="#E88A1A"/>
+        </svg>
+        <span><span class="coin">Coin</span><span class="raahi">Raahi</span></span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links">
+        <li class="has-dropdown"><a href="../../start-here/">Start Here</a>
+          <ul class="dropdown-menu">
+          <li><a href="../../start-here/crypto-basics/">Crypto Basics</a></li>
+          <li><a href="../../start-here/beginner-roadmap/">Beginner Roadmap</a></li>
+          <li><a href="../../start-here/common-questions/">Common Questions</a></li>
+          </ul>
+          </li>
+        <li class="has-dropdown"><a href="../../exchanges/">Exchanges</a>
+          <ul class="dropdown-menu">
+          <li><a href="../../exchanges/binance/">Binance</a></li>
+          <li><a href="../../exchanges/coindcx/">CoinDCX</a></li>
+          <li><a href="../../exchanges/coinswitch/">CoinSwitch</a></li>
+          <li><a href="../../exchanges/comparisons/">Exchange Comparisons</a></li>
+          <li><a href="../../exchanges/account-kyc/">KYC &amp; Account</a></li>
+          <li><a href="../../exchanges/fees-withdrawals/">Fees &amp; Withdrawals</a></li>
+          </ul>
+          </li>
+        <li class="has-dropdown"><a href="../../crypto/" class="active">Crypto</a>
+          <ul class="dropdown-menu">
+          <li><a href="../../crypto/bitcoin/">Bitcoin</a></li>
+          <li><a href="../../crypto/ethereum/">Ethereum</a></li>
+          <li><a href="../../crypto/stablecoins/">Stablecoins</a></li>
+          <li><a href="../../crypto/blockchain-basics/">Blockchain Basics</a></li>
+          </ul>
+          </li>
+        <li class="has-dropdown"><a href="../../assets-rwa/">Assets &amp; RWA</a>
+          <ul class="dropdown-menu">
+          <li><a href="../../assets-rwa/us-stocks-etfs/">US Stocks &amp; ETFs</a></li>
+          <li><a href="../../assets-rwa/tokenised-stocks/">Tokenised Stocks</a></li>
+          <li><a href="../../assets-rwa/gold/">Gold</a></li>
+          <li><a href="../../assets-rwa/tokenised-assets/">Tokenised Assets</a></li>
+          </ul>
+          </li>
+        <li class="has-dropdown"><a href="../../wallets-safety/">Wallets &amp; Safety</a>
+          <ul class="dropdown-menu">
+          <li><a href="../../wallets-safety/wallet-basics/">Wallet Basics</a></li>
+          <li><a href="../../wallets-safety/transfers/">Transfers</a></li>
+          <li><a href="../../wallets-safety/account-security/">Account Security</a></li>
+          <li><a href="../../wallets-safety/scam-prevention/">Scam Prevention</a></li>
+          </ul>
+          </li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="container page">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../index.html">Home</a> <span class="sep">&#8250;</span> <a href="../">Crypto</a> <span class="sep">&#8250;</span> <span class="current">Ethereum</span></nav>
+    <h1>Ethereum Explained for India</h1>
+    <p class="updated">Last updated: 6 September 2026</p>
+
+    <p class="lede">Ethereum and ETH are related, but they are not the same thing. Ethereum is the blockchain network. ETH is the network&rsquo;s native asset. That simple distinction prevents a lot of beginner confusion.</p>
+
+    <h2>What makes Ethereum different from Bitcoin?</h2>
+    <p>Bitcoin focuses strongly on a decentralised monetary asset and settlement network. Ethereum was designed as a programmable blockchain where developers can deploy smart contracts. That enables tokens, stablecoins, DeFi, NFTs and RWA applications.</p>
+
+    <h2>What is gas?</h2>
+    <p>Ethereum transactions require computational resources. Users pay network fees in ETH. Gas is not an exchange fee. It is part of how Ethereum prices network execution.</p>
+
+    <h2>Why can gas become expensive?</h2>
+    <p>Costs can rise when network demand increases, complex smart contracts require more computation, or users compete for block space. This is one reason Layer 2 networks became important.</p>
+
+    <h2>What are Layer 2 networks?</h2>
+    <p>Layer 2 systems process activity outside or alongside Ethereum&rsquo;s main execution layer while using Ethereum for parts of settlement/security. Beginners should still check which network they are on, bridge requirements, supported wallet and withdrawal path.</p>
+
+    <h2>Ethereum tokens</h2>
+    <p>Many assets use Ethereum token standards. Examples include stablecoins, governance tokens and tokenised assets. Holding a token on Ethereum does not mean holding ETH itself.</p>
+
+    <h2>Smart contracts introduce new risks</h2>
+    <p>A smart contract can automate rules. It can also contain bugs, design flaws, permission risks and upgrade controls. &ldquo;Decentralised&rdquo; does not automatically mean &ldquo;risk-free&rdquo;.</p>
+
+    <h2>What is Ethereum staking?</h2>
+    <p>Ethereum uses proof of stake. Users can participate directly or through services, but the risk differs depending on whether the route uses direct validator staking, exchange staking or liquid staking tokens. Each adds different custody and smart-contract layers.</p>
+
+    <h2>Ethereum wallet safety</h2>
+    <p>Before using Ethereum, keep ETH for gas, verify token contracts, review approvals, avoid blind signing, and distinguish mainnet from Layer 2 networks.</p>
+
+    <h2>Related guides</h2>
+    <ul>
+      <li><a href="../bitcoin/">Bitcoin Explained for India</a></li>
+      <li><a href="../blockchain-basics/">Blockchain Basics</a></li>
+      <li><a href="../stablecoins/usdt-trc20-vs-erc20-vs-bep20/">USDT on TRC20, ERC20 and BEP20</a></li>
+      <li><a href="../../wallets-safety/wallet-basics/">Crypto Wallet Basics</a></li>
+      <li><a href="../crypto-tax-india/">Crypto Tax in India</a></li>
+    </ul>
+    <h2>Frequently asked questions</h2>
+    <h3>Is ETH a company share?</h3>
+    <p>No. ETH is the native asset of the Ethereum network.</p>
+    <h3>Why do I need ETH to send USDT on Ethereum?</h3>
+    <p>Because Ethereum network execution fees are normally paid in ETH.</p>
+    <h3>Is Ethereum the same as ERC20?</h3>
+    <p>No. Ethereum is the blockchain; ERC20 is a token standard used on Ethereum.</p>
+    <h3>Can Ethereum transactions be reversed?</h3>
+    <p>Normally not after final confirmation.</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand">
+          <a href="../../index.html" class="logo">
+            <svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true">
+              <circle cx="16" cy="16" r="15" fill="#E88A1A"/>
+              <path d="M16 6 L21 21 L16 17.5 L11 21 Z" fill="#1F3A5F"/>
+            </svg>
+            <span><span class="coin" style="color:#fff">Coin</span><span class="raahi">Raahi</span></span>
+          </a>
+          <p>Practical guides to crypto and global digital assets, written for India.</p>
+          <p class="contact"><a href="mailto:hello@coinraahi.com">hello@coinraahi.com</a></p>
+        </div>
+        <div class="footer-col">
+          <h4>Start Here</h4>
+          <ul>
+            <li><a href="../../start-here/crypto-basics/">Crypto Basics</a></li>
+            <li><a href="../../start-here/beginner-roadmap/">Beginner Roadmap</a></li>
+            <li><a href="../../start-here/common-questions/">Common Questions</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Exchanges</h4>
+          <ul>
+            <li><a href="../../exchanges/binance/">Binance</a></li>
+            <li><a href="../../exchanges/coindcx/">CoinDCX</a></li>
+            <li><a href="../../exchanges/coinswitch/">CoinSwitch</a></li>
+            <li><a href="../../exchanges/comparisons/">Comparisons</a></li>
+            <li><a href="../../exchanges/account-kyc/">KYC &amp; Account</a></li>
+            <li><a href="../../exchanges/fees-withdrawals/">Fees &amp; Withdrawals</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Crypto</h4>
+          <ul>
+            <li><a href="../../crypto/bitcoin/">Bitcoin</a></li>
+            <li><a href="../../crypto/ethereum/">Ethereum</a></li>
+            <li><a href="../../crypto/stablecoins/">Stablecoins</a></li>
+            <li><a href="../../crypto/blockchain-basics/">Blockchain Basics</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Assets &amp; RWA</h4>
+          <ul>
+            <li><a href="../../assets-rwa/us-stocks-etfs/">US Stocks &amp; ETFs</a></li>
+            <li><a href="../../assets-rwa/tokenised-stocks/">Tokenised Stocks</a></li>
+            <li><a href="../../assets-rwa/gold/">Gold</a></li>
+            <li><a href="../../assets-rwa/tokenised-assets/">Tokenised Assets</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Wallets &amp; Safety</h4>
+          <ul>
+            <li><a href="../../wallets-safety/wallet-basics/">Wallet Basics</a></li>
+            <li><a href="../../wallets-safety/transfers/">Transfers</a></li>
+            <li><a href="../../wallets-safety/account-security/">Account Security</a></li>
+            <li><a href="../../wallets-safety/scam-prevention/">Scam Prevention</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="../../about.html">About</a></li>
+            <li><a href="../../editorial-policy.html">Editorial Policy</a></li>
+            <li><a href="../../affiliate-disclosure.html">Affiliate Disclosure</a></li>
+            <li><a href="../../risk-disclosure.html">Risk Disclosure</a></li>
+            <li><a href="../../contact.html">Contact</a></li>
+            <li><a href="../../privacy.html">Privacy Policy</a></li>
+            <li><a href="../../disclaimer.html">Disclaimer</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="risk">Cryptocurrency and tokenised assets can be highly volatile and involve significant market, custody and counterparty risk. You may lose some or all of the money you invest. In India, income from the transfer of qualifying virtual digital assets is generally subject to the special tax regime under Section 115BBH, while 1% TDS may apply to qualifying transfers under Section 194S, subject to applicable rules and thresholds. CoinRaahi provides educational information only and does not provide financial, investment, legal or tax advice.</p>
+        <div class="legal">
+          <span>&copy; 2026 CoinRaahi. Not financial advice.</span>
+          <span>
+            <a href="../../disclaimer.html">Disclaimer</a>
+            <a href="../../privacy.html">Privacy</a>
+            <a href="../../editorial-policy.html">Editorial Policy</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../js/main.js"></script>
+</body>
+</html>
