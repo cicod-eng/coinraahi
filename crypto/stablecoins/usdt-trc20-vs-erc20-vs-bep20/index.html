@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>USDT TRC20 vs ERC20 vs BEP20: Fees, Networks &amp; Transfer Risks | CoinRaahi</title>
+  <meta name="description" content="Compare USDT on TRON, Ethereum and BNB Smart Chain. Learn the differences in network support, fees, token structure and what to check before sending USDT.">
+  <link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="48" fill="%231F3A5F"/><text x="50" y="68" font-size="54" font-weight="bold" text-anchor="middle" fill="%23E88A1A" font-family="Arial">R</text></svg>'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../../css/style.css">
+  <link rel="canonical" href="https://coinraahi.com/crypto/stablecoins/usdt-trc20-vs-erc20-vs-bep20/">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "USDT TRC20 vs ERC20 vs BEP20: Which Network Should You Use?",
+  "description": "Compare USDT on TRON, Ethereum and BNB Smart Chain. Learn the differences in network support, fees, token structure and what to check before sending USDT.",
+  "datePublished": "2026-09-06",
+  "dateModified": "2026-09-06",
+  "inLanguage": "en-IN",
+  "mainEntityOfPage": "https://coinraahi.com/crypto/stablecoins/usdt-trc20-vs-erc20-vs-bep20/"
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the difference between USDT ERC20 and TRC20?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ERC20 USD\u20ae operates on Ethereum, while TRC20 USD\u20ae operates on TRON. They use different blockchains, address systems and network-fee mechanisms. Tether currently lists both as supported USD\u20ae protocols."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is TRC20 cheaper than ERC20?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It is often used as a lower-cost transfer route, but actual costs depend on current network conditions and the exchange's withdrawal fee. Check the live quote."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is USDT BEP20 the same as Tether USDT?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Do not assume so merely from the ticker. Binance infrastructure recognises a widely used BSC USDT contract, while Tether's current official BNB Smart Chain supported-protocol section does not list a USD\u20ae contract there. Verify the exact asset and contract."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I send ERC20 USDT to a TRC20 address?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Treat them as different network routes. Use a supported conversion, bridge or exchange route instead of directly sending between incompatible networks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why do Ethereum and BSC addresses both start with 0x?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Both are EVM-compatible account systems, but they are separate blockchain networks. The same-looking address format does not make the chains interchangeable."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens if I send USDT using the wrong network?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Recovery depends on whether you control the receiving address and whether the destination platform supports the network. Some cases are recoverable; others may not be."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need ETH, TRX or BNB to receive USDT?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Receiving generally does not require you to already hold the native gas asset, but sending from a self-custody wallet later may require the relevant network resource or native token."
+      }
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a href="../../../index.html" class="logo" aria-label="CoinRaahi home">
+        <svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true">
+          <circle cx="16" cy="16" r="15" fill="#1F3A5F"/>
+          <path d="M16 6 L21 21 L16 17.5 L11 21 Z" fill="#E88A1A"/>
+        </svg>
+        <span><span class="coin">Coin</span><span class="raahi">Raahi</span></span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links">
+        <li class="has-dropdown"><a href="../../../start-here/">Start Here</a>
+          <ul class="dropdown-menu">
+            <li><a href="../../../start-here/crypto-basics/">Crypto Basics</a></li>
+            <li><a href="../../../start-here/beginner-roadmap/">Beginner Roadmap</a></li>
+            <li><a href="../../../start-here/common-questions/">Common Questions</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown"><a href="../../../exchanges/">Exchanges</a>
+          <ul class="dropdown-menu">
+            <li><a href="../../../exchanges/binance/">Binance</a></li>
+            <li><a href="../../../exchanges/coindcx/">CoinDCX</a></li>
+            <li><a href="../../../exchanges/coinswitch/">CoinSwitch</a></li>
+            <li><a href="../../../exchanges/comparisons/">Exchange Comparisons</a></li>
+            <li><a href="../../../exchanges/account-kyc/">KYC &amp; Account</a></li>
+            <li><a href="../../../exchanges/fees-withdrawals/">Fees &amp; Withdrawals</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown"><a href="../../../crypto/" class="active">Crypto</a>
+          <ul class="dropdown-menu">
+            <li><a href="../../../crypto/bitcoin/">Bitcoin</a></li>
+            <li><a href="../../../crypto/ethereum/">Ethereum</a></li>
+            <li><a href="../../../crypto/stablecoins/">Stablecoins</a></li>
+            <li><a href="../../../crypto/blockchain-basics/">Blockchain Basics</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown"><a href="../../../assets-rwa/">Assets &amp; RWA</a>
+          <ul class="dropdown-menu">
+            <li><a href="../../../assets-rwa/us-stocks-etfs/">US Stocks &amp; ETFs</a></li>
+            <li><a href="../../../assets-rwa/tokenised-stocks/">Tokenised Stocks</a></li>
+            <li><a href="../../../assets-rwa/gold/">Gold</a></li>
+            <li><a href="../../../assets-rwa/tokenised-assets/">Tokenised Assets</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown"><a href="../../../wallets-safety/">Wallets &amp; Safety</a>
+          <ul class="dropdown-menu">
+            <li><a href="../../../wallets-safety/wallet-basics/">Wallet Basics</a></li>
+            <li><a href="../../../wallets-safety/transfers/">Transfers</a></li>
+            <li><a href="../../../wallets-safety/account-security/">Account Security</a></li>
+            <li><a href="../../../wallets-safety/scam-prevention/">Scam Prevention</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <main class="container page">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../../index.html">Home</a> <span class="sep">›</span> <a href="../../../crypto/">Crypto</a> <span class="sep">›</span> <a href="../">Stablecoins</a> <span class="sep">›</span> <span class="current">USDT TRC20 vs ERC20 vs BEP20</span></nav>
+    <h1>USDT TRC20 vs ERC20 vs BEP20: Which Network Should You Use?</h1>
+    <p class="updated">Last updated: 6 September 2026</p>
+
+
+    <p class="lede">You want to withdraw 100 USDT. The exchange asks you to choose: <strong>Ethereum (ERC20)</strong>, <strong>TRON (TRC20)</strong> or <strong>BNB Smart Chain (BEP20)</strong>.</p>
+    <p>It is tempting to compare only the withdrawal fee and select the cheapest option. That is the wrong order. The first question should be:</p>
+    <div class="callout"><p><strong>Does the receiving wallet or exchange support the exact network and token I am about to send?</strong></p></div>
+    <p>Only after confirming that should you compare cost. There is another detail beginners often miss: the label <strong>USDT</strong> does not automatically mean every version shown across every blockchain has the same issuance structure. That becomes especially important when comparing Ethereum and TRON with what many exchanges and wallets call &ldquo;USDT on BNB Smart Chain&rdquo;.</p>
+
+    <h2>The short answer</h2>
+    <p>If both the sending and receiving platforms support several networks:</p>
+    <ul>
+      <li><strong>TRC20</strong> is widely used for USDT transfers on TRON and often chosen when transfer cost matters.</li>
+      <li><strong>ERC20</strong> is USDT on Ethereum and can be useful when funds need to remain within the Ethereum ecosystem.</li>
+      <li><strong>BEP20/BSC-labelled USDT</strong> can offer inexpensive EVM-compatible transfers, but you should check the exact token contract and support at both ends rather than assuming it is structurally identical to Tether-issued USDT on Ethereum or TRON.</li>
+    </ul>
+    <p>Tether officially lists USD₮ on Ethereum and TRON among its supported protocols. Its current BNB Smart Chain section does not list a native USD₮ contract, even though BSC wallets and Binance infrastructure recognise a widely used BSC token under the USDT symbol.<sup><a href="#source-1">[1]</a></sup></p>
+    <p>That is why CoinRaahi recommends:</p>
+    <div class="callout"><p><strong>Check token &rarr; check network &rarr; check recipient support &rarr; check contract where relevant &rarr; then compare fees.</strong></p></div>
+    <p>Not <em>&ldquo;always use the cheapest chain&rdquo;</em>. For the broader stablecoin landscape, see our <a href="../">stablecoins explained for India</a> guide.</p>
+
+    <h2>First: USDT is the asset, the network is the transport layer</h2>
+    <p>A useful way to think about it is: <strong>USDT = the dollar-linked token/product</strong>, while <strong>Ethereum / TRON / BNB Smart Chain = blockchain networks used to move tokens</strong>.</p>
+    <p>Tether itself describes Tether tokens as existing across multiple blockchain protocols and specifically advises platforms to make clear which protocols they support.<sup><a href="#source-1">[1]</a></sup> So when an exchange shows <em>USDT</em>, that alone is not enough information for a withdrawal. You also need to know: <strong>USDT on which network?</strong></p>
+
+    <h2>What is USDT ERC20?</h2>
+    <p>ERC20 USDT is Tether USD₮ issued on the <strong>Ethereum blockchain</strong>. Tether&rsquo;s current official supported-protocol page identifies the Ethereum USD₮ contract as:</p>
+    <div class="callout"><p><code>0xdAC17F958D2ee523a2206206994597C13D831ec7</code></p></div>
+    <p><sup><a href="#source-1">[1]</a></sup> Ethereum addresses normally begin with <code>0x</code>. USDT on Ethereum interacts with Ethereum wallets, exchanges and applications that support the ERC20 version of USD₮.</p>
+    <h3>What pays the network fee?</h3>
+    <p>For a self-custody transfer from an Ethereum wallet, network execution costs are normally paid in <strong>ETH</strong>. That means someone can hold <em>1,000 USDT</em> in a self-custody Ethereum wallet but still be unable to send it if the wallet has no ETH available for gas. This is an important difference between <strong>having the token</strong> and <strong>having the native asset required to move the token</strong>.</p>
+
+    <h2>What is USDT TRC20?</h2>
+    <p>TRC20 USDT is Tether USD₮ issued on the <strong>TRON blockchain</strong>. Tether&rsquo;s official USD₮ TRON contract is:</p>
+    <div class="callout"><p><code>TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t</code></p></div>
+    <p><sup><a href="#source-1">[1]</a></sup> TRON&rsquo;s own developer documentation defines TRC20 as its fungible-token smart-contract standard and notes that it is interface-compatible with ERC20.<sup><a href="#source-2">[2]</a></sup> TRON addresses commonly begin with <code>T</code>, which makes them visually different from Ethereum-style <code>0x</code> addresses.</p>
+    <h3>What pays the network cost on TRON?</h3>
+    <p>TRX is the native asset of the TRON network. TRON also uses its bandwidth/energy resource model for network operations. For an ordinary user, the practical point is: a self-custody USDT balance on TRON still depends on the TRON network&rsquo;s fee/resource mechanism when it needs to move. An exchange may instead present you with a fixed USDT withdrawal charge. Those are not necessarily the same thing.</p>
+
+    <h2>What is &ldquo;USDT BEP20&rdquo;?</h2>
+    <p>This needs more care. BNB Smart Chain is an EVM-compatible blockchain, and BNB is its native token for transaction fees. BNB Chain&rsquo;s current documentation confirms both its EVM compatibility and BNB&rsquo;s role in paying gas.<sup><a href="#source-3">[3]</a></sup></p>
+    <p>A widely used BSC contract shown as USDT in Binance&rsquo;s current Web3 infrastructure is:</p>
+    <div class="callout"><p><code>0x55d398326f99059fF775485246999027B3197955</code></p></div>
+    <p><sup><a href="#source-4">[4]</a></sup> But here is the important distinction: <strong>Tether&rsquo;s own current supported-protocol page does not list that contract as its BNB Smart Chain USD₮ contract.</strong> In fact, Tether&rsquo;s BNB Smart Chain section currently lists <strong>XAU₮</strong>, while its USD₮ contracts are explicitly listed for networks such as Ethereum and TRON.<sup><a href="#source-1">[1]</a></sup></p>
+    <p>So CoinRaahi would avoid writing <em>&ldquo;USDT BEP20 is simply native Tether USDT issued on BNB Smart Chain&rdquo;</em>. That statement is too loose. A more accurate description is:</p>
+    <div class="callout"><p><strong>BSC has widely used USDT-labelled/token representations supported by parts of the Binance/BNB ecosystem, but users should verify the exact contract and backing/bridge structure rather than assuming it is the same native issuance model as Tether USD₮ on Ethereum or TRON.</strong></p></div>
+    <p>This is a meaningful distinction for self-custody users.</p>
+
+    <h2>Why does this matter if 1 USDT still looks like 1 USDT?</h2>
+    <p>Because a ticker is not a legal or technical identity. Imagine your wallet displays <em>USDT &mdash; 100</em>. That does not, by itself, tell you which blockchain the token is on, which smart contract created it, whether Tether itself issued it there, whether it is bridged or pegged, or whether the receiving exchange accepts that exact version. For a centralised exchange user, much of this complexity may be hidden by the exchange. For a self-custody user, it becomes much more important.</p>
+
+    <h2>A better comparison</h2>
+    <div class="table-wrap">
+      <table class="compare">
+        <tr><th>Question</th><th>ERC20</th><th>TRC20</th><th>BNB Smart Chain / &ldquo;BEP20&rdquo;</th></tr>
+        <tr><td>Blockchain</td><td>Ethereum</td><td>TRON</td><td>BNB Smart Chain</td></tr>
+        <tr><td>Tether official USD₮ issuance currently listed?</td><td>Yes</td><td>Yes</td><td>Verify exact token; Tether&rsquo;s current BSC section does not list USD₮</td></tr>
+        <tr><td>Typical address style</td><td><code>0x&hellip;</code></td><td><code>T&hellip;</code></td><td><code>0x&hellip;</code></td></tr>
+        <tr><td>Native fee asset</td><td>ETH</td><td>TRX / resource model</td><td>BNB</td></tr>
+        <tr><td>EVM compatible</td><td>Yes</td><td>No, although TRC20 interface resembles ERC20</td><td>Yes</td></tr>
+        <tr><td>Common wallet ecosystem</td><td>Ethereum / EVM</td><td>TRON</td><td>EVM / BSC</td></tr>
+        <tr><td>Main beginner risk</td><td>high cost / incorrect network</td><td>wrong TRON network / address handling</td><td>assuming every USDT-labelled token is native Tether USD₮</td></tr>
+        <tr><td>What to verify first</td><td>Receiver supports ERC20 USDT</td><td>Receiver supports TRC20 USDT</td><td>Receiver supports exact BSC token/network</td></tr>
+      </table>
+    </div>
+    <p>This is a better table than <em>&ldquo;ERC20 = expensive, TRC20 = cheap, BEP20 = cheapest&rdquo;</em>, because fees change. <strong>Compatibility and token identity do not.</strong></p>
+
+    <h2>Why TRC20 became popular for USDT transfers</h2>
+    <p>There is a practical reason many users recognise TRC20 USDT. TRON provides a dedicated fungible-token standard and has long supported Tether USD₮; Tether introduced TRC20-based USDT on TRON in 2019.<sup><a href="#source-5">[5]</a></sup> For users moving stablecoins between exchanges, TRON has often been attractive because it is widely integrated, transfer costs have often been lower than Ethereum during expensive periods, and addresses are easy to distinguish visually from Ethereum-style addresses.</p>
+    <p>But &ldquo;popular&rdquo; does not mean <em>&ldquo;always choose TRC20&rdquo;</em>. If the destination supports only ERC20, TRC20 is the wrong choice regardless of fee.</p>
+
+    <h2>When ERC20 can make more sense</h2>
+    <p>ERC20 may be more logical when the USDT is going to an Ethereum DeFi protocol, an Ethereum wallet already holding ETH, an exchange deposit that specifically requests ERC20, or another Ethereum smart contract. In that situation, trying to save money by first sending through another network may introduce bridge risk, additional swaps, extra platform dependency and more transaction steps. The lowest fee on the first transfer does not necessarily mean the lowest <strong>total route cost</strong>.</p>
+
+    <h2>When BNB Smart Chain can make sense</h2>
+    <p>BNB Smart Chain can be useful when both applications explicitly support the same BSC token, you are already using BSC applications, your wallet supports BSC, you have BNB available for gas, and you have checked the token contract. BNB Smart Chain is designed as an EVM-compatible network and its official documentation describes BNB as the gas token.<sup><a href="#source-3">[3]</a></sup> But there is one extra question CoinRaahi would add: <strong>which USDT-labelled asset is this?</strong> That is particularly important outside a centralised exchange interface.</p>
+
+    <h2>&ldquo;BEP20 address&rdquo; can be misleading</h2>
+    <p>Because BNB Smart Chain is EVM-compatible, an address can look like <code>0x&hellip;</code>, just like Ethereum. This creates a beginner trap. An Ethereum address and a BSC address can have the same format &mdash; and a self-custody wallet may even derive the same account address across EVM networks. But that does not mean Ethereum and BSC are the same network. The blockchain state is separate. A balance on Ethereum does not automatically appear on BSC. This is why checking only the address format is not enough.</p>
+
+    <h2>TRC20 addresses are easier to distinguish &mdash; but still check</h2>
+    <p>TRON&rsquo;s common <code>T&hellip;</code> address format makes a TRON address visually different from an EVM <code>0x&hellip;</code> address. That can reduce one type of confusion. But it does not eliminate wrong recipients, missing exchange instructions, unsupported deposits, fake token contracts or minimum-deposit issues. Visual format is a useful warning signal, not a complete safety check.</p>
+
+    <h2>Exchange withdrawal fee is not the same as blockchain gas</h2>
+    <p>This is one of the biggest mistakes in network comparisons. Suppose an exchange shows <em>ERC20 withdrawal: X USDT, TRC20 withdrawal: Y USDT, BSC withdrawal: Z USDT</em>. Those numbers are <strong>exchange withdrawal charges</strong>. They may be influenced by network cost, but they are determined by the platform. Meanwhile, when sending from your own wallet, Ethereum transactions normally require ETH, BSC transactions require BNB, and TRON uses its native fee/resource system.</p>
+    <p>So an article claiming <em>&ldquo;ERC20 always costs $10&rdquo;</em> or <em>&ldquo;TRC20 costs exactly 1 USDT&rdquo;</em> will become stale &mdash; and can already be wrong depending on where the user sends from. For how Indian platforms structure these charges, see our <a href="../../../exchanges/fees-withdrawals/">exchange fees and withdrawals guide</a>.</p>
+
+    <h2>This is why CoinRaahi will not publish a permanent fee table</h2>
+    <p>Fees are dynamic. A more durable comparison is:</p>
+    <div class="table-wrap">
+      <table class="compare">
+        <tr><th>Transfer situation</th><th>What determines cost?</th></tr>
+        <tr><td>Exchange &rarr; wallet</td><td>Exchange withdrawal fee</td></tr>
+        <tr><td>Wallet &rarr; wallet on Ethereum</td><td>Ethereum network gas</td></tr>
+        <tr><td>Wallet &rarr; wallet on BSC</td><td>BSC gas paid in BNB</td></tr>
+        <tr><td>Wallet &rarr; wallet on TRON</td><td>TRON network resource/fee mechanism</td></tr>
+        <tr><td>Cross-chain movement</td><td>May involve bridge/exchange plus multiple network costs</td></tr>
+      </table>
+    </div>
+    <p>Before every transfer, look at the <strong>current withdrawal preview</strong>. That is more useful than an article&rsquo;s six-month-old fee number.</p>
+
+    <h2>The cheapest network can become the most expensive mistake</h2>
+    <p>Imagine <strong>Option A</strong>: the ERC20 withdrawal fee is higher. <strong>Option B</strong>: the BSC withdrawal fee is much lower. You select BSC. But the receiving exchange accepts that deposit only through Ethereum. The apparent saving has now created a recovery problem. So the correct calculation is not <em>&ldquo;which fee is lowest?&rdquo;</em>. It is <em>&ldquo;which compatible route has the lowest total cost and least operational risk?&rdquo;</em> That distinction is central to safe crypto transfers.</p>
+
+    <h2>A ₹50,000 example</h2>
+    <p>Suppose you want to move the equivalent of ₹50,000 in USDT from Exchange A to Exchange B. Exchange A offers three networks. Do not start with fees. Use this order:</p>
+    <h3>Step 1 &mdash; Open Exchange B</h3>
+    <p>Go to <em>Deposit &rarr; USDT</em>.</p>
+    <h3>Step 2 &mdash; Check supported networks</h3>
+    <p>Suppose it shows Ethereum and TRON, but not BSC. Your actual choice set is now <strong>ERC20 or TRC20</strong>. BSC is no longer an option.</p>
+    <h3>Step 3 &mdash; Compare current fees</h3>
+    <p>Go back to Exchange A and compare the current withdrawal preview for those two compatible networks.</p>
+    <h3>Step 4 &mdash; Check minimum deposit</h3>
+    <p>Make sure the amount arriving will exceed Exchange B&rsquo;s deposit minimum.</p>
+    <h3>Step 5 &mdash; Copy address</h3>
+    <p>Use the address generated specifically for the selected network. Only now should you send.</p>
+    <p>This procedure is safer than memorising a &ldquo;best network&rdquo;.</p>
+
+    <h2>What if both exchanges support all three?</h2>
+    <p>Then compare four things: exact token/network support, current withdrawal fee, deposit minimum, and your intended use after arrival. The fourth question matters. If USDT is going straight into Ethereum DeFi, sending it to BSC first may create another cross-chain step later. If it will remain inside the destination exchange, the cheapest compatible network may be reasonable.</p>
+
+    <h2>What if I am withdrawing to my own wallet?</h2>
+    <p>Self-custody adds two additional checks.</p>
+    <h3>Do I have the native gas token?</h3>
+    <p>For example, Ethereum &rarr; ETH, BSC &rarr; BNB, TRON &rarr; TRX/resource mechanism. Receiving USDT usually does not require you to already hold the native asset. But sending it later may. For more on this, see our <a href="../../../wallets-safety/wallet-basics/exchange-vs-self-custody-wallet/">exchange vs self-custody wallet</a> guide.</p>
+    <h3>Do I know the exact token contract?</h3>
+    <p>This becomes especially important on EVM networks, where anyone can create a token with the symbol <em>USDT</em>. The ticker alone is not proof of authenticity.</p>
+
+    <h2>Fake USDT is a real wallet problem</h2>
+    <p>A scam token can be named <em>USDT</em> and display a familiar logo. That does not make it Tether USD₮. For self-custody use, verify the token using issuer documentation, the official contract address, a reputable explorer, and a trusted wallet token list. Tether publishes the contract addresses of supported Tether protocols on its official site.<sup><a href="#source-1">[1]</a></sup> This is another reason network-specific education matters.</p>
+
+    <h2>What happens if you send USDT on the wrong network?</h2>
+    <p>There is no single answer.</p>
+    <h3>Your own EVM wallet</h3>
+    <p>If you sent an EVM token to an address controlled by your own private key, the asset may still be accessible by switching to the correct network and importing the correct token contract. For example, funds can be present on BSC while your wallet interface is currently showing Ethereum.</p>
+    <h3>Centralised exchange</h3>
+    <p>If you send on a network the exchange does not support, you do not control the destination private key. Recovery depends on the platform. It may recover automatically later, offer a manual recovery service, charge a fee, or refuse unsupported deposits. Do not assume.</p>
+    <h3>Wrong address entirely</h3>
+    <p>If the funds went to an unrelated address and the transaction is final, recovery may be impossible. For detailed troubleshooting, see our <a href="../../../wallets-safety/transfers/crypto-transfer-checklist/">crypto transfer checklist</a>.</p>
+
+    <h2>Can you &ldquo;convert&rdquo; ERC20 USDT to TRC20 USDT?</h2>
+    <p>Yes, but usually not by simply changing a network setting in your wallet. Moving value between networks generally requires an intermediary mechanism such as a centralised exchange, a supported cross-chain service, or a bridge/liquidity protocol. This introduces additional risk. A user sending ERC20 USDT cannot simply select &ldquo;TRON&rdquo; afterwards and make the Ethereum token become TRC20. They exist on different blockchain systems.</p>
+
+    <h2>Exchange conversion is often easier for beginners</h2>
+    <p>A common practical route is: deposit USDT through a network the exchange supports, let the exchange credit the USDT balance, then withdraw USDT using another supported network. The exchange handles the internal network conversion. But check withdrawal availability, fees, KYC, platform risk, and tax/record implications where relevant. Do not send funds to an exchange solely as a bridge without understanding its terms. For a step-by-step USDT purchase flow, see <a href="../buy-usdt-india/">how to buy USDT in India</a>.</p>
+
+    <h2>A note about &ldquo;BEP20&rdquo;</h2>
+    <p>People often use <em>BEP20 = token standard on BNB Smart Chain</em> as shorthand. That remains useful in everyday crypto discussion. But modern BNB Chain documentation increasingly describes BSC as EVM-compatible and its contract tokens in Ethereum-compatible terms as well. BSC&rsquo;s technical documentation confirms its EVM compatibility and use of contract tokens on the network.<sup><a href="#source-3">[3]</a></sup> For users, the practical label matters less than: <strong>is this the exact BSC token supported by both endpoints?</strong></p>
+
+    <h2>Is TRC20 safer than ERC20?</h2>
+    <p>Not in a simple universal sense. They have different consensus systems, validator structures, ecosystems, smart-contract implementations and operational risks. Ethereum has one security model; TRON has another; BNB Smart Chain has another. A retail transfer decision should usually focus on recipient compatibility, asset authenticity, amount, cost and intended destination. Do not equate <em>cheaper = safer</em> or <em>more expensive = safer</em>.</p>
+
+    <h2>Is ERC20 always more expensive?</h2>
+    <p>No. Ethereum network demand changes, and exchange withdrawal charges also change independently. It is fair to say Ethereum has historically experienced periods of materially higher transaction costs than lower-cost networks, but a current transaction should be priced using the <strong>current wallet/exchange quote</strong>, not a permanent number in an SEO article.</p>
+
+    <h2>Is TRC20 always the best network for USDT?</h2>
+    <p>No. TRC20 may be practical when both parties support it, the user simply needs to transfer USDT, and current cost is attractive. But it is inappropriate when the recipient supports only Ethereum, funds are needed in Ethereum DeFi, a platform has TRON deposits disabled, or another route has better operational support. <em>&ldquo;TRC20 by default&rdquo;</em> is not a safe beginner rule.</p>
+
+    <h2>Is BSC always the cheapest?</h2>
+    <p>No. BSC&rsquo;s native transaction costs are generally designed to be low, and BNB Chain itself describes low transaction costs as a feature.<sup><a href="#source-6">[6]</a></sup> But exchange withdrawal fees can differ, token structure matters, recipient support matters, and you may later need another cross-chain transaction. Total cost is what matters.</p>
+
+    <h2>For Indian users, the choice is mostly operational &mdash; not tax-based</h2>
+    <p>Choosing ERC20 instead of TRC20 does not generally turn the economic asset into a different investment simply because the transport network changes. But users should still retain records of source, destination, TXID, amount, network and fees. This becomes useful when reconciling exchange trades and wallet movements later. For India-specific VDA tax questions, use the dedicated <a href="../../../crypto/crypto-tax-india/">crypto tax in India</a> guide rather than assuming every blockchain transfer itself is a taxable sale.</p>
+
+    <h2>CoinRaahi&rsquo;s network-selection rule</h2>
+    <p>Do this every time:</p>
+    <ol>
+      <li><strong>Start at the destination.</strong> Which networks does the recipient support?</li>
+      <li><strong>Match the exact network.</strong> Do not choose by fee first.</li>
+      <li><strong>Verify the token.</strong> Especially when using a self-custody wallet or a BSC/EVM token.</li>
+      <li><strong>Compare current costs.</strong> Use today&rsquo;s withdrawal preview.</li>
+      <li><strong>Check minimum deposit.</strong> Especially before a test transfer.</li>
+      <li><strong>Consider what happens next.</strong> Will the funds stay on that network or need to be moved again?</li>
+      <li><strong>Save the TXID.</strong> Keep a record after sending.</li>
+    </ol>
+    <p>That is a much better decision framework than <em>&ldquo;TRC20 = cheap, ERC20 = expensive, BEP20 = cheapest&rdquo;</em>.</p>
+
+    <h2>Which one should you use?</h2>
+    <p>There is no single network winner.</p>
+    <h3>TRC20 may be appropriate when</h3>
+    <p>Both sides support TRON USDT and you want a straightforward USDT transfer.</p>
+    <h3>ERC20 may be appropriate when</h3>
+    <p>The destination requires Ethereum, or the funds will be used within Ethereum.</p>
+    <h3>BNB Smart Chain may be appropriate when</h3>
+    <p>Both sides explicitly support the exact BSC token, and you intend to remain within the BSC ecosystem or use a compatible transfer route.</p>
+    <p>The deciding factor should always be: <strong>compatibility first, cost second.</strong></p>
+
+    <h2>One more thing: network support can disappear</h2>
+    <p>Blockchain support is not permanent. Tether&rsquo;s own terms state that it may cease support for particular blockchains or protocols, and its current supported-protocol page already distinguishes active from deprecated networks.<sup><a href="#source-1">[1]</a></sup> That is another reason CoinRaahi will date-check network-specific articles rather than treating network lists as permanent.</p>
+
+    <h2>Bottom line</h2>
+    <p>ERC20, TRC20 and BSC are not three fee settings attached to the same button. They represent different blockchain environments. For USDT transfers: <strong>ERC20</strong> means Ethereum-based Tether USD₮. <strong>TRC20</strong> means TRON-based Tether USD₮. <strong>BSC/BEP20-labelled USDT</strong> requires additional attention to the exact token structure and contract; do not assume every USDT-labelled token on BNB Smart Chain is identical to native Tether issuance on Ethereum or TRON.<sup><a href="#source-1">[1]</a></sup></p>
+    <div class="callout"><p><strong>Before sending: Asset &rarr; Token contract where relevant &rarr; Network &rarr; Recipient support &rarr; Address &rarr; Fee &rarr; Amount.</strong></p></div>
+    <p>The network with the lowest fee is only useful if it is the right network.</p>
+
+    <h2>Sources</h2>
+    <ol>
+      <li id="source-1"><a href="https://tether.to/en/supported-protocols/" target="_blank" rel="noopener">Tether &mdash; Official Home of Tether (Supported Protocols)</a>.</li>
+      <li id="source-2"><a href="https://developers.tron.network/docs/token-standards-overview" target="_blank" rel="noopener">TRON Developer Hub &mdash; Token Standards Overview</a>.</li>
+      <li id="source-3"><a href="https://docs.bnbchain.org/bnb-smart-chain/developers/quick-guide/" target="_blank" rel="noopener">BNB Chain &mdash; Quick Guide, BNB Smart Chain (BSC)</a>.</li>
+      <li id="source-4"><a href="https://www.binance.com/en-JP/skills/detail/binance-web3/binance-agentic-wallet" target="_blank" rel="noopener">Binance Web3 &mdash; Agentic Wallet (Skills Hub)</a>.</li>
+      <li id="source-5"><a href="https://tether.to/en/usdt-introduced-to-tron-blockchain/" target="_blank" rel="noopener">Tether &mdash; USDT Introduced to the TRON Blockchain</a>.</li>
+      <li id="source-6"><a href="https://docs.bnbchain.org/bnb-smart-chain/overview/" target="_blank" rel="noopener">BNB Chain &mdash; Overview, BNB Smart Chain</a>.</li>
+    </ol>
+
+    <h2>Related guides</h2>
+    <ul>
+      <li><a href="../">Stablecoins Explained for India</a></li>
+      <li><a href="../buy-usdt-india/">How to Buy USDT in India</a></li>
+      <li><a href="../../../wallets-safety/transfers/crypto-transfer-checklist/">Crypto Transfer Checklist</a></li>
+      <li><a href="../../../wallets-safety/wallet-basics/exchange-vs-self-custody-wallet/">Crypto Exchange vs Self-Custody Wallet</a></li>
+      <li><a href="../../../exchanges/fees-withdrawals/">Crypto Exchange Fees &amp; Withdrawals</a></li>
+      <li><a href="../../../exchanges/binance/binance-india-guide/">Binance India Guide</a></li>
+      <li><a href="../../../crypto/crypto-tax-india/">Crypto Tax in India</a></li>
+    </ul>
+
+    <h2>Frequently asked questions</h2>
+    <h3>What is the difference between USDT ERC20 and TRC20?</h3>
+    <p>ERC20 USD₮ operates on Ethereum, while TRC20 USD₮ operates on TRON. They use different blockchains, address systems and network-fee mechanisms. Tether currently lists both as supported USD₮ protocols.</p>
+    <h3>Is TRC20 cheaper than ERC20?</h3>
+    <p>It is often used as a lower-cost transfer route, but actual costs depend on current network conditions and the exchange's withdrawal fee. Check the live quote.</p>
+    <h3>Is USDT BEP20 the same as Tether USDT?</h3>
+    <p>Do not assume so merely from the ticker. Binance infrastructure recognises a widely used BSC USDT contract, while Tether's current official BNB Smart Chain supported-protocol section does not list a USD₮ contract there. Verify the exact asset and contract.</p>
+    <h3>Can I send ERC20 USDT to a TRC20 address?</h3>
+    <p>No. Treat them as different network routes. Use a supported conversion, bridge or exchange route instead of directly sending between incompatible networks.</p>
+    <h3>Why do Ethereum and BSC addresses both start with 0x?</h3>
+    <p>Both are EVM-compatible account systems, but they are separate blockchain networks. The same-looking address format does not make the chains interchangeable.</p>
+    <h3>What happens if I send USDT using the wrong network?</h3>
+    <p>Recovery depends on whether you control the receiving address and whether the destination platform supports the network. Some cases are recoverable; others may not be.</p>
+    <h3>Do I need ETH, TRX or BNB to receive USDT?</h3>
+    <p>Receiving generally does not require you to already hold the native gas asset, but sending from a self-custody wallet later may require the relevant network resource or native token.</p>
+  </main>
+
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand">
+          <a href="../../../index.html" class="logo">
+            <svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true">
+              <circle cx="16" cy="16" r="15" fill="#E88A1A"/>
+              <path d="M16 6 L21 21 L16 17.5 L11 21 Z" fill="#1F3A5F"/>
+            </svg>
+            <span><span class="coin" style="color:#fff">Coin</span><span class="raahi">Raahi</span></span>
+          </a>
+          <p>Practical guides to crypto and global digital assets, written for India.</p>
+          <p class="contact"><a href="mailto:hello@coinraahi.com">hello@coinraahi.com</a></p>
+        </div>
+        <div class="footer-col">
+          <h4>Start Here</h4>
+          <ul>
+            <li><a href="../../../start-here/crypto-basics/">Crypto Basics</a></li>
+            <li><a href="../../../start-here/beginner-roadmap/">Beginner Roadmap</a></li>
+            <li><a href="../../../start-here/common-questions/">Common Questions</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Exchanges</h4>
+          <ul>
+            <li><a href="../../../exchanges/binance/">Binance</a></li>
+            <li><a href="../../../exchanges/coindcx/">CoinDCX</a></li>
+            <li><a href="../../../exchanges/coinswitch/">CoinSwitch</a></li>
+            <li><a href="../../../exchanges/comparisons/">Comparisons</a></li>
+            <li><a href="../../../exchanges/account-kyc/">KYC &amp; Account</a></li>
+            <li><a href="../../../exchanges/fees-withdrawals/">Fees &amp; Withdrawals</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Crypto</h4>
+          <ul>
+            <li><a href="../../../crypto/bitcoin/">Bitcoin</a></li>
+            <li><a href="../../../crypto/ethereum/">Ethereum</a></li>
+            <li><a href="../../../crypto/stablecoins/">Stablecoins</a></li>
+            <li><a href="../../../crypto/blockchain-basics/">Blockchain Basics</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Assets &amp; RWA</h4>
+          <ul>
+            <li><a href="../../../assets-rwa/us-stocks-etfs/">US Stocks &amp; ETFs</a></li>
+            <li><a href="../../../assets-rwa/tokenised-stocks/">Tokenised Stocks</a></li>
+            <li><a href="../../../assets-rwa/gold/">Gold</a></li>
+            <li><a href="../../../assets-rwa/tokenised-assets/">Tokenised Assets</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Wallets &amp; Safety</h4>
+          <ul>
+            <li><a href="../../../wallets-safety/wallet-basics/">Wallet Basics</a></li>
+            <li><a href="../../../wallets-safety/transfers/">Transfers</a></li>
+            <li><a href="../../../wallets-safety/account-security/">Account Security</a></li>
+            <li><a href="../../../wallets-safety/scam-prevention/">Scam Prevention</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="../../../about.html">About</a></li>
+            <li><a href="../../../editorial-policy.html">Editorial Policy</a></li>
+            <li><a href="../../../affiliate-disclosure.html">Affiliate Disclosure</a></li>
+            <li><a href="../../../risk-disclosure.html">Risk Disclosure</a></li>
+            <li><a href="../../../contact.html">Contact</a></li>
+            <li><a href="../../../privacy.html">Privacy Policy</a></li>
+            <li><a href="../../../disclaimer.html">Disclaimer</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="risk">Cryptocurrency and tokenised assets can be highly volatile and involve significant market, custody and counterparty risk. You may lose some or all of the money you invest. In India, income from the transfer of qualifying virtual digital assets is generally subject to the special tax regime under Section 115BBH, while 1% TDS may apply to qualifying transfers under Section 194S, subject to applicable rules and thresholds. CoinRaahi provides educational information only and does not provide financial, investment, legal or tax advice.</p>
+        <div class="legal">
+          <span>&copy; 2026 CoinRaahi. Not financial advice.</span>
+          <span>
+            <a href="../../../disclaimer.html">Disclaimer</a>
+            <a href="../../../privacy.html">Privacy</a>
+            <a href="../../../editorial-policy.html">Editorial Policy</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../../js/main.js"></script>
+</body>
+</html>

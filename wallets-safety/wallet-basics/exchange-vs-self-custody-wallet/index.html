@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crypto Exchange vs Self-Custody Wallet: Which Is Better for Beginners? | CoinRaahi</title>
+  <meta name="description" content="Should you keep crypto on an exchange or move it to a self-custody wallet? Compare control, recovery, security, transfer risk and real-world use cases before deciding.">
+  <link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="48" fill="%231F3A5F"/><text x="50" y="68" font-size="54" font-weight="bold" text-anchor="middle" fill="%23E88A1A" font-family="Arial">R</text></svg>'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../../css/style.css">
+  <link rel="canonical" href="https://coinraahi.com/wallets-safety/wallet-basics/exchange-vs-self-custody-wallet/">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Crypto Exchange vs Self-Custody Wallet: Where Should You Keep Your Crypto?",
+  "description": "Should you keep crypto on an exchange or move it to a self-custody wallet? Compare control, recovery, security, transfer risk and real-world use cases before deciding.",
+  "datePublished": "2026-09-06",
+  "dateModified": "2026-09-06",
+  "inLanguage": "en-IN",
+  "mainEntityOfPage": "https://coinraahi.com/wallets-safety/wallet-basics/exchange-vs-self-custody-wallet/"
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is it safe to keep crypto on an exchange?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Exchange custody can be convenient, but it introduces platform and counterparty risk. Security depends on the exchange, your account setup and how much value you keep there."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is a self-custody wallet safer than an exchange?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It removes some exchange-related risks but introduces key-management and transaction risks. It is not automatically safer for every user."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens if I lose my wallet seed phrase?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If you still have access to the wallet, you may be able to create a new backup depending on the wallet. If both wallet access and recovery credentials are lost, recovery may be impossible."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should beginners use a hardware wallet?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A hardware wallet can improve key isolation, but beginners should first understand recovery phrases, transfers and wallet security."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can an exchange recover crypto sent to the wrong address?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Usually not once an irreversible blockchain transaction has been completed. Some special recovery situations may exist, but users should never assume funds can be recovered."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use both an exchange and a wallet?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Many users use exchanges for trading and INR access while keeping some assets in self-custody."
+      }
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a href="../../../index.html" class="logo" aria-label="CoinRaahi home">
+        <svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true">
+          <circle cx="16" cy="16" r="15" fill="#1F3A5F"/>
+          <path d="M16 6 L21 21 L16 17.5 L11 21 Z" fill="#E88A1A"/>
+        </svg>
+        <span><span class="coin">Coin</span><span class="raahi">Raahi</span></span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links">
+        <li class="has-dropdown"><a href="../../../start-here/">Start Here</a>
+          <ul class="dropdown-menu">
+            <li><a href="../../../start-here/crypto-basics/">Crypto Basics</a></li>
+            <li><a href="../../../start-here/beginner-roadmap/">Beginner Roadmap</a></li>
+            <li><a href="../../../start-here/common-questions/">Common Questions</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown"><a href="../../../exchanges/" >Exchanges</a>
+          <ul class="dropdown-menu">
+            <li><a href="../../../exchanges/binance/">Binance</a></li>
+            <li><a href="../../../exchanges/coindcx/">CoinDCX</a></li>
+            <li><a href="../../../exchanges/coinswitch/">CoinSwitch</a></li>
+            <li><a href="../../../exchanges/comparisons/">Exchange Comparisons</a></li>
+            <li><a href="../../../exchanges/account-kyc/">KYC &amp; Account</a></li>
+            <li><a href="../../../exchanges/fees-withdrawals/">Fees &amp; Withdrawals</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown"><a href="../../../crypto/" >Crypto</a>
+          <ul class="dropdown-menu">
+            <li><a href="../../../crypto/bitcoin/">Bitcoin</a></li>
+            <li><a href="../../../crypto/ethereum/">Ethereum</a></li>
+            <li><a href="../../../crypto/stablecoins/">Stablecoins</a></li>
+            <li><a href="../../../crypto/blockchain-basics/">Blockchain Basics</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown"><a href="../../../assets-rwa/" >Assets &amp; RWA</a>
+          <ul class="dropdown-menu">
+            <li><a href="../../../assets-rwa/us-stocks-etfs/">US Stocks &amp; ETFs</a></li>
+            <li><a href="../../../assets-rwa/tokenised-stocks/">Tokenised Stocks</a></li>
+            <li><a href="../../../assets-rwa/gold/">Gold</a></li>
+            <li><a href="../../../assets-rwa/tokenised-assets/">Tokenised Assets</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown"><a href="../../../wallets-safety/"  class="active">Wallets &amp; Safety</a>
+          <ul class="dropdown-menu">
+            <li><a href="../../../wallets-safety/wallet-basics/">Wallet Basics</a></li>
+            <li><a href="../../../wallets-safety/transfers/">Transfers</a></li>
+            <li><a href="../../../wallets-safety/account-security/">Account Security</a></li>
+            <li><a href="../../../wallets-safety/scam-prevention/">Scam Prevention</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="container page">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../../index.html">Home</a> <span class="sep">›</span> <a href="../../">Wallets &amp; Safety</a> <span class="sep">›</span> <a href="../">Wallet Basics</a> <span class="sep">›</span> <span class="current">Crypto Exchange vs Self-Custody Wallet</span></nav>
+    <h1>Crypto Exchange vs Self-Custody Wallet: Where Should You Keep Your Crypto?</h1>
+    <p class="updated">Last updated: 6 September 2026</p>
+
+
+    <p class="lede">You buy ₹20,000 worth of crypto on an exchange. The trade is complete. Now comes a question beginners often underestimate: <strong>where should the crypto stay?</strong></p>
+    <p>You can leave it inside the exchange account, or you can withdraw it to a wallet where you control the private keys. Both choices have risks. The important difference is <strong>who is responsible when something goes wrong</strong>. An exchange removes much of the technical complexity, but you depend on the platform. Self-custody gives you more control, but mistakes can become irreversible.</p>
+    <p>So the useful question is not &ldquo;which one is safest?&rdquo;. It is:</p>
+    <div class="callout"><p><strong>Which risks am I prepared to manage myself?</strong></p></div>
+
+    <h2>Three people, three very different answers</h2>
+    <p><strong>Rahul</strong> bought ₹3,000 worth of Bitcoin for the first time. He does not yet understand seed phrases, networks or wallet recovery. Moving the BTC immediately to a self-custody wallet could introduce more risk than leaving it temporarily on a reputable exchange while he learns.</p>
+    <p><strong>Aisha</strong> has used crypto for two years. She holds long-term assets and rarely trades. She understands wallet backups and has tested recovery. For her, keeping everything permanently on an exchange creates unnecessary platform dependency.</p>
+    <p><strong>Arjun</strong> actively trades USDT between platforms and uses blockchain applications. He may need both an exchange account for trading and INR access, and a self-custody wallet for on-chain use. There is no rule saying a user must choose only one. That is why &ldquo;exchange or wallet?&rdquo; is often the wrong binary.</p>
+
+    <h2>What does it mean to keep crypto on an exchange?</h2>
+    <p>When you buy crypto on a centralised exchange, the platform generally controls the wallet infrastructure. You log in using email, password, 2FA, passkey and other account-security tools. Inside the app you see <strong>0.01 BTC</strong>, but you normally do not control the private key for the blockchain address holding that Bitcoin. The exchange manages custody. This is called <strong>custodial storage</strong>.</p>
+
+    <h2>What does self-custody mean?</h2>
+    <p>A self-custody wallet gives the user control of the cryptographic keys. Depending on the wallet, access may be protected by seed phrase, private key, device security, PIN or passphrase. The wallet software does not &ldquo;hold&rdquo; the crypto in the same way a bank holds money — the blockchain records the assets, and your wallet controls the credentials that allow transactions to be signed. That distinction matters.</p>
+
+    <h2>The real difference: who controls the recovery path?</h2>
+    <p>This is one of the best ways to understand exchange custody versus self-custody. With an <strong>exchange account</strong>, if you forget your password you may be able to reset it, verify your identity, contact support and recover access. There is still platform risk, but there is a recovery system. With a <strong>self-custody wallet</strong>, if you lose the wallet password but still have the recovery phrase, you can usually restore the wallet. But if you lose both access and the recovery credentials, there may be no central support team capable of restoring the funds. That is not a software bug — it is a consequence of self-custody.</p>
+
+    <h2>Scenario 1: you forget your password</h2>
+    <p>Suppose you wake up and cannot remember your login. <strong>On an exchange</strong>, the platform may allow password reset, email confirmation, identity verification, a temporary withdrawal lock and support escalation. This can be inconvenient, but recovery may still be possible. <strong>In self-custody</strong>, the answer depends on what you lost. Forgot the wallet app password? Maybe recoverable with your seed phrase. Lost the device? Still recoverable if the seed phrase is safe. Lost the seed phrase and device? That can be permanent.</p>
+    <div class="callout"><p><strong>Exchange custody depends on the platform. Self-custody depends on your backup discipline.</strong></p></div>
+
+    <h2>Scenario 2: the platform freezes withdrawals</h2>
+    <p>Now imagine the exchange is operating normally, but crypto withdrawals are temporarily paused. Possible causes include wallet maintenance, compliance review, security checks, network problems or platform-wide issues. If the crypto remains on the exchange, you cannot simply bypass the platform and move it yourself — you depend on the exchange restoring access. In self-custody, there is no exchange withdrawal approval step. If the blockchain is functioning and your wallet works, you can usually initiate the transaction directly. This is where self-custody provides a meaningful form of control — but that control comes with responsibility.</p>
+
+    <h2>Scenario 3: you send crypto on the wrong network</h2>
+    <p>Suppose you withdraw USDT, and the exchange offers Ethereum, Tron and BNB Chain. You choose a network the receiving platform does not support. The transaction may still succeed on-chain, but the recipient may not automatically credit the funds. This is not primarily an &ldquo;exchange vs wallet&rdquo; problem — it is a <strong>transfer-knowledge problem</strong>. Self-custody does not protect users from wrong addresses, wrong networks, phishing or malicious token approvals. In fact, more control can mean more ways to make irreversible mistakes. Our <a href="../../transfers/">crypto transfers guide</a> walks through what to check before you send.</p>
+
+    <h2>Who controls the keys?</h2>
+    <div class="table-wrap">
+      <table class="compare">
+        <tr><th>Storage</th><th>Who controls the private keys?</th></tr>
+        <tr><td>Centralised exchange</td><td>Exchange / custodian</td></tr>
+        <tr><td>Self-custody software wallet</td><td>User</td></tr>
+        <tr><td>Hardware wallet</td><td>User</td></tr>
+        <tr><td>Managed custody service</td><td>Custodian</td></tr>
+      </table>
+    </div>
+    <p>But &ldquo;who controls the keys?&rdquo; is only the first question. You should also ask: who can freeze withdrawals, who can recover access, who handles security, and who bears the cost of mistakes?</p>
+
+    <h2>Exchange custody is not automatically unsafe</h2>
+    <p>Crypto discussions often repeat &ldquo;not your keys, not your coins&rdquo;. The phrase highlights a real custody issue, but beginners sometimes interpret it as &ldquo;anything on an exchange is unsafe and should immediately be moved&rdquo;. That is too simplistic. A reputable exchange can provide account recovery, security monitoring, withdrawal controls, passkeys, address whitelisting, anti-phishing tools and operational support. For a beginner who has never managed a seed phrase, those protections can be valuable. The real question is whether the user understands the counterparty risk.</p>
+
+    <h2>Self-custody is not automatically safer</h2>
+    <p>A wallet can remove exchange custody risk while introducing entirely different risks: seed phrase theft, phishing websites, malicious wallet extensions, clipboard malware, incorrect addresses, wrong networks, malicious approvals, fake wallet apps, lost backups and physical theft of recovery material. A hardware wallet can reduce some attack surfaces, but it cannot stop every user mistake. For example, if you approve a malicious smart-contract transaction, the hardware wallet may faithfully sign exactly what you asked it to sign. Security is not only about where the key is stored — it is also about <strong>what you sign</strong>.</p>
+
+    <h2>What happens if the exchange fails?</h2>
+    <p>This is one reason people choose self-custody. If an exchange becomes insolvent or inaccessible, the outcome depends on how customer assets are held, the legal structure, jurisdiction, segregation of client assets, the insolvency process and record-keeping. A user may see a balance in an app without having direct control over the blockchain asset. Self-custody removes that specific exchange dependency, but it does not remove market risk or blockchain risk.</p>
+
+    <h2>What happens if your wallet provider disappears?</h2>
+    <p>This is an important distinction. A true self-custody wallet provider can stop maintaining its app, but your assets do not necessarily disappear. If you still control the recovery credentials and the wallet uses standard recovery methods, you may be able to restore access through another compatible wallet. That is fundamentally different from a custodial exchange account. However, compatibility is not universal — users should understand the recovery standard, supported networks, derivation paths where relevant, and whether the wallet uses proprietary backup systems. Do not wait until the app disappears to learn how recovery works.</p>
+
+    <h2>Software wallet vs hardware wallet</h2>
+    <p>Self-custody itself has multiple forms. A <strong>software wallet</strong> (mobile or browser) is convenient, usually free and easy for frequent transfers, and useful for DeFi and Web3 — but it carries risks from device malware, phishing, browser-extension risk and a compromised operating system.</p>
+    <p>A <strong>hardware wallet</strong> is designed to keep private keys within a dedicated device, reducing exposure of keys to the internet, and is useful for longer-term holdings with transaction confirmation on a separate device. But it still carries risks: losing the backup, fake devices, supply-chain scams, malicious signing, and firmware or user mistakes. A hardware wallet is not a magic safe — it is a security tool that still requires correct behaviour.</p>
+
+    <h2>The seed phrase is not a password</h2>
+    <p>This is one of the most important beginner lessons. A password can often be reset; a seed phrase usually cannot. Anyone who obtains the recovery phrase may be able to recreate the wallet. That means you should never photograph it, upload it to cloud storage, email it to yourself, type it into a random website, send it to customer support, or share it during screen sharing. A legitimate exchange or wallet support agent does not need your seed phrase.</p>
+
+    <h2>Should you keep all your crypto in one place?</h2>
+    <p>Not necessarily. Another mistake is thinking custody decisions must be all-or-nothing. Some experienced users separate funds by purpose: a <strong>trading balance</strong> kept on an exchange, a <strong>spending / on-chain balance</strong> in a software wallet, and <strong>long-term holdings</strong> in a separate self-custody setup. This is a form of <strong>risk separation</strong> — if one account or device is compromised, not every asset is exposed at once. But splitting funds also creates more backups and operational complexity. More wallets do not automatically mean better security.</p>
+
+    <h2>Small balances and large balances are different problems</h2>
+    <p>A ₹2,000 beginner balance and a ₹20 lakh long-term portfolio do not justify exactly the same security setup. With small amounts, the cost and complexity of multiple wallets or hardware devices may outweigh the benefits. As balances grow, concentration risk becomes more important. That is why custody decisions should change as portfolio size, experience, transaction frequency and needs change. Security is a process, not a one-time choice.</p>
+
+    <h2>When leaving crypto on an exchange may make sense</h2>
+    <p>It may be reasonable when you trade frequently, need INR access, are still learning wallet basics, the amount is small relative to your finances, you need platform-specific products, or you are not yet confident managing recovery phrases. The key is to understand that convenience comes with platform dependency. For how exchange custody and fees fit together, see our <a href="../../../exchanges/fees-withdrawals/">exchange fees and withdrawals guide</a>.</p>
+
+    <h2>When self-custody may make more sense</h2>
+    <p>It may become more relevant when you hold assets long-term, want direct blockchain access, use DeFi or Web3, want to reduce exchange concentration, understand backups, have tested wallet recovery, and can securely store recovery credentials. Self-custody should not begin with &ldquo;I bought a hardware wallet&rdquo;. It should begin with:</p>
+    <div class="callout"><p><strong>I know exactly how I will recover access if this device disappears tomorrow.</strong></p></div>
+
+    <h2>A safer way to move from exchange to self-custody</h2>
+    <p>Beginners do not need to move an entire balance in one transaction. A more careful approach:</p>
+    <ol>
+      <li>Set up the wallet using the official app or verified hardware device.</li>
+      <li>Back up the recovery phrase offline.</li>
+      <li>Verify the receiving network — make sure the wallet supports the exact asset and chain.</li>
+      <li>Send a small test amount first, when fees and minimums make this practical.</li>
+      <li>Confirm receipt — check the wallet, transaction hash and block explorer.</li>
+      <li>Send the remaining amount only after confirming the setup works.</li>
+    </ol>
+    <p>This does not eliminate risk, but it reduces the impact of a setup mistake.</p>
+
+    <h2>Test transfers are useful — but not always economical</h2>
+    <p>&ldquo;Always send a test transaction&rdquo; sounds good until the network fee is significant. Suppose you are transferring a small amount on a high-fee network — two transfers may cost materially more than one. The better principle is: <strong>use a test transaction when the value at risk justifies the extra fee and the receiving setup has not already been verified.</strong> This is more practical than treating test transfers as an absolute rule.</p>
+
+    <h2>Exchange security checklist</h2>
+    <ul class="check-list">
+      <li>Use a unique password.</li>
+      <li>Enable strong 2FA or a passkey.</li>
+      <li>Secure the email account.</li>
+      <li>Review active sessions.</li>
+      <li>Use a withdrawal whitelist where available.</li>
+      <li>Enable anti-phishing codes.</li>
+      <li>Never trust unsolicited support messages.</li>
+      <li>Keep independent transaction records.</li>
+    </ul>
+    <p>Your email account is often part of your crypto security perimeter. A secure exchange account with a compromised email account may still be vulnerable.</p>
+
+    <h2>Self-custody checklist</h2>
+    <ul class="check-list">
+      <li>Download only from an official source.</li>
+      <li>Verify the correct network.</li>
+      <li>Keep the seed phrase offline.</li>
+      <li>Never share recovery credentials.</li>
+      <li>Test recovery before storing significant value.</li>
+      <li>Review token approvals.</li>
+      <li>Avoid blind signing.</li>
+      <li>Separate high-value storage from daily-use wallets.</li>
+      <li>Verify every address before sending.</li>
+    </ul>
+    <p>The goal is not maximum complexity. It is to remove unnecessary single points of failure.</p>
+
+    <h2>What happens when things go wrong?</h2>
+    <div class="table-wrap">
+      <table class="compare">
+        <tr><th>Problem</th><th>Exchange</th><th>Self-custody</th></tr>
+        <tr><td>Forgot password</td><td>Usually recovery process</td><td>Wallet recovery depends on backup</td></tr>
+        <tr><td>Lost phone</td><td>Account can often be restored</td><td>Safe if seed/recovery exists</td></tr>
+        <tr><td>Platform freezes withdrawal</td><td>User must wait/resolve</td><td>Not applicable</td></tr>
+        <tr><td>Seed phrase stolen</td><td>Not applicable</td><td>Funds may be at immediate risk</td></tr>
+        <tr><td>Wrong address transfer</td><td>Usually irreversible after broadcast</td><td>Usually irreversible</td></tr>
+        <tr><td>Wrong network</td><td>Support may sometimes help</td><td>User must understand recovery path</td></tr>
+        <tr><td>Account hacked</td><td>Platform security/recovery may help</td><td>Key compromise can be final</td></tr>
+        <tr><td>Provider shuts down</td><td>Depends on custody/legal structure</td><td>Standard wallet may be recoverable elsewhere</td></tr>
+        <tr><td>Need INR withdrawal</td><td>Usually easier</td><td>Usually must return through an off-ramp/exchange</td></tr>
+      </table>
+    </div>
+    <p>Notice something important: <strong>neither column wins every row.</strong> That is the real answer.</p>
+
+    <h2>What about keeping USDT in a wallet?</h2>
+    <p>Stablecoins create an additional issue. Even in self-custody, USDT or USDC are not decentralised in the same way Bitcoin is. The issuer may retain certain controls at the token-contract level. So <strong>self-custody of stablecoins removes exchange custody, but not issuer risk.</strong> This distinction is frequently missed — you can control the wallet keys while still relying on the stablecoin issuer, reserve structure, smart contract and blockchain network. For more, see our <a href="../../../crypto/stablecoins/">stablecoins explained for India</a> guide.</p>
+
+    <h2>What about Bitcoin?</h2>
+    <p>Bitcoin self-custody is structurally different from holding a centralised stablecoin. There is no company behind Bitcoin with the same type of issuer controls. But Bitcoin users still face key loss, wallet errors, transaction mistakes and phishing. Different assets have different custody models — do not treat &ldquo;crypto&rdquo; as one uniform product.</p>
+
+    <h2>What Indian users should consider</h2>
+    <p>For users in India, custody often connects to three practical needs. First, <strong>INR access</strong>: self-custody wallets do not normally provide the same bank on/off-ramp experience as Indian exchanges. Second, <strong>tax records</strong>: exchanges may provide trade history and tax-related records, while self-custody users often need to maintain more of their own records across wallets and transactions — see our <a href="../../../crypto/crypto-tax-india/">crypto tax guide</a>. Third, <strong>platform restrictions</strong>: exchange features, crypto withdrawals and INR methods can change, which makes understanding self-custody valuable even if you do not plan to move everything off-platform immediately.</p>
+
+    <h2>The CoinRaahi custody test</h2>
+    <p>Before deciding where to keep an asset, answer six questions:</p>
+    <ol>
+      <li><strong>Why am I holding it?</strong> Trading, long-term, transfer or DeFi?</li>
+      <li><strong>Who controls the keys?</strong> You or the platform?</li>
+      <li><strong>How would I recover access tomorrow?</strong> Know the answer before there is an emergency.</li>
+      <li><strong>What mistake am I most likely to make?</strong> Phishing, seed loss, wrong network or account compromise?</li>
+      <li><strong>How much value is at risk?</strong> Security effort should scale with the amount.</li>
+      <li><strong>How do I exit?</strong> Can you move back to INR when needed?</li>
+    </ol>
+    <p>This gives a much better answer than simply asking &ldquo;is MetaMask safer than Binance?&rdquo;.</p>
+
+    <h2>Bottom line</h2>
+    <p>An exchange and a self-custody wallet solve different problems. An exchange trades some control for convenience, recovery, INR access and integrated trading. Self-custody trades some convenience for direct key control, blockchain access and less dependence on one exchange. Neither structure removes risk — it moves the risk. The best custody setup is one where you understand who controls the keys, how recovery works, what happens if the platform disappears, and what happens if you make a mistake. If you cannot answer those questions yet, do not move a large balance simply because someone told you that self-custody is &ldquo;always safer&rdquo;.</p>
+
+    <h2>Related guides</h2>
+    <ul>
+      <li><a href="../">Crypto Wallet Basics: who controls the keys</a></li>
+      <li><a href="../../transfers/">Crypto Transfers: what to check before you send</a></li>
+      <li><a href="../../../crypto/stablecoins/buy-usdt-india/">How to Buy USDT in India</a></li>
+      <li><a href="../../../exchanges/fees-withdrawals/">Crypto Exchange Fees &amp; Withdrawals</a></li>
+      <li><a href="../../../crypto/crypto-tax-india/">Crypto Tax in India</a></li>
+    </ul>
+
+    <h2>Frequently asked questions</h2>
+    <h3>Is it safe to keep crypto on an exchange?</h3>
+    <p>Exchange custody can be convenient, but it introduces platform and counterparty risk. Security depends on the exchange, your account setup and how much value you keep there.</p>
+    <h3>Is a self-custody wallet safer than an exchange?</h3>
+    <p>It removes some exchange-related risks but introduces key-management and transaction risks. It is not automatically safer for every user.</p>
+    <h3>What happens if I lose my wallet seed phrase?</h3>
+    <p>If you still have access to the wallet, you may be able to create a new backup depending on the wallet. If both wallet access and recovery credentials are lost, recovery may be impossible.</p>
+    <h3>Should beginners use a hardware wallet?</h3>
+    <p>A hardware wallet can improve key isolation, but beginners should first understand recovery phrases, transfers and wallet security.</p>
+    <h3>Can an exchange recover crypto sent to the wrong address?</h3>
+    <p>Usually not once an irreversible blockchain transaction has been completed. Some special recovery situations may exist, but users should never assume funds can be recovered.</p>
+    <h3>Can I use both an exchange and a wallet?</h3>
+    <p>Yes. Many users use exchanges for trading and INR access while keeping some assets in self-custody.</p>
+  </main>
+
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand">
+          <a href="../../../index.html" class="logo">
+            <svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true">
+              <circle cx="16" cy="16" r="15" fill="#E88A1A"/>
+              <path d="M16 6 L21 21 L16 17.5 L11 21 Z" fill="#1F3A5F"/>
+            </svg>
+            <span><span class="coin" style="color:#fff">Coin</span><span class="raahi">Raahi</span></span>
+          </a>
+          <p>Practical guides to crypto and global digital assets, written for India.</p>
+          <p class="contact"><a href="mailto:hello@coinraahi.com">hello@coinraahi.com</a></p>
+        </div>
+        <div class="footer-col">
+          <h4>Start Here</h4>
+          <ul>
+            <li><a href="../../../start-here/crypto-basics/">Crypto Basics</a></li>
+            <li><a href="../../../start-here/beginner-roadmap/">Beginner Roadmap</a></li>
+            <li><a href="../../../start-here/common-questions/">Common Questions</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Exchanges</h4>
+          <ul>
+            <li><a href="../../../exchanges/binance/">Binance</a></li>
+            <li><a href="../../../exchanges/coindcx/">CoinDCX</a></li>
+            <li><a href="../../../exchanges/coinswitch/">CoinSwitch</a></li>
+            <li><a href="../../../exchanges/comparisons/">Comparisons</a></li>
+            <li><a href="../../../exchanges/account-kyc/">KYC &amp; Account</a></li>
+            <li><a href="../../../exchanges/fees-withdrawals/">Fees &amp; Withdrawals</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Crypto</h4>
+          <ul>
+            <li><a href="../../../crypto/bitcoin/">Bitcoin</a></li>
+            <li><a href="../../../crypto/ethereum/">Ethereum</a></li>
+            <li><a href="../../../crypto/stablecoins/">Stablecoins</a></li>
+            <li><a href="../../../crypto/blockchain-basics/">Blockchain Basics</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Assets &amp; RWA</h4>
+          <ul>
+            <li><a href="../../../assets-rwa/us-stocks-etfs/">US Stocks &amp; ETFs</a></li>
+            <li><a href="../../../assets-rwa/tokenised-stocks/">Tokenised Stocks</a></li>
+            <li><a href="../../../assets-rwa/gold/">Gold</a></li>
+            <li><a href="../../../assets-rwa/tokenised-assets/">Tokenised Assets</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Wallets &amp; Safety</h4>
+          <ul>
+            <li><a href="../../../wallets-safety/wallet-basics/">Wallet Basics</a></li>
+            <li><a href="../../../wallets-safety/transfers/">Transfers</a></li>
+            <li><a href="../../../wallets-safety/account-security/">Account Security</a></li>
+            <li><a href="../../../wallets-safety/scam-prevention/">Scam Prevention</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="../../../about.html">About</a></li>
+            <li><a href="../../../editorial-policy.html">Editorial Policy</a></li>
+            <li><a href="../../../affiliate-disclosure.html">Affiliate Disclosure</a></li>
+            <li><a href="../../../risk-disclosure.html">Risk Disclosure</a></li>
+            <li><a href="../../../contact.html">Contact</a></li>
+            <li><a href="../../../privacy.html">Privacy Policy</a></li>
+            <li><a href="../../../disclaimer.html">Disclaimer</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="risk">Cryptocurrency and tokenised assets can be highly volatile and involve significant market, custody and counterparty risk. You may lose some or all of the money you invest. In India, income from the transfer of qualifying virtual digital assets is generally subject to the special tax regime under Section 115BBH, while 1% TDS may apply to qualifying transfers under Section 194S, subject to applicable rules and thresholds. CoinRaahi provides educational information only and does not provide financial, investment, legal or tax advice.</p>
+        <div class="legal">
+          <span>&copy; 2026 CoinRaahi. Not financial advice.</span>
+          <span>
+            <a href="../../../disclaimer.html">Disclaimer</a>
+            <a href="../../../privacy.html">Privacy</a>
+            <a href="../../../editorial-policy.html">Editorial Policy</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../../js/main.js"></script>
+</body>
+</html>

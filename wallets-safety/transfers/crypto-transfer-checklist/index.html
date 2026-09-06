@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crypto Transfer Checklist: Network, Address, Fees &amp; Missing Deposits Explained | CoinRaahi</title>
+  <meta name="description" content="Before sending crypto, verify the asset, network, address, memo/tag, minimum deposit, fees and recipient support. Includes a practical checklist and troubleshooting steps.">
+  <link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="48" fill="%231F3A5F"/><text x="50" y="68" font-size="54" font-weight="bold" text-anchor="middle" fill="%23E88A1A" font-family="Arial">R</text></svg>'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../../css/style.css">
+  <link rel="canonical" href="https://coinraahi.com/wallets-safety/transfers/crypto-transfer-checklist/">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Crypto Transfer Checklist: What to Verify Before Sending Crypto",
+  "description": "Before sending crypto, verify the asset, network, address, memo/tag, minimum deposit, fees and recipient support. Includes a practical checklist and troubleshooting steps.",
+  "datePublished": "2026-09-06",
+  "dateModified": "2026-09-06",
+  "inLanguage": "en-IN",
+  "mainEntityOfPage": "https://coinraahi.com/wallets-safety/transfers/crypto-transfer-checklist/"
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What should I check before sending crypto?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Confirm the asset, network, address, memo/tag, deposit minimum, withdrawal fee and current deposit availability."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens if I send crypto on the wrong network?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Recovery depends on whether you control the receiving address and whether the platform supports the network used. Some cases are recoverable; others are not."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why is my crypto transaction confirmed but not showing in my exchange account?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The exchange may require additional confirmations, a memo/tag, a minimum deposit or manual review."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can a crypto transaction be reversed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A confirmed blockchain transfer generally cannot be reversed by a bank or exchange."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I always send a test transaction?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It can be useful for large or unfamiliar transfers, but fees and deposit minimums should also be considered."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is a TXID?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A TXID is the unique transaction identifier used to locate and verify a blockchain transaction."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is a screenshot proof that someone sent crypto?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Verify the transaction on-chain using the TXID."
+      }
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a href="../../../index.html" class="logo" aria-label="CoinRaahi home">
+        <svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true">
+          <circle cx="16" cy="16" r="15" fill="#1F3A5F"/>
+          <path d="M16 6 L21 21 L16 17.5 L11 21 Z" fill="#E88A1A"/>
+        </svg>
+        <span><span class="coin">Coin</span><span class="raahi">Raahi</span></span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links">
+        <li class="has-dropdown"><a href="../../../start-here/">Start Here</a>
+          <ul class="dropdown-menu">
+            <li><a href="../../../start-here/crypto-basics/">Crypto Basics</a></li>
+            <li><a href="../../../start-here/beginner-roadmap/">Beginner Roadmap</a></li>
+            <li><a href="../../../start-here/common-questions/">Common Questions</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown"><a href="../../../exchanges/">Exchanges</a>
+          <ul class="dropdown-menu">
+            <li><a href="../../../exchanges/binance/">Binance</a></li>
+            <li><a href="../../../exchanges/coindcx/">CoinDCX</a></li>
+            <li><a href="../../../exchanges/coinswitch/">CoinSwitch</a></li>
+            <li><a href="../../../exchanges/comparisons/">Exchange Comparisons</a></li>
+            <li><a href="../../../exchanges/account-kyc/">KYC &amp; Account</a></li>
+            <li><a href="../../../exchanges/fees-withdrawals/">Fees &amp; Withdrawals</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown"><a href="../../../crypto/">Crypto</a>
+          <ul class="dropdown-menu">
+            <li><a href="../../../crypto/bitcoin/">Bitcoin</a></li>
+            <li><a href="../../../crypto/ethereum/">Ethereum</a></li>
+            <li><a href="../../../crypto/stablecoins/">Stablecoins</a></li>
+            <li><a href="../../../crypto/blockchain-basics/">Blockchain Basics</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown"><a href="../../../assets-rwa/">Assets &amp; RWA</a>
+          <ul class="dropdown-menu">
+            <li><a href="../../../assets-rwa/us-stocks-etfs/">US Stocks &amp; ETFs</a></li>
+            <li><a href="../../../assets-rwa/tokenised-stocks/">Tokenised Stocks</a></li>
+            <li><a href="../../../assets-rwa/gold/">Gold</a></li>
+            <li><a href="../../../assets-rwa/tokenised-assets/">Tokenised Assets</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown"><a href="../../../wallets-safety/" class="active">Wallets &amp; Safety</a>
+          <ul class="dropdown-menu">
+            <li><a href="../../../wallets-safety/wallet-basics/">Wallet Basics</a></li>
+            <li><a href="../../../wallets-safety/transfers/">Transfers</a></li>
+            <li><a href="../../../wallets-safety/account-security/">Account Security</a></li>
+            <li><a href="../../../wallets-safety/scam-prevention/">Scam Prevention</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <main class="container page">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../../index.html">Home</a> <span class="sep">›</span> <a href="../../../wallets-safety/">Wallets &amp; Safety</a> <span class="sep">›</span> <a href="../">Transfers</a> <span class="sep">›</span> <span class="current">Crypto Transfer Checklist</span></nav>
+    <h1>Crypto Transfer Checklist: What to Verify Before Sending Crypto</h1>
+    <p class="updated">Last updated: 6 September 2026</p>
+
+
+    <p class="lede">A crypto transfer can look simple: <em>copy address &rarr; choose network &rarr; tap Send</em>. But most expensive transfer mistakes happen in the few seconds before that final tap.</p>
+    <p>The blockchain usually does exactly what you ask. That is the problem. If the address is wrong, the network is unsupported, or a required memo is missing, the transaction may still complete successfully on-chain while the receiving platform does not credit your account.</p>
+    <p>So before sending any crypto, check these seven things.</p>
+
+    <h2>Before you tap send</h2>
+    <ul class="check-list">
+      <li>Asset</li>
+      <li>Network</li>
+      <li>Address</li>
+      <li>Memo or tag</li>
+      <li>Minimum deposit</li>
+      <li>Withdrawal and network fees</li>
+      <li>Recipient support</li>
+    </ul>
+    <p>If the amount is significant or the receiving setup is new, consider a small test transfer when practical. This checklist will prevent more problems than memorising the names of twenty blockchains. It sits on top of the custody basics covered in our <a href="../wallet-basics/">wallet basics</a> and <a href="../wallet-basics/exchange-vs-self-custody-wallet/">exchange vs self-custody</a> guides.</p>
+
+    <h2>1. Check the asset first</h2>
+    <p>Start with the most basic question:</p>
+    <div class="callout"><p><strong>What exactly am I sending?</strong></p></div>
+    <p>Examples include BTC, ETH, USDT, USDC, XRP and SOL. Do not assume two assets are interchangeable because their names look similar. For example, USDT is not USDC. BTC on the Bitcoin network is not the same as a wrapped BTC token on another network. ETH can exist natively on Ethereum and also appear in wrapped or bridged forms elsewhere. The receiving platform must support the exact asset you are sending.</p>
+
+    <h2>2. Check the network &mdash; not just the coin</h2>
+    <p>This is the single most common source of confusion for stablecoins. USDT can exist on multiple networks &mdash; Ethereum, Tron, BNB Smart Chain, Solana and others. The token may still be called <strong>USDT</strong> on every one of them. That does not mean you can send it to any USDT deposit address. The sending and receiving side must support the <strong>same network</strong>.</p>
+    <h3>Example</h3>
+    <p>You hold USDT on Binance. The receiving exchange gives you a USDT deposit address on Ethereum. If you withdraw using Tron instead, the blockchain transaction may complete, but the receiving platform may not automatically credit the deposit. The correct question is not <em>&ldquo;which USDT network is cheapest?&rdquo;</em>. It is:</p>
+    <div class="callout"><p><strong>Which network is supported at both ends?</strong></p></div>
+    <p>Cost comes after compatibility. If you are unsure how USDT and USDC work across networks, our <a href="../../../crypto/stablecoins/">stablecoins explained for India</a> guide walks through the basics.</p>
+
+    <h2>3. Check the address carefully</h2>
+    <p>Crypto addresses are long and easy to misread. Do not rely on visually checking only the first and last two characters. A better process:</p>
+    <ol>
+      <li>Copy the address from the receiving wallet or exchange.</li>
+      <li>Paste it into the sending app.</li>
+      <li>Compare the first and last several characters.</li>
+      <li>Confirm the network again.</li>
+      <li>If the app shows an address-book label, verify the correct recipient.</li>
+    </ol>
+    <p>Clipboard malware can replace copied crypto addresses on compromised devices. That is why comparing the pasted address matters.</p>
+
+    <h2>4. Do not ignore memo, tag or destination ID</h2>
+    <p>Some networks or exchanges use a shared deposit address and identify the user with an additional field. Common examples include the XRP Destination Tag, the XLM Memo, and exchange-specific memo or tag fields. If the receiving platform tells you a memo or tag is required, treat it as part of the address. A transaction can reach the correct blockchain address but still fail to be credited to your account if the identifying field is missing or wrong.</p>
+    <h3>Important distinction</h3>
+    <p><strong>Personal wallet:</strong> a memo may not always be needed.</p>
+    <p><strong>Centralised exchange:</strong> a memo or tag may be essential because the platform uses one deposit address for many users.</p>
+    <p>Always follow the deposit instructions shown by the recipient.</p>
+
+    <h2>5. Check the minimum deposit</h2>
+    <p>This is often overlooked. Some exchanges require a minimum deposit amount for a particular asset or network. If you send less than the stated minimum, the blockchain transaction may complete and the funds may reach the platform&rsquo;s wallet, but your account may still not be credited automatically. Before sending a small test amount, check the minimum deposit. This matters because &ldquo;send a test transfer first&rdquo; is not always useful if the test amount falls below the recipient&rsquo;s crediting threshold.</p>
+
+    <h2>6. Check withdrawal fees and the actual amount received</h2>
+    <p>The amount you enter is not always the amount the recipient receives. An exchange may deduct a withdrawal fee, a platform-set network fee, or other transaction-related charges. Suppose you withdraw 100 USDT and the platform charges 1 USDT. The recipient may receive roughly 99 USDT, depending on the platform&rsquo;s fee model. This becomes important when the destination has a minimum deposit.</p>
+    <div class="callout"><p><strong>Amount sent &rarr; fee deducted &rarr; amount expected to arrive</strong></p></div>
+    <p>Do not look only at the network name.</p>
+
+    <h2>7. Check whether the recipient supports deposits right now</h2>
+    <p>A network can be technically active while a specific exchange temporarily suspends deposits. Possible reasons include wallet maintenance, a network upgrade, congestion, an internal platform issue or risk controls. So even if a network is generally supported, check the current deposit page. If the recipient says <em>deposits temporarily suspended</em>, wait. A blockchain cannot read an exchange maintenance notice.</p>
+
+    <h2>The CoinRaahi transfer check</h2>
+    <p>Before every transfer, answer these seven questions:</p>
+    <div class="table-wrap">
+      <table class="compare">
+        <tr><th>Check</th><th>Question</th></tr>
+        <tr><td>Asset</td><td>Am I sending the exact coin/token the recipient supports?</td></tr>
+        <tr><td>Network</td><td>Is the same network supported by both sides?</td></tr>
+        <tr><td>Address</td><td>Did I paste the correct destination address?</td></tr>
+        <tr><td>Memo/Tag</td><td>Is an additional identifier required?</td></tr>
+        <tr><td>Minimum</td><td>Is my amount above the deposit minimum?</td></tr>
+        <tr><td>Fee</td><td>How much will actually arrive?</td></tr>
+        <tr><td>Availability</td><td>Are deposits currently active?</td></tr>
+      </table>
+    </div>
+    <p>If any answer is unclear, stop before sending.</p>
+
+    <h2>Should you always send a test transaction?</h2>
+    <p>A test transfer can be useful, especially when using a new wallet, sending a large amount, using a network you have not used before, or copying a new address. But it is not an absolute rule. A test may be impractical when the network fee is high, the deposit minimum is high, or the transfer amount itself is small. A better principle is:</p>
+    <div class="callout"><p><strong>Use a test transfer when the value at risk is meaningfully larger than the extra fee, and the receiving setup has not already been verified.</strong></p></div>
+    <p>This is more useful than &ldquo;always test&rdquo;.</p>
+
+    <h2>How long should a crypto transfer take?</h2>
+    <p>There is no universal answer. Transfer time depends on the blockchain, network congestion, fee level, the number of confirmations required by the receiver, exchange processing and compliance review. A transaction can be confirmed on-chain while the exchange is still waiting for additional confirmations before crediting the account. So &ldquo;not received yet&rdquo; does not automatically mean the funds are lost.</p>
+
+    <h2>The first thing to check when a deposit is missing</h2>
+    <p>Do not immediately contact support. First find the <strong>transaction hash</strong>, often called the TXID, transaction ID or transaction hash. Then open the appropriate blockchain explorer and check:</p>
+    <ol>
+      <li>Is the transaction confirmed?</li>
+      <li>Which address received it?</li>
+      <li>Which network was used?</li>
+      <li>How much was sent?</li>
+      <li>Was the transaction successful or failed?</li>
+    </ol>
+    <p>This separates blockchain problems from exchange-account problems.</p>
+
+    <h2>Case 1: the transaction is still pending</h2>
+    <p>If the transaction has not confirmed, possible causes include network congestion, a low transaction fee, or exchange processing delay. For exchange withdrawals, the platform may show stages such as <em>processing</em>, <em>sent</em> or <em>completed</em>. Do not rely only on the app label. Once a TXID exists, the blockchain explorer is usually the better source for on-chain status.</p>
+
+    <h2>Case 2: blockchain says &ldquo;success&rdquo; but the exchange balance is missing</h2>
+    <p>This is a common situation. If the explorer shows a successful transaction to the correct address, check the required confirmation count, deposit minimum, memo/tag, network support and maintenance notices. If all of those are correct, contact the receiving platform with the TXID, asset, network, amount, deposit address, memo/tag if applicable, and timestamp. Do not send private keys or seed phrases. For exchange-specific recovery, our <a href="../../../exchanges/binance/binance-india-guide/">Binance India guide</a> explains the withdrawal and deposit flow in more detail.</p>
+
+    <h2>Case 3: you forgot the memo or destination tag</h2>
+    <p>If the funds went to the exchange&rsquo;s correct deposit address but the tag or memo was missing, the platform may need to manually identify the transfer. Recovery depends on the exchange. Prepare the TXID, exact amount, sender address, receiving address, the correct account UID where relevant, and the expected memo/tag. Some platforms may charge a recovery fee. Do not make another transfer until you understand the first one.</p>
+
+    <h2>Case 4: you used the wrong network</h2>
+    <p>This can mean several different things.</p>
+    <h3>Situation A: you control the destination wallet</h3>
+    <p>Suppose you send a token to your own wallet address on another compatible EVM network. The funds may still be accessible if the private key controls the same address, the token exists on the network used, and you add the correct network and token to the wallet. The balance may simply be invisible in the default wallet interface.</p>
+    <h3>Situation B: you sent to an exchange</h3>
+    <p>This is harder. The exchange controls the private keys, not you. Even if the funds technically reached an address controlled by the exchange, recovery depends on whether the exchange supports that network internally, whether it offers unsupported-deposit recovery, the amount, and its operational policy. Do not assume recovery is guaranteed.</p>
+    <h3>Situation C: the networks are incompatible</h3>
+    <p>If the destination does not correspond to an address you control, or the receiving system cannot access the network used, recovery may be impossible. The phrase &ldquo;wrong network&rdquo; covers very different technical situations. That is why a proper diagnosis requires the transaction hash.</p>
+
+    <h2>Case 5: you sent to the wrong address</h2>
+    <p>If the blockchain transaction is confirmed to a completely wrong address, there is usually no central mechanism that can reverse it. Possible exceptions are narrow: you know the recipient, the address belongs to a platform willing and able to help, or the transaction is part of a recoverable smart-contract process. But ordinary blockchain transfers are designed to be final. This is why address verification matters before sending.</p>
+
+    <h2>Case 6: right token, right address, wrong network in a self-custody wallet</h2>
+    <p>This is especially common with self-custody wallets. Example: you send USDT on BNB Smart Chain, but the wallet opens by default on Ethereum and shows a zero balance. That does not necessarily mean the funds are missing. You may need to switch network, add the token contract, refresh the wallet, or verify the balance with a blockchain explorer. The explorer is the source of truth for the chain.</p>
+
+    <h2>Do not trust screenshots as proof of payment</h2>
+    <p>This is particularly important for P2P transactions. A screenshot can be edited, delayed, fake, from a reversed payment, or from a different transaction. For bank payments, verify the money in your own bank account. For crypto payments, verify the blockchain transaction. Do not release crypto based only on a screenshot. This is one of the most practical security rules for P2P users.</p>
+
+    <h2>A TXID is better evidence than &ldquo;the app says completed&rdquo;</h2>
+    <p>If an exchange withdrawal says completed, ask for the transaction hash. The TXID allows you to independently verify the network, destination, amount, status and confirmations. If no TXID exists yet, the asset may not have been broadcast to the blockchain. That distinction is useful when speaking to support.</p>
+
+    <h2>Exchange withdrawal fee vs blockchain fee</h2>
+    <p>These are often confused. A <strong>blockchain fee</strong> is paid for network processing. An <strong>exchange withdrawal fee</strong> is set by the exchange. The two can differ. An exchange may charge a fixed withdrawal fee that is higher or lower than the exact underlying network transaction cost. So do not describe every withdrawal fee as &ldquo;gas&rdquo;. Our <a href="../../../exchanges/fees-withdrawals/">exchange fees and withdrawals guide</a> covers how Indian platforms structure these.</p>
+
+    <h2>Stablecoin transfers need extra care</h2>
+    <p>Stablecoins create a unique beginner trap. USDT may look identical in an exchange balance regardless of network. But once you withdraw, the network becomes critical. Before transferring USDT, identify the receiving network, copy the network-specific deposit address, choose the same network on the sender, check the deposit minimum, and check the withdrawal fee. For a step-by-step route, see <a href="../../../crypto/stablecoins/buy-usdt-india/">how to buy USDT in India</a>.</p>
+
+    <h2>XRP and other tag-based assets</h2>
+    <p>With XRP, the destination address may belong to the exchange while the Destination Tag identifies your individual account. If you omit the tag, XRP can still reach the exchange wallet, but your user balance may not be credited automatically. This is a very different problem from sending to a wrong XRP address. Understanding the distinction makes support requests much clearer.</p>
+
+    <h2>What to send support</h2>
+    <p>If a deposit is missing, prepare one clean support message containing:</p>
+    <ul class="check-list">
+      <li>asset;</li>
+      <li>amount;</li>
+      <li>transaction hash;</li>
+      <li>network;</li>
+      <li>sender address;</li>
+      <li>receiving address;</li>
+      <li>memo/tag;</li>
+      <li>transaction time;</li>
+      <li>a screenshot of the receiving deposit instructions if relevant.</li>
+    </ul>
+    <p>Avoid sending ten separate messages. A complete evidence set usually makes troubleshooting easier.</p>
+
+    <h2>What never to send support</h2>
+    <p>Never provide a wallet seed phrase, private key, exchange password, email password, OTP, or remote access to your device. A legitimate exchange does not need your private key to investigate a deposit. If someone asks for it, stop.</p>
+
+    <h2>Record keeping matters in India too</h2>
+    <p>Crypto transfers can also affect your records. Keep the TXID, asset, amount, network, date, source platform, destination and purpose. This becomes useful when matching exchange trades, wallet transfers, tax records and future withdrawals. A wallet-to-wallet transfer is not the same thing as a sale, but poor records can make later reporting difficult. For tax-related issues, see our <a href="../../../crypto/crypto-tax-india/">crypto tax in India</a> guide.</p>
+
+    <h2>A practical transfer workflow</h2>
+    <p>For a transfer you have never done before:</p>
+    <ol>
+      <li>Open the recipient deposit page first.</li>
+      <li>Choose the asset.</li>
+      <li>Choose the supported network.</li>
+      <li>Copy the address and memo/tag.</li>
+      <li>Return to the sending platform.</li>
+      <li>Select the exact same network.</li>
+      <li>Paste and verify the address.</li>
+      <li>Check minimums and fees.</li>
+      <li>Use a test transfer when practical.</li>
+      <li>Save the TXID.</li>
+    </ol>
+    <p>This order matters. Do not choose a network on the sending side first and then hope the recipient supports it.</p>
+
+    <h2>The biggest transfer mistake is usually not &ldquo;technical&rdquo;</h2>
+    <p>Most beginner losses are not caused by deep blockchain bugs. They are often caused by rushing, copying the wrong address, choosing the cheapest network without checking support, ignoring a memo or tag, trusting screenshots, or responding to fake support. The technology is complex, but the most useful protections are often simple operational habits.</p>
+
+    <h2>Bottom line</h2>
+    <p>Before sending crypto, verify: <strong>asset &rarr; network &rarr; address &rarr; memo/tag &rarr; minimum &rarr; fee &rarr; recipient status</strong>. If something goes wrong, do not guess. Find the transaction hash and determine:</p>
+    <div class="callout"><p><strong>Did the blockchain fail, or did the receiving platform fail to credit a successful transaction?</strong></p></div>
+    <p>Those are two very different problems. A successful blockchain transaction is usually final. That makes the few checks before sending much more valuable than trying to recover funds afterwards.</p>
+
+    <h2>Related guides</h2>
+    <ul>
+      <li><a href="../">Crypto Transfers: what to check before you send</a></li>
+      <li><a href="../wallet-basics/">Crypto Wallet Basics</a></li>
+      <li><a href="../wallet-basics/exchange-vs-self-custody-wallet/">Crypto Exchange vs Self-Custody Wallet</a></li>
+      <li><a href="../../../crypto/stablecoins/">Stablecoins Explained for India</a></li>
+      <li><a href="../../../crypto/stablecoins/buy-usdt-india/">How to Buy USDT in India</a></li>
+      <li><a href="../../../exchanges/fees-withdrawals/">Crypto Exchange Fees &amp; Withdrawals</a></li>
+      <li><a href="../../../exchanges/binance/binance-india-guide/">Binance India Guide</a></li>
+      <li><a href="../../../crypto/crypto-tax-india/">Crypto Tax in India</a></li>
+    </ul>
+
+    <h2>Frequently asked questions</h2>
+    <h3>What should I check before sending crypto?</h3>
+    <p>Confirm the asset, network, address, memo/tag, deposit minimum, withdrawal fee and current deposit availability.</p>
+    <h3>What happens if I send crypto on the wrong network?</h3>
+    <p>Recovery depends on whether you control the receiving address and whether the platform supports the network used. Some cases are recoverable; others are not.</p>
+    <h3>Why is my crypto transaction confirmed but not showing in my exchange account?</h3>
+    <p>The exchange may require additional confirmations, a memo/tag, a minimum deposit or manual review.</p>
+    <h3>Can a crypto transaction be reversed?</h3>
+    <p>A confirmed blockchain transfer generally cannot be reversed by a bank or exchange.</p>
+    <h3>Should I always send a test transaction?</h3>
+    <p>It can be useful for large or unfamiliar transfers, but fees and deposit minimums should also be considered.</p>
+    <h3>What is a TXID?</h3>
+    <p>A TXID is the unique transaction identifier used to locate and verify a blockchain transaction.</p>
+    <h3>Is a screenshot proof that someone sent crypto?</h3>
+    <p>No. Verify the transaction on-chain using the TXID.</p>
+  </main>
+
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand">
+          <a href="../../../index.html" class="logo">
+            <svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true">
+              <circle cx="16" cy="16" r="15" fill="#E88A1A"/>
+              <path d="M16 6 L21 21 L16 17.5 L11 21 Z" fill="#1F3A5F"/>
+            </svg>
+            <span><span class="coin" style="color:#fff">Coin</span><span class="raahi">Raahi</span></span>
+          </a>
+          <p>Practical guides to crypto and global digital assets, written for India.</p>
+          <p class="contact"><a href="mailto:hello@coinraahi.com">hello@coinraahi.com</a></p>
+        </div>
+        <div class="footer-col">
+          <h4>Start Here</h4>
+          <ul>
+            <li><a href="../../../start-here/crypto-basics/">Crypto Basics</a></li>
+            <li><a href="../../../start-here/beginner-roadmap/">Beginner Roadmap</a></li>
+            <li><a href="../../../start-here/common-questions/">Common Questions</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Exchanges</h4>
+          <ul>
+            <li><a href="../../../exchanges/binance/">Binance</a></li>
+            <li><a href="../../../exchanges/coindcx/">CoinDCX</a></li>
+            <li><a href="../../../exchanges/coinswitch/">CoinSwitch</a></li>
+            <li><a href="../../../exchanges/comparisons/">Comparisons</a></li>
+            <li><a href="../../../exchanges/account-kyc/">KYC &amp; Account</a></li>
+            <li><a href="../../../exchanges/fees-withdrawals/">Fees &amp; Withdrawals</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Crypto</h4>
+          <ul>
+            <li><a href="../../../crypto/bitcoin/">Bitcoin</a></li>
+            <li><a href="../../../crypto/ethereum/">Ethereum</a></li>
+            <li><a href="../../../crypto/stablecoins/">Stablecoins</a></li>
+            <li><a href="../../../crypto/blockchain-basics/">Blockchain Basics</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Assets &amp; RWA</h4>
+          <ul>
+            <li><a href="../../../assets-rwa/us-stocks-etfs/">US Stocks &amp; ETFs</a></li>
+            <li><a href="../../../assets-rwa/tokenised-stocks/">Tokenised Stocks</a></li>
+            <li><a href="../../../assets-rwa/gold/">Gold</a></li>
+            <li><a href="../../../assets-rwa/tokenised-assets/">Tokenised Assets</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Wallets &amp; Safety</h4>
+          <ul>
+            <li><a href="../../../wallets-safety/wallet-basics/">Wallet Basics</a></li>
+            <li><a href="../../../wallets-safety/transfers/">Transfers</a></li>
+            <li><a href="../../../wallets-safety/account-security/">Account Security</a></li>
+            <li><a href="../../../wallets-safety/scam-prevention/">Scam Prevention</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="../../../about.html">About</a></li>
+            <li><a href="../../../editorial-policy.html">Editorial Policy</a></li>
+            <li><a href="../../../affiliate-disclosure.html">Affiliate Disclosure</a></li>
+            <li><a href="../../../risk-disclosure.html">Risk Disclosure</a></li>
+            <li><a href="../../../contact.html">Contact</a></li>
+            <li><a href="../../../privacy.html">Privacy Policy</a></li>
+            <li><a href="../../../disclaimer.html">Disclaimer</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="risk">Cryptocurrency and tokenised assets can be highly volatile and involve significant market, custody and counterparty risk. You may lose some or all of the money you invest. In India, income from the transfer of qualifying virtual digital assets is generally subject to the special tax regime under Section 115BBH, while 1% TDS may apply to qualifying transfers under Section 194S, subject to applicable rules and thresholds. CoinRaahi provides educational information only and does not provide financial, investment, legal or tax advice.</p>
+        <div class="legal">
+          <span>&copy; 2026 CoinRaahi. Not financial advice.</span>
+          <span>
+            <a href="../../../disclaimer.html">Disclaimer</a>
+            <a href="../../../privacy.html">Privacy</a>
+            <a href="../../../editorial-policy.html">Editorial Policy</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../../js/main.js"></script>
+</body>
+</html>
