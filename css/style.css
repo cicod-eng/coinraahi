@@ -481,6 +481,41 @@ table.compare .warn { color: var(--saffron-dark); font-weight: 600; }
 .page .updated { font-size: 13px; color: var(--muted); margin-bottom: 8px; }
 .page a { font-weight: 500; }
 
+/* ============ 文章增强（指南/教程页） ============ */
+.page h3 { font-size: 17px; margin: 26px 0 10px; }
+.page ol { color: var(--muted); margin: 0 0 18px 22px; }
+.page ol li { margin-bottom: 10px; }
+.page .lede { font-size: 17.5px; color: var(--ink); line-height: 1.7; }
+.page .lede strong, .page p strong { color: var(--ink); }
+
+.summary-box { margin: 22px 0 30px; border: 1px solid var(--border); border-left: 4px solid var(--blue); border-radius: var(--radius); background: var(--blue-soft); padding: 22px 24px; }
+.summary-box h2 { font-size: 16px; margin: 0 0 12px; }
+.summary-box ul { margin: 0; padding: 0; list-style: none; }
+.summary-box li { display: flex; gap: 10px; margin-bottom: 9px; color: var(--ink); font-size: 14.5px; }
+.summary-box li:last-child { margin-bottom: 0; }
+.summary-box li::before { content: '→'; color: var(--saffron-dark); font-weight: 700; flex: 0 0 auto; }
+
+.callout { margin: 22px 0; border: 1px solid var(--border); border-radius: var(--radius); padding: 18px 20px; font-size: 14.5px; line-height: 1.6; }
+.callout p { margin-bottom: 0; color: var(--ink); }
+.callout-warn { background: var(--saffron-soft); border-left: 4px solid var(--saffron); }
+.callout-warn strong { color: var(--saffron-dark); }
+.callout-info { background: var(--peacock-soft); border-left: 4px solid var(--peacock); }
+.callout-info strong { color: var(--peacock); }
+
+.cta-box { margin: 36px 0 8px; border-radius: var(--radius-lg); background: var(--grad-hero); color: #fff; padding: 34px 32px; }
+.cta-box h2 { color: #fff; font-size: 21px; margin-bottom: 10px; }
+.cta-box p { color: rgba(255,255,255,0.84); margin-bottom: 22px; }
+.cta-box .btn { color: #fff; }
+.cta-disclosure { font-size: 12px; color: rgba(255,255,255,0.55); margin-top: 16px; line-height: 1.55; }
+.cta-disclosure a { color: rgba(255,255,255,0.75); text-decoration: underline; }
+
+.page .check-list { list-style: none; margin: 0 0 16px; }
+.page .check-list li { position: relative; padding-left: 26px; margin-bottom: 10px; }
+.page .check-list li::before { content: '✓'; position: absolute; left: 0; color: var(--peacock); font-weight: 700; }
+.page .cross-list { list-style: none; margin: 0 0 16px; }
+.page .cross-list li { position: relative; padding-left: 26px; margin-bottom: 10px; }
+.page .cross-list li::before { content: '×'; position: absolute; left: 0; color: var(--saffron-dark); font-weight: 700; }
+
 /* ============ 页脚（链接库） ============ */
 .site-footer {
   background: var(--grad-hero);
