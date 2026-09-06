@@ -479,6 +479,13 @@ table.compare .warn { color: var(--saffron-dark); font-weight: 600; }
 .page ul { color: var(--muted); margin: 0 0 16px 22px; }
 .page li { margin-bottom: 8px; }
 .page .updated { font-size: 13px; color: var(--muted); margin-bottom: 8px; }
+
+/* ============ 面包屑（Hub 页） ============ */
+.breadcrumb { font-size: 13px; color: var(--muted); margin: 6px 0 20px; display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
+.breadcrumb a { color: var(--muted); text-decoration: none; }
+.breadcrumb a:hover { color: var(--blue); }
+.breadcrumb .sep { color: var(--border); user-select: none; }
+.breadcrumb .current { color: var(--ink); font-weight: 500; }
 .page a { font-weight: 500; }
 
 /* ============ 文章增强（指南/教程页） ============ */
