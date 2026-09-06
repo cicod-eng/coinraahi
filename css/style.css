@@ -436,6 +436,40 @@ table.compare .ok { color: var(--peacock); font-weight: 600; }
 table.compare .warn { color: var(--saffron-dark); font-weight: 600; }
 .table-note { font-size: 12.5px; color: var(--muted); margin-top: 10px; }
 
+/* ============ Compare Exchanges 维度块 ============ */
+.compare-wrap {
+  margin-top: 28px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--card);
+  box-shadow: var(--shadow-sm);
+  padding: 26px;
+}
+.compare-title {
+  font-size: 17px;
+  margin-bottom: 18px;
+}
+.compare-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px 24px;
+  margin-bottom: 22px;
+}
+.compare-item {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.ci-label {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--ink);
+}
+.ci-desc {
+  font-size: 13px;
+  color: var(--muted);
+}
+
 /* ============ 静态内容页 ============ */
 .page { max-width: 780px; margin: 0 auto; padding: 56px 24px 72px; }
 .page h1 { font-size: 34px; margin-bottom: 12px; }
