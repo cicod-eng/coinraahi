@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Crypto Exchange Fees in India: Trading Fees, Spread &amp; Withdrawal Costs | CoinRaahi</title>
-  <meta name="description" content="Learn how crypto exchange costs really work in India, including trading fees, spreads, INR deposits, withdrawals, network charges and TDS. Includes ₹1,000, ₹10,000 and ₹1 lakh examples.">
+  <meta name="description" content="Crypto exchange costs in India explained: trading fees, spreads, INR deposits, withdrawals, network charges and TDS — plus a September 2026 public fee check of Binance, CoinDCX and CoinSwitch.">
   <link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="48" fill="%231F3A5F"/><text x="50" y="68" font-size="54" font-weight="bold" text-anchor="middle" fill="%23E88A1A" font-family="Arial">R</text></svg>'>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +16,7 @@
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Crypto Exchange Fees in India: What Do You Really Pay?",
-  "description": "Learn how crypto exchange costs really work in India, including trading fees, spreads, INR deposits, withdrawals, network charges and TDS. Includes \u20b91,000, \u20b910,000 and \u20b91 lakh examples.",
+  "description": "Crypto exchange costs in India explained: trading fees, spreads, INR deposits, withdrawals, network charges and TDS — plus a September 2026 public fee check of Binance, CoinDCX and CoinSwitch.",
   "datePublished": "2026-09-06",
   "dateModified": "2026-09-06",
   "inLanguage": "en-IN",
@@ -212,6 +212,72 @@
     <h2>Do not copy these example percentages into a platform comparison</h2>
     <p>The numbers above are illustrative. They are designed to show the maths. They are <strong>not current Binance, CoinDCX or CoinSwitch fee claims</strong>. Platform fees change. For real comparisons, record the live figures on the same date. This distinction should be explicit in every CoinRaahi cost article.</p>
 
+    <h2>Binance vs CoinDCX vs CoinSwitch: what the public fee data actually tells us</h2>
+    <p>A fee comparison looks simple until you try to verify the numbers. CoinRaahi reviewed the public fee and support documentation for Binance, CoinDCX and CoinSwitch in September 2026. The result was not a clean <em>0.1% vs 0.2% vs 0%</em> comparison. In fact, the public documentation shows why a single headline fee can be misleading.</p>
+
+    <h3>Binance</h3>
+    <p>Binance currently lists its standard Spot fee for a Regular User at <strong>0.100% maker and 0.100% taker</strong>. Its published schedule also shows a lower effective rate when the eligible BNB fee discount is used.<sup><a href="#source-3">[3]</a></sup> That makes Binance&rsquo;s base trading fee relatively easy to verify publicly.</p>
+    <p>But it still does not tell us the complete cost of an INR-to-crypto route. The user may still need to consider:</p>
+    <ul>
+      <li>entry route;</li>
+      <li>quoted exchange rate;</li>
+      <li>P2P premium where applicable;</li>
+      <li>withdrawal fee;</li>
+      <li>chosen network.</li>
+    </ul>
+    <p>So a 0.1% trading fee is not the same as a 0.1% total cost.</p>
+
+    <h3>CoinDCX</h3>
+    <p>CoinDCX currently states that Spot trading fees for both INR pairs and crypto-to-crypto pairs depend on the user&rsquo;s <strong>VIP Level</strong>.<sup><a href="#source-4">[4]</a></sup> Its public documentation also says crypto withdrawal minimums and fees vary by token.<sup><a href="#source-11">[11]</a></sup> That means a comparison should not assign one universal CoinDCX trading or withdrawal fee without specifying the user tier, asset and network.</p>
+    <p>CoinDCX currently states that, for an INR trading pair, a sale of <strong>₹2,000</strong> produces <strong>1% × ₹2,000 = ₹20</strong> in TDS, with the remaining amount credited after applicable trading fees, GST and TDS. For crypto-to-crypto trades, it states that TDS is calculated on the net transaction value after deducting fees including GST.<sup><a href="#source-10">[10]</a></sup> That is a useful, verifiable reference &mdash; but it is CoinDCX&rsquo;s own stated handling, not a rule you should assume applies identically on every platform.</p>
+
+    <h3>CoinSwitch</h3>
+    <p>CoinSwitch presents an even stronger example of why personalised pricing matters. Its 2026 API documentation states that fee schedules can be <strong>user-specific</strong>, including differences caused by cohorts, volume tiers and promotional discounts, and advises clients to query the effective fee rather than cache one global rate.<sup><a href="#source-5">[5]</a></sup> Its current Terms also allow separate service fees for certain instant-order services and transaction fees for some fiat or crypto transfers and withdrawals.</p>
+    <p>That makes a simple statement such as <em>&ldquo;CoinSwitch has zero fees&rdquo;</em> too broad for a serious comparison.</p>
+
+    <h2>Public price pages are not executable quotes</h2>
+    <p>CoinRaahi also checked the platforms&rsquo; publicly accessible USDT pages. The results show why those pages should not be treated as a substitute for an order preview.</p>
+    <p>CoinSwitch&rsquo;s public pages displayed different USDT/INR figures during our review, while one converter page returned ₹0 and simultaneously stated that USDT-pair trading was not currently supported.<sup><a href="#source-6">[6]</a></sup><sup><a href="#source-7">[7]</a></sup><sup><a href="#source-8">[8]</a></sup></p>
+    <p>CoinDCX&rsquo;s public USDT pages also failed to return a reliable live executable price in our crawl, showing placeholders such as &ldquo;Error fetching price data&rdquo; and &ldquo;Loading price&rdquo;.<sup><a href="#source-9">[9]</a></sup></p>
+    <p>For that reason, CoinRaahi does <strong>not</strong> use these marketing/price pages to declare which platform offers the cheapest ₹10,000 USDT purchase. A valid purchase-cost comparison requires the logged-in order preview at approximately the same time.</p>
+
+    <h2>What can be compared reliably today</h2>
+    <div class="table-wrap">
+      <table class="compare">
+        <tr><th>Metric</th><th>Binance</th><th>CoinDCX</th><th>CoinSwitch</th></tr>
+        <tr><td>Public base Spot fee</td><td>Yes</td><td>Tier dependent</td><td>User/tier dependent</td></tr>
+        <tr><td>Final ₹10,000 buy quote available publicly</td><td>Not reliably comparable</td><td>No reliable executable quote</td><td>No reliable executable quote</td></tr>
+        <tr><td>Withdrawal fee fixed globally</td><td>No</td><td>No</td><td>No</td></tr>
+        <tr><td>User-specific pricing possible</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
+        <tr><td>Platform tax documentation</td><td>Some context dependent</td><td>Detailed TDS order documentation</td><td>Contract note / tax documentation</td></tr>
+        <tr><td>Safe to declare cheapest from public pages?</td><td><strong>No</strong></td><td><strong>No</strong></td><td><strong>No</strong></td></tr>
+      </table>
+    </div>
+
+    <h2>What this means for a user with ₹10,000</h2>
+    <p>The correct comparison is still: <strong>₹10,000 paid &rarr; crypto actually credited &rarr; crypto actually withdrawable &rarr; amount arriving at destination</strong>. Until all four are measured under comparable conditions, a ranking such as <em>&ldquo;Exchange X is 0.4% cheaper&rdquo;</em> would imply precision the public data does not support.</p>
+    <p>That is why CoinRaahi separates <strong>public fee verification</strong> from <strong>hands-on executable-price testing</strong>.</p>
+
+    <h2>CoinRaahi Public Data Check &mdash; September 2026</h2>
+    <p><strong>Methodology:</strong> We reviewed publicly accessible platform documentation and pricing pages. No trades were placed and no personalised logged-in quote was used.</p>
+    <p><strong>What this can verify:</strong></p>
+    <ul>
+      <li>published fee structures;</li>
+      <li>whether pricing is tier dependent;</li>
+      <li>withdrawal-fee methodology;</li>
+      <li>tax/TDS handling documentation;</li>
+      <li>public product availability claims.</li>
+    </ul>
+    <p><strong>What it cannot verify:</strong></p>
+    <ul>
+      <li>final ₹1,000 purchase price;</li>
+      <li>final ₹10,000 purchase price;</li>
+      <li>account-specific promotional rate;</li>
+      <li>actual spread in a logged-in order;</li>
+      <li>final withdrawal amount for a specific user.</li>
+    </ul>
+    <p>This distinction matters because an SEO article should not call public marketing data a &ldquo;test&rdquo;.</p>
+
     <h2>A better way to test an exchange</h2>
     <p>Instead of comparing home-page claims, run the same route on every platform. For example: <strong>₹10,000 &rarr; buy USDT &rarr; withdraw to the same wallet/network.</strong> Record the INR deposited, USDT quoted, USDT actually purchased, explicit trading fee, withdrawal fee and USDT actually received. Then calculate:</p>
     <div class="callout"><p><strong>Effective Cost % = (Theoretical Market Value &minus; Final Value Received) &divide; Starting INR</strong></p></div>
@@ -335,6 +401,15 @@
     <ol>
       <li id="source-1"><a href="https://www.incometaxindia.gov.in/w/tds-on-payment-for-the-transfer-of-virtual-digital-assets-vdas-" target="_blank" rel="noopener">Income Tax Department &mdash; TDS on Payment for the Transfer of Virtual Digital Assets (VDAs)</a>.</li>
       <li id="source-2"><a href="https://www.incometaxindia.gov.in/documents/20117/42998/Taxation-of-Virtual-Digital-Asset-VDA_2026-01-06_06-43-57_cfe04a_en.pdf/153706c8-7b5c-77d4-fc56-624c50ece1b0" target="_blank" rel="noopener">Income Tax Department &mdash; Taxation of Virtual Digital Assets (VDA)</a>.</li>
+      <li id="source-3"><a href="https://www.binance.com/en/fee/trading" target="_blank" rel="noopener">Binance &mdash; Spot Trading Fee Rate</a>.</li>
+      <li id="source-4"><a href="https://support.coindcx.com/conversations/search?q=trading+view" target="_blank" rel="noopener">CoinDCX Help &amp; Support &mdash; trading fees</a>.</li>
+      <li id="source-5"><a href="https://api-trading.coinswitch.co/spot/reference/trading-fee" target="_blank" rel="noopener">CoinSwitch API Trading &mdash; Trading Fee</a>.</li>
+      <li id="source-6"><a href="https://coinswitch.co/coins/buy-tether-in-india" target="_blank" rel="noopener">CoinSwitch &mdash; Buy Tether (USDT) in India</a>.</li>
+      <li id="source-7"><a href="https://coinswitch.co/price/tether-price-in-india" target="_blank" rel="noopener">CoinSwitch &mdash; Tether Price in India</a>.</li>
+      <li id="source-8"><a href="https://coinswitch.co/conversions/tether-inr" target="_blank" rel="noopener">CoinSwitch &mdash; USDT to INR Converter</a>.</li>
+      <li id="source-9"><a href="https://coindcx.com/crypto-prices/tether-price/" target="_blank" rel="noopener">CoinDCX &mdash; Tether Price in India</a>.</li>
+      <li id="source-10"><a href="https://support.coindcx.com/articles/tax-deducted-at-source-tds/how-is-tds-calculated/6a578711de4d65eafa537189" target="_blank" rel="noopener">CoinDCX Help &amp; Support &mdash; How is TDS calculated?</a>.</li>
+      <li id="source-11"><a href="https://support.coindcx.com/articles/crypto-withdrawals/what-is-the-minimum-withdrawal-amount-and-fee/659b7faf94970840015b0c8e" target="_blank" rel="noopener">CoinDCX Help &amp; Support &mdash; Minimum withdrawal amount and fee</a>.</li>
     </ol>
 
     <h2>Related guides</h2>
