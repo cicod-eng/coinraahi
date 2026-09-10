@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 48" role="img" aria-label="CoinRaahi">
+  <circle cx="24" cy="24" r="21" fill="#1F3A5F"/>
+  <path d="M24 10 L31 31 L24 26 L17 31 Z" fill="#E88A1A"/>
+  <text x="58" y="35" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="30" font-weight="700">
+    <tspan fill="#1F3A5F">Coin</tspan><tspan fill="#E88A1A">Raahi</tspan>
+  </text>
+</svg>
