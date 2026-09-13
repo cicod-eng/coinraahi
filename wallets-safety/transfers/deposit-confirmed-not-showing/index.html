@@ -57,7 +57,7 @@
       "name": "I sent USDT on the wrong network to an exchange. Can I get it back?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "It depends. If the funds reached an address the exchange controls and the exchange supports the network you used, recovery is often possible but slow and may carry a fee. If the exchange does not support that network, recovery may not be possible at all. Contact official support with the transaction ID and do not keep resending. The network must match on both ends before you send."
+        "text": "It depends. If the funds reached an address the exchange controls and the exchange supports the network you used, recovery may be possible, but it is never guaranteed, and it can be slow and carry a fee. If the exchange does not support that network, recovery may not be possible at all. Contact official support with the transaction ID and do not keep resending. The network must match on both ends before you send."
       }
     },
     {
@@ -230,33 +230,7 @@
     <p>The address and network checks are the ones people rush. An address that starts and ends the same way on an explorer can still be on a different network, because Ethereum and many other chains use addresses that all begin with &ldquo;0x&rdquo;.</p>
 
     <h2>Case 1: it just needs more confirmations</h2>
-    <p>If the address, network, memo and amount are all correct, the deposit almost certainly just needs time. Each exchange sets its own confirmation requirement per coin and per network, and it changes over time. Rather than guessing a number, check what your exchange actually requires:</p>
-    <div class="table-wrap">
-      <table class="compare">
-        <caption>What to check, by network, instead of a fixed number</caption>
-        <thead>
-        <tr>
-          <th>Network</th>
-          <th>What you should check</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-          <td>Bitcoin (BTC)</td>
-          <td>The deposit page may require multiple confirmations</td>
-        </tr>
-        <tr>
-          <td>Ethereum (ETH &amp; ERC-20 tokens)</td>
-          <td>The requirement varies by exchange and token</td>
-        </tr>
-        <tr>
-          <td>Tron (TRC-20, e.g. USDT)</td>
-          <td>Usually credits quickly once the platform&rsquo;s required confirmations are reached</td>
-        </tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="callout"><p><strong>Do not rely on a generic confirmation number from another website. The number shown on your exchange&rsquo;s deposit page is the one that matters.</strong></p></div>
+    <p>If the address, network, memo and amount are all correct, the deposit almost certainly just needs time. Each exchange sets its own confirmation requirement for each asset and network, and it changes over time. Do not rely on a generic confirmation number from another website — the number shown on your exchange&rsquo;s deposit page is the one that matters.</p>
     <p>Larger deposits can also be routed to a manual review, which adds time on top of confirmations.</p>
     <p>If the deposit history shows &ldquo;processing&rdquo; and the explorer shows a rising confirmation count, the correct action is usually to do nothing for a while — refreshing the balance every thirty seconds does not speed it up. Many platforms suggest waiting roughly 30 to 60 minutes after the on-chain confirmations have clearly passed the deposit page&rsquo;s requirement before opening a ticket.</p>
 
@@ -264,7 +238,7 @@
     <p>Wrong network is one of the first mistakes to rule out. An EVM-compatible address on Ethereum, BNB Chain, Polygon or Arbitrum can all begin with &ldquo;0x&rdquo;, so a pasted address can look correct while being on the wrong network entirely.</p>
     <p>The blockchain does not know your intention. It will happily deliver your tokens to an address the exchange controls on a network the exchange may not watch for that asset. What happens next depends on whether the exchange supports that network internally:</p>
     <ul>
-      <li><strong>If the exchange supports the network</strong>, recovery is usually possible — often with a fee and after a manual review. Contact support with the transaction ID.</li>
+      <li><strong>If the exchange controls the destination address and supports the network</strong>, recovery may be possible — but it is never guaranteed, and it can carry a fee and require a manual review. Contact support with the transaction ID.</li>
       <li><strong>If the exchange does not support the network</strong>, the funds may be effectively out of reach. This is why the network check must happen before sending, not after.</li>
     </ul>
     <p>If you are unsure how one stablecoin can live on several networks, our guide to <a href="../../../crypto/stablecoins/usdt-trc20-vs-erc20-vs-bep20/">USDT on TRC-20 vs ERC-20 vs BEP-20</a> explains the difference and why the cheapest network is not always the right one.</p>
@@ -279,7 +253,7 @@
 
     <h2>Case 5: you sent to the token&rsquo;s contract address</h2>
     <p>This is an under-discussed mistake. On a block explorer, every token has a <strong>contract address</strong> — the smart contract that implements the token — and it is easy to copy that instead of your own deposit address, because both are long strings shown on the same page. Your deposit address and the token&rsquo;s contract address are not the same thing.</p>
-    <p>Sending tokens <em>to</em> the contract address delivers them to the contract itself, and this is often unrecoverable. The issue is not simply whether the contract has an &ldquo;owner&rdquo;; many token contracts are not designed with a function that lets accidentally received tokens be withdrawn. This is why the address check is worth an extra ten seconds. Compare the full address from your exchange&rsquo;s deposit page with the one in the explorer, not just the first and last few characters.</p>
+    <p>Sending tokens <em>to</em> the contract address delivers them to the contract itself, and this is often unrecoverable. Many token contracts are not designed with a function that allows accidentally received tokens to be withdrawn, even if the contract itself has an administrator or owner. This is why the address check is worth an extra ten seconds. Compare the full address from your exchange&rsquo;s deposit page with the one in the explorer, not just the first and last few characters.</p>
 
     <h2>Case 6: deposits suspended, maintenance, or a compliance hold</h2>
     <p>Sometimes the delay has nothing to do with your transaction. An exchange can temporarily suspend deposits for a specific asset or network during a wallet upgrade, a network hard fork, or congestion. Check the exchange&rsquo;s status page or the deposit page for any notice. Separately, an account under KYC review or a deposit that triggers a compliance flag can be held until the exchange completes its checks.</p>
@@ -320,7 +294,7 @@
     <h3>I forgot the memo or destination tag on my deposit. Can the exchange still credit it?</h3>
     <p>Usually yes, but it will not happen automatically. For assets that use a shared deposit address, such as XRP, XLM, EOS, ATOM, HBAR or TON, the memo or tag is what routes the transfer to your individual account. If it was missing or wrong, the funds can sit uncredited until support identifies the transaction. Contact the exchange with the transaction ID, the exact amount, the sender and receiving addresses, and the correct memo or tag. Recovery may involve a fee and is not guaranteed.</p>
     <h3>I sent USDT on the wrong network to an exchange. Can I get it back?</h3>
-    <p>It depends. If the funds reached an address the exchange controls and the exchange supports the network you used, recovery is often possible but slow and may carry a fee. If the exchange does not support that network, recovery may not be possible at all. Contact official support with the transaction ID and do not keep resending. The network must match on both ends before you send.</p>
+    <p>It depends. If the funds reached an address the exchange controls and the exchange supports the network you used, recovery may be possible, but it is never guaranteed, and it can be slow and carry a fee. If the exchange does not support that network, recovery may not be possible at all. Contact official support with the transaction ID and do not keep resending. The network must match on both ends before you send.</p>
     <h3>Why does my exchange show a minimum deposit amount?</h3>
     <p>Exchanges set a minimum because crediting very small deposits costs them more than the deposit is worth, and tiny amounts can be swallowed by network fees. If you send below the stated minimum, the transaction may still confirm on-chain but your account may not be credited automatically. Check the minimum on the deposit page before sending, and if you have already sent below it, contact support with the transaction ID.</p>
     <h3>Is depositing crypto into my own exchange account a taxable event in India?</h3>
