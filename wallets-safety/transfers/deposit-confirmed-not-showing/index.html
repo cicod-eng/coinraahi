@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crypto Deposit Confirmed but Not Showing on Exchange? What to Check First (2026)</title>
+  <meta name="description" content="Crypto deposit confirmed on-chain but the exchange balance hasn't updated? Check confirmations, network, memo and minimum before contacting support.">
+  <link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="48" fill="%231F3A5F"/><text x="50" y="68" font-size="54" font-weight="bold" text-anchor="middle" fill="%23E88A1A" font-family="Arial">R</text></svg>'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../../css/style.css">
+  <link rel="canonical" href="https://coinraahi.com/wallets-safety/transfers/deposit-confirmed-not-showing/">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Crypto Deposit Confirmed but Not Showing on Exchange? What to Check First",
+  "description": "Crypto deposit confirmed on-chain but the exchange balance hasn't updated? Check confirmations, network, memo and minimum before contacting support.",
+  "datePublished": "2026-09-13",
+  "dateModified": "2026-09-13",
+  "inLanguage": "en-IN",
+  "mainEntityOfPage": "https://coinraahi.com/wallets-safety/transfers/deposit-confirmed-not-showing/"
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "My deposit shows confirmed on the block explorer but my exchange balance is zero. Is my money lost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A confirmed transaction does not by itself mean the funds are lost. It means the transfer reached the exchange's deposit address, and the exchange still has to run its own crediting step, which can include waiting for additional confirmations. Run the checks on this page in order: correct address, correct network, memo or tag present, and amount above the minimum. If those are all correct, the deposit normally credits once the confirmation requirement is met; if one is wrong, it usually needs a support ticket with the transaction ID."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How many confirmations does an exchange need before crediting a deposit?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It depends on the network and the exchange. As of September 2026, typical exchange-side figures are 2 to 6 confirmations for Bitcoin, around 12 to 24 for Ethereum and ERC-20 tokens, and roughly 20 for Tron TRC-20. These are the exchange's risk threshold, not the network's own finality, and they change over time. The number that actually applies to you is shown on your exchange's deposit page for that coin and network."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "I forgot the memo or destination tag on my deposit. Can the exchange still credit it?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Usually yes, but it will not happen automatically. For assets that use a shared deposit address, such as XRP, XLM, EOS, ATOM, HBAR or TON, the memo or tag is what routes the transfer to your individual account. If it was missing or wrong, the funds can sit uncredited until support identifies the transaction. Contact the exchange with the transaction ID, the exact amount, the sender and receiving addresses, and the correct memo or tag. Recovery may involve a fee and is not guaranteed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "I sent USDT on the wrong network to an exchange. Can I get it back?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It depends. If the funds reached an address the exchange controls and the exchange supports the network you used, recovery is often possible but slow and may carry a fee. If the exchange does not support that network, recovery may not be possible at all. Contact official support with the transaction ID and do not keep resending. The network must match on both ends before you send."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does my exchange show a minimum deposit amount?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Exchanges set a minimum because crediting very small deposits costs them more than the deposit is worth, and tiny amounts can be swallowed by network fees. If you send below the stated minimum, the transaction may still confirm on-chain but your account may not be credited automatically. Check the minimum on the deposit page before sending, and if you have already sent below it, contact support with the transaction ID."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is depositing crypto into my own exchange account a taxable event in India?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Moving crypto you already own into your own account is generally not by itself a sale, so it does not usually create a taxable gain on its own. What matters is keeping the record: the deposit's transaction ID, amount, network and date become part of your cost-basis and later reporting trail. India's tax treatment of virtual digital assets has specific rules, so see our India crypto tax guide or obtain professional advice for your own situation."
+      }
+    }
+  ]
+}
+  </script>
+  <meta property="og:site_name" content="CoinRaahi">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://coinraahi.com/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://coinraahi.com/assets/og-image.png">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a href="../../../index.html" class="logo" aria-label="CoinRaahi home">
+        <svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true">
+          <circle cx="16" cy="16" r="15" fill="#1F3A5F"/>
+          <path d="M16 6 L21 21 L16 17.5 L11 21 Z" fill="#E88A1A"/>
+        </svg>
+        <span><span class="coin">Coin</span><span class="raahi">Raahi</span></span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links">
+        <li class="has-dropdown"><a href="../../../start-here/">Start Here</a>
+          <ul class="dropdown-menu">
+            <li><a href="../../../start-here/crypto-basics/">Crypto Basics</a></li>
+            <li><a href="../../../start-here/beginner-roadmap/">Beginner Roadmap</a></li>
+            <li><a href="../../../start-here/common-questions/">Common Questions</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown"><a href="../../../exchanges/">Exchanges</a>
+          <ul class="dropdown-menu">
+            <li><a href="../../../exchanges/binance/">Binance</a></li>
+            <li><a href="../../../exchanges/coindcx/">CoinDCX</a></li>
+            <li><a href="../../../exchanges/coinswitch/">CoinSwitch</a></li>
+            <li><a href="../../../exchanges/comparisons/">Exchange Comparisons</a></li>
+            <li><a href="../../../exchanges/account-kyc/">KYC &amp; Account</a></li>
+            <li><a href="../../../exchanges/fees-withdrawals/">Fees &amp; Withdrawals</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown"><a href="../../../crypto/">Crypto</a>
+          <ul class="dropdown-menu">
+            <li><a href="../../../crypto/bitcoin/">Bitcoin</a></li>
+            <li><a href="../../../crypto/ethereum/">Ethereum</a></li>
+            <li><a href="../../../crypto/stablecoins/">Stablecoins</a></li>
+            <li><a href="../../../crypto/blockchain-basics/">Blockchain Basics</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown"><a href="../../../assets-rwa/">Assets &amp; RWA</a>
+          <ul class="dropdown-menu">
+            <li><a href="../../../assets-rwa/us-stocks-etfs/">US Stocks &amp; ETFs</a></li>
+            <li><a href="../../../assets-rwa/tokenised-stocks/">Tokenised Stocks</a></li>
+            <li><a href="../../../assets-rwa/gold/">Gold</a></li>
+            <li><a href="../../../assets-rwa/tokenised-assets/">Tokenised Assets</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown"><a href="../../../wallets-safety/" class="active">Wallets &amp; Safety</a>
+          <ul class="dropdown-menu">
+            <li><a href="../../../wallets-safety/wallet-basics/">Wallet Basics</a></li>
+            <li><a href="../../../wallets-safety/transfers/">Transfers</a></li>
+            <li><a href="../../../wallets-safety/account-security/">Account Security</a></li>
+            <li><a href="../../../wallets-safety/scam-prevention/">Scam Prevention</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="container page">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../../index.html">Home</a> <span class="sep">›</span> <a href="../../../wallets-safety/">Wallets &amp; Safety</a> <span class="sep">›</span> <a href="../">Transfers</a> <span class="sep">›</span> <span class="current">Deposit Confirmed but Not Showing</span></nav>
+    <h1>Crypto Deposit Confirmed but Not Showing on Exchange? What to Check First</h1>
+    <p class="updated">Last updated: 13 September 2026 · Confirmation counts below are typical figures as of that date; the deposit page on your exchange shows the number that applies to you</p>
+
+    <p class="lede">Your transaction says <strong>&ldquo;confirmed&rdquo;</strong> on the block explorer, but your exchange balance still shows zero. The single most useful thing to understand is that <strong>confirmed on the blockchain and credited to your account are two different events</strong>. The blockchain confirmed that your transfer reached the exchange&rsquo;s deposit address; it has not said that the exchange has moved it into your individual account. The first thing to rule out is whether the exchange is simply still waiting on confirmations — in that case the balance appears on its own. If it is not that, there is a specific mistake to identify, and the sooner you identify which one, the better your odds of recovery. The mistake most people make is contacting support with only a screenshot. Work from the transaction ID instead.</p>
+
+    <div class="summary-box">
+      <h2>The short version</h2>
+      <ul>
+        <li>Confirm the transaction on a block explorer first: correct <strong>address</strong>, correct <strong>network</strong>, and enough <strong>confirmations</strong>.</li>
+        <li>Rule out the simplest cause first: the exchange is still waiting on its confirmation requirement, and the balance will appear on its own.</li>
+        <li>Before contacting support, rule out the fixable causes: <strong>wrong network</strong>, <strong>missing memo/tag</strong>, <strong>below the minimum</strong>, or sent to the token&rsquo;s <strong>contract address</strong> instead of your deposit address.</li>
+        <li>If everything is correct and it still has not credited, contact official support with the full evidence set — not just a screenshot.</li>
+        <li>Never share your seed phrase, password or OTP with anyone claiming to &ldquo;help&rdquo; you recover a deposit.</li>
+      </ul>
+    </div>
+
+    <h2>Why a confirmed deposit is not yet in your balance</h2>
+    <p>A deposit passes through three stages, and it helps to keep them separate:</p>
+    <ol>
+      <li><strong>Broadcast</strong> — your transaction enters the network&rsquo;s queue of unconfirmed transactions.</li>
+      <li><strong>Confirmed</strong> — a miner or validator includes it in a block, and later blocks pile on top of it.</li>
+      <li><strong>Credited</strong> — the exchange&rsquo;s system reads the confirmed transaction, matches it to your deposit address (and memo, if required), and updates your balance.</li>
+    </ol>
+    <p>&ldquo;Confirmed&rdquo; means stage 2 finished. The exchange still has its own stage 3 to complete, and it is deliberately more cautious than the network. A transaction with a single confirmation can, in theory, still be reorganised away if the chain briefly splits. So an exchange waits for more confirmations than the network technically needs before it touches your balance. That gap between stage 2 and stage 3 is the reason behind most of this guide.</p>
+    <p>This is also why you should look at your <strong>deposit history page</strong>, not just the balance. The history page usually shows the deposit as &ldquo;processing&rdquo; or &ldquo;confirming&rdquo; even when the balance has not moved yet — a sign that the exchange has already seen your transaction and is waiting on confirmations, which means you usually just have to wait.</p>
+
+    <h2>Start here: five checks in the right order</h2>
+    <p>Run these before anything else, because each one points to a different answer.</p>
+    <div class="table-wrap">
+      <table class="compare">
+        <caption>What to check when a deposit is confirmed on-chain but not credited</caption>
+        <thead>
+        <tr>
+          <th>Check</th>
+          <th>What you are looking for</th>
+          <th>If it is wrong</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>Is the transaction confirmed?</td>
+          <td>The explorer shows success with a growing confirmation count</td>
+          <td>If it is still pending, that is a different problem — wait or check the fee</td>
+        </tr>
+        <tr>
+          <td>Is the address correct?</td>
+          <td>The receiving address matches your exchange deposit address exactly</td>
+          <td>A wrong address is usually unrecoverable unless you know who owns it</td>
+        </tr>
+        <tr>
+          <td>Is the network correct?</td>
+          <td>The network matches the one your exchange gave you for that asset</td>
+          <td>A wrong network needs support recovery, and it is not guaranteed</td>
+        </tr>
+        <tr>
+          <td>Is the memo/tag present?</td>
+          <td>The memo or destination tag is present and matches, if one was required</td>
+          <td>A missing or wrong memo needs support to credit manually</td>
+        </tr>
+        <tr>
+          <td>Is the amount above the minimum?</td>
+          <td>The amount meets the deposit minimum shown on the deposit page</td>
+          <td>Below the minimum may not credit automatically</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>The address and network checks are the ones people rush. An address that starts and ends the same way on an explorer can still be on a different network, because Ethereum and many other chains use addresses that all begin with &ldquo;0x&rdquo;.</p>
+
+    <h2>Case 1: it just needs more confirmations</h2>
+    <p>If the address, network, memo and amount are all correct, the deposit almost certainly just needs time. Each exchange sets its own confirmation requirement per coin and per network, and it changes over time. Typical figures as of September 2026:</p>
+    <div class="table-wrap">
+      <table class="compare">
+        <caption>Typical exchange-side confirmation requirements, by network</caption>
+        <thead>
+        <tr>
+          <th>Network</th>
+          <th>Confirmations an exchange typically waits for</th>
+          <th>Rough time per block</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>Bitcoin (BTC)</td>
+          <td>typically 2&ndash;6</td>
+          <td>~10 minutes</td>
+        </tr>
+        <tr>
+          <td>Ethereum (ETH &amp; ERC-20 tokens)</td>
+          <td>about 12&ndash;24</td>
+          <td>~12 seconds</td>
+        </tr>
+        <tr>
+          <td>Tron (TRC-20, e.g. USDT)</td>
+          <td>roughly 20</td>
+          <td>~3 seconds</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="table-note">These are the exchange&rsquo;s risk threshold, not the network&rsquo;s own finality, and they are approximate and subject to change. The exact number for your asset and network is shown on your exchange&rsquo;s deposit page. Larger deposits can also be routed to a manual review, which adds time on top of confirmations.</p>
+    <p>If the deposit history shows &ldquo;processing&rdquo; and the explorer shows a rising confirmation count, the correct action is usually to do nothing for a while — refreshing the balance every thirty seconds does not speed it up. Many platforms suggest waiting roughly 30 to 60 minutes after the on-chain confirmations have clearly passed the deposit page&rsquo;s requirement before opening a ticket.</p>
+
+    <h2>Case 2: wrong network — the addresses looked the same</h2>
+    <p>Wrong network is one of the first mistakes to rule out. An EVM-compatible address on Ethereum, BNB Chain, Polygon or Arbitrum can all begin with &ldquo;0x&rdquo;, so a pasted address can look correct while being on the wrong network entirely.</p>
+    <p>The blockchain does not know your intention. It will happily deliver your tokens to an address the exchange controls on a network the exchange may not watch for that asset. What happens next depends on whether the exchange supports that network internally:</p>
+    <ul>
+      <li><strong>If the exchange supports the network</strong>, recovery is usually possible — often with a fee and after a manual review. Contact support with the transaction ID.</li>
+      <li><strong>If the exchange does not support the network</strong>, the funds may be effectively out of reach. This is why the network check must happen before sending, not after.</li>
+    </ul>
+    <p>If you are unsure how one stablecoin can live on several networks, our guide to <a href="../../../crypto/stablecoins/usdt-trc20-vs-erc20-vs-bep20/">USDT on TRC-20 vs ERC-20 vs BEP-20</a> explains the difference and why the cheapest network is not always the right one.</p>
+
+    <h2>Case 3: a missing memo or destination tag</h2>
+    <p>Some assets — XRP, XLM, EOS, ATOM, HBAR, TON and others — use a <strong>shared deposit address</strong> at exchanges, and a separate <strong>memo</strong> or <strong>destination tag</strong> tells the exchange which individual account the deposit belongs to. If the memo was required and you left it blank or typed it wrong, the transaction can confirm perfectly on-chain while the exchange has no way to route it to you automatically.</p>
+    <p>The fix is a support ticket, not a wallet action. Provide the transaction ID, the exact amount, the sender and receiving addresses, and the correct memo or tag. Because the funds are identifiable, this is usually recoverable — but it may take time and carry a recovery fee. Do not send the same deposit again until you understand what happened to the first one.</p>
+
+    <h2>Case 4: below the minimum deposit</h2>
+    <p>Exchanges set a minimum deposit per asset and network, and it exists for a practical reason: crediting a very small deposit can cost the exchange more than the deposit is worth, and tiny amounts are easily swallowed by network fees. If you send below the minimum, the transaction can still confirm on-chain while your account is never credited automatically.</p>
+    <p>Check the minimum on the deposit page before you send — this matters especially when you are tempted to send a &ldquo;test transfer&rdquo; of a tiny amount to a new address. A test that falls below the minimum teaches you nothing useful. If you have already sent below the minimum, contact support with the transaction ID and the amount.</p>
+
+    <h2>Case 5: you sent to the token&rsquo;s contract address</h2>
+    <p>This is an under-discussed mistake. On a block explorer, every token has a <strong>contract address</strong> — the smart contract that implements the token — and it is easy to copy that instead of your own deposit address, because both are long strings shown on the same page. Your deposit address and the token&rsquo;s contract address are not the same thing.</p>
+    <p>Sending tokens <em>to</em> the contract address delivers them to the contract itself, and a standard token contract generally has no owner who can send them back. This is usually unrecoverable, which is why the address check is the one worth an extra ten seconds. Compare the full address from your exchange&rsquo;s deposit page with the one in the explorer, not just the first and last few characters.</p>
+
+    <h2>Case 6: deposits suspended, maintenance, or a compliance hold</h2>
+    <p>Sometimes the delay has nothing to do with your transaction. An exchange can temporarily suspend deposits for a specific asset or network during a wallet upgrade, a network hard fork, or congestion. Check the exchange&rsquo;s status page or the deposit page for any notice. Separately, an account under KYC review or a deposit that triggers a compliance flag can be held until the exchange completes its checks.</p>
+    <p>If the deposit page itself said &ldquo;deposits temporarily suspended&rdquo; when you generated the address, that is the likely cause. The blockchain cannot read an exchange&rsquo;s maintenance notice; it will confirm your transaction regardless.</p>
+
+    <h2>What to send support</h2>
+    <p>If you have ruled out the fixable causes and the deposit still has not credited after the confirmation time has passed, contact the exchange&rsquo;s official support — through the app or website, never through a Telegram or WhatsApp contact. Put everything in one message:</p>
+    <ul class="check-list">
+      <li><strong>Transaction ID (TXID)</strong> — the single most useful piece of evidence.</li>
+      <li><strong>Asset and network</strong> (for example, USDT on TRC-20).</li>
+      <li><strong>Amount</strong> sent, and the time.</li>
+      <li><strong>Sender address</strong> and the <strong>deposit address</strong> you were given.</li>
+      <li><strong>Memo or destination tag</strong>, if one was required.</li>
+      <li><strong>Your account UID or email</strong> on the exchange.</li>
+    </ul>
+    <p>A complete evidence set usually gets resolved faster than a single &ldquo;where is my money&rdquo; message with no transaction ID.</p>
+
+    <h2>What not to do while you wait</h2>
+    <ul class="check-list">
+      <li><strong>Do not resend the same amount</strong> to &ldquo;test&rdquo; whether the first one arrives — it usually doubles the problem.</li>
+      <li><strong>Do not contact &ldquo;support&rdquo; on Telegram, WhatsApp or social media.</strong> Real exchange support does not reach out first, and it never asks you to connect a wallet or pay a &ldquo;recovery fee&rdquo;.</li>
+      <li><strong>Do not share your seed phrase, private key, password or OTP</strong> with anyone, even if they claim to be recovering your deposit.</li>
+      <li><strong>Do not trust a screenshot as proof of a deposit</strong> — verify the transaction ID on the explorer yourself.</li>
+    </ul>
+
+    <h2>India notes: a deposit is not a sale</h2>
+    <p>For Indian users, it is worth separating two ideas that get tangled up here. A deposit into your own exchange account is a transfer of crypto you already own, not a sale, so it generally does not by itself create a taxable gain. What it does create is a <strong>record</strong>: the transaction ID, amount, network and date become part of your cost-basis and later reporting trail, which matters when you eventually sell or convert. There is a practical reason to keep it — the exchange you deposit into has no record of what you originally paid for the crypto, so if you later sell there, its reports may treat your cost basis as zero unless you keep your own purchase records.</p>
+    <p>The India angle also shapes behaviour: if you move USDT on Tron for the lower fees, the wrong-network and missing-memo checks above matter especially. The same deposit checks apply whether you are moving between two exchanges or from a wallet you control. Our <a href="../../../crypto/crypto-tax-india/">crypto tax in India</a> guide covers what happens when you do sell or convert, and the <a href="../">transfers hub</a> has the broader pre-send checklist.</p>
+
+    <h2>Bottom line: a rule you can reuse</h2>
+    <p>When a deposit shows confirmed but your balance does not move, you are really answering one question: <strong>did the exchange fail to credit a correct deposit, or did I send something the exchange cannot credit automatically?</strong> If the address, network, memo and amount are all correct, the answer is almost always the first one — wait out the confirmations. If any of them is wrong, the answer is the second one — contact support with the transaction ID, and be honest with yourself about which cases are actually recoverable. Wrong network and missing memo are usually fixable with patience; wrong address and the token&rsquo;s contract address usually are not. That distinction is worth knowing before you send, which is exactly what our <a href="../crypto-transfer-checklist/">crypto transfer checklist</a> walks through, and what the <a href="../../../exchanges/binance/withdrawal-pending-india/">withdrawal side of the same problem</a> looks like when the money is moving the other way.</p>
+
+    <h2>Frequently asked questions</h2>
+    <h3>My deposit shows confirmed on the block explorer but my exchange balance is zero. Is my money lost?</h3>
+    <p>A confirmed transaction does not by itself mean the funds are lost. It means the transfer reached the exchange's deposit address, and the exchange still has to run its own crediting step, which can include waiting for additional confirmations. Run the checks on this page in order: correct address, correct network, memo or tag present, and amount above the minimum. If those are all correct, the deposit normally credits once the confirmation requirement is met; if one is wrong, it usually needs a support ticket with the transaction ID.</p>
+    <h3>How many confirmations does an exchange need before crediting a deposit?</h3>
+    <p>It depends on the network and the exchange. As of September 2026, typical exchange-side figures are 2 to 6 confirmations for Bitcoin, around 12 to 24 for Ethereum and ERC-20 tokens, and roughly 20 for Tron TRC-20. These are the exchange's risk threshold, not the network's own finality, and they change over time. The number that actually applies to you is shown on your exchange's deposit page for that coin and network.</p>
+    <h3>I forgot the memo or destination tag on my deposit. Can the exchange still credit it?</h3>
+    <p>Usually yes, but it will not happen automatically. For assets that use a shared deposit address, such as XRP, XLM, EOS, ATOM, HBAR or TON, the memo or tag is what routes the transfer to your individual account. If it was missing or wrong, the funds can sit uncredited until support identifies the transaction. Contact the exchange with the transaction ID, the exact amount, the sender and receiving addresses, and the correct memo or tag. Recovery may involve a fee and is not guaranteed.</p>
+    <h3>I sent USDT on the wrong network to an exchange. Can I get it back?</h3>
+    <p>It depends. If the funds reached an address the exchange controls and the exchange supports the network you used, recovery is often possible but slow and may carry a fee. If the exchange does not support that network, recovery may not be possible at all. Contact official support with the transaction ID and do not keep resending. The network must match on both ends before you send.</p>
+    <h3>Why does my exchange show a minimum deposit amount?</h3>
+    <p>Exchanges set a minimum because crediting very small deposits costs them more than the deposit is worth, and tiny amounts can be swallowed by network fees. If you send below the stated minimum, the transaction may still confirm on-chain but your account may not be credited automatically. Check the minimum on the deposit page before sending, and if you have already sent below it, contact support with the transaction ID.</p>
+    <h3>Is depositing crypto into my own exchange account a taxable event in India?</h3>
+    <p>Moving crypto you already own into your own account is generally not by itself a sale, so it does not usually create a taxable gain on its own. What matters is keeping the record: the deposit's transaction ID, amount, network and date become part of your cost-basis and later reporting trail. India's tax treatment of virtual digital assets has specific rules, so see our <a href="../../../crypto/crypto-tax-india/">India crypto tax guide</a> or obtain professional advice for your own situation.</p>
+
+    <div class="cta-box">
+      <h2><img src="../../../assets/binance-logo.png" alt="Binance" width="24" height="24" style="vertical-align:-5px;margin-right:9px">Depositing to Binance?</h2>
+      <p>Before you deposit, open the deposit page inside your account, choose the exact asset and network you are sending, and copy the address and any memo from there — not from a third-party site or an old screenshot. If you are new to Binance and decide it fits your needs, you can use the link below to visit its registration page.</p>
+      <a href="https://www.binance.com/join?ref=BN522" class="btn btn-primary" rel="nofollow sponsored noopener" target="_blank">Visit Binance &rarr;</a>
+      <p class="cta-disclosure"><strong>Affiliate disclosure:</strong> This is an affiliate link. If you sign up through it, CoinRaahi may earn a commission at no additional cost to you. This does not affect our reviews, comparisons or editorial conclusions. See our <a href="../../../affiliate-disclosure.html">affiliate disclosure</a>.</p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand">
+          <a href="../../../index.html" class="logo">
+            <svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true">
+              <circle cx="16" cy="16" r="15" fill="#E88A1A"/>
+              <path d="M16 6 L21 21 L16 17.5 L11 21 Z" fill="#1F3A5F"/>
+            </svg>
+            <span><span class="coin" style="color:#fff">Coin</span><span class="raahi">Raahi</span></span>
+          </a>
+          <p>Practical guides to crypto and global digital assets, written for India.</p>
+          <p class="contact"><a href="mailto:hello@coinraahi.com">hello@coinraahi.com</a></p>
+        </div>
+        <div class="footer-col">
+          <h4>Start Here</h4>
+          <ul>
+            <li><a href="../../../start-here/crypto-basics/">Crypto Basics</a></li>
+            <li><a href="../../../start-here/beginner-roadmap/">Beginner Roadmap</a></li>
+            <li><a href="../../../start-here/common-questions/">Common Questions</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Exchanges</h4>
+          <ul>
+            <li><a href="../../../exchanges/binance/">Binance</a></li>
+            <li><a href="../../../exchanges/coindcx/">CoinDCX</a></li>
+            <li><a href="../../../exchanges/coinswitch/">CoinSwitch</a></li>
+            <li><a href="../../../exchanges/comparisons/">Comparisons</a></li>
+            <li><a href="../../../exchanges/account-kyc/">KYC &amp; Account</a></li>
+            <li><a href="../../../exchanges/fees-withdrawals/">Fees &amp; Withdrawals</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Crypto</h4>
+          <ul>
+            <li><a href="../../../crypto/bitcoin/">Bitcoin</a></li>
+            <li><a href="../../../crypto/ethereum/">Ethereum</a></li>
+            <li><a href="../../../crypto/stablecoins/">Stablecoins</a></li>
+            <li><a href="../../../crypto/blockchain-basics/">Blockchain Basics</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Assets &amp; RWA</h4>
+          <ul>
+            <li><a href="../../../assets-rwa/us-stocks-etfs/">US Stocks &amp; ETFs</a></li>
+            <li><a href="../../../assets-rwa/tokenised-stocks/">Tokenised Stocks</a></li>
+            <li><a href="../../../assets-rwa/gold/">Gold</a></li>
+            <li><a href="../../../assets-rwa/tokenised-assets/">Tokenised Assets</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Wallets &amp; Safety</h4>
+          <ul>
+            <li><a href="../../../wallets-safety/wallet-basics/">Wallet Basics</a></li>
+            <li><a href="../../../wallets-safety/transfers/">Transfers</a></li>
+            <li><a href="../../../wallets-safety/account-security/">Account Security</a></li>
+            <li><a href="../../../wallets-safety/scam-prevention/">Scam Prevention</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="../../../about.html">About</a></li>
+            <li><a href="../../../editorial-policy.html">Editorial Policy</a></li>
+            <li><a href="../../../affiliate-disclosure.html">Affiliate Disclosure</a></li>
+            <li><a href="../../../risk-disclosure.html">Risk Disclosure</a></li>
+            <li><a href="../../../contact.html">Contact</a></li>
+            <li><a href="../../../privacy.html">Privacy Policy</a></li>
+            <li><a href="../../../disclaimer.html">Disclaimer</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="risk">Cryptocurrency and tokenised assets can be highly volatile and involve significant market, custody and counterparty risk. You may lose some or all of the money you invest. In India, income from the transfer of qualifying virtual digital assets is generally subject to the special tax regime under Section 115BBH, while 1% TDS may apply to qualifying transfers under Section 194S, subject to applicable rules and thresholds. CoinRaahi provides educational information only and does not provide financial, investment, legal or tax advice.</p>
+        <div class="legal">
+          <span>&copy; 2026 CoinRaahi. Not financial advice.</span>
+          <span>
+            <a href="../../../disclaimer.html">Disclaimer</a>
+            <a href="../../../privacy.html">Privacy</a>
+            <a href="../../../editorial-policy.html">Editorial Policy</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../../js/main.js"></script>
+</body>
+</html>
