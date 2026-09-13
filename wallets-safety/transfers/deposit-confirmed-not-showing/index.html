@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Crypto Deposit Confirmed but Not Showing on Exchange? What to Check First (2026)</title>
-  <meta name="description" content="Crypto deposit confirmed on-chain but the exchange balance hasn't updated? Check confirmations, network, memo and minimum before contacting support.">
+  <title>Crypto Deposit Confirmed but Not Credited? 6 Things to Check First</title>
+  <meta name="description" content="Crypto deposit confirmed but not credited to your balance? Check confirmations, address, network, memo and minimum before contacting support.">
   <link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="48" fill="%231F3A5F"/><text x="50" y="68" font-size="54" font-weight="bold" text-anchor="middle" fill="%23E88A1A" font-family="Arial">R</text></svg>'>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,10 +15,10 @@
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Crypto Deposit Confirmed but Not Showing on Exchange? What to Check First",
-  "description": "Crypto deposit confirmed on-chain but the exchange balance hasn't updated? Check confirmations, network, memo and minimum before contacting support.",
+  "headline": "Crypto Deposit Confirmed but Not Credited? 6 Things to Check First",
+  "description": "Crypto deposit confirmed but not credited to your balance? Check confirmations, address, network, memo and minimum before contacting support.",
   "datePublished": "2026-09-13",
-  "dateModified": "2026-09-13",
+  "dateModified": "2026-09-14",
   "inLanguage": "en-IN",
   "mainEntityOfPage": "https://coinraahi.com/wallets-safety/transfers/deposit-confirmed-not-showing/"
 }
@@ -41,7 +41,7 @@
       "name": "How many confirmations does an exchange need before crediting a deposit?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "It depends on the network and the exchange. As of September 2026, typical exchange-side figures are 2 to 6 confirmations for Bitcoin, around 12 to 24 for Ethereum and ERC-20 tokens, and roughly 20 for Tron TRC-20. These are the exchange's risk threshold, not the network's own finality, and they change over time. The number that actually applies to you is shown on your exchange's deposit page for that coin and network."
+        "text": "It depends on the network and the exchange, and the requirement changes over time. The number that matters is shown on your exchange's deposit page for that coin and network — do not rely on a generic figure from another website. As a rough guide, Bitcoin deposits can need several confirmations, Ethereum and ERC-20 tokens often need a dozen or more, and Tron TRC-20 typically credits quickly once the platform's required number is reached."
       }
     },
     {
@@ -74,6 +74,14 @@
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Moving crypto you already own into your own account is generally not by itself a sale, so it does not usually create a taxable gain on its own. What matters is keeping the record: the deposit's transaction ID, amount, network and date become part of your cost-basis and later reporting trail. India's tax treatment of virtual digital assets has specific rules, so see our India crypto tax guide or obtain professional advice for your own situation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Binance or OKX says my deposit is completed, but the balance still has not updated. What should I do?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Treat the exchange's own deposit history as the source of truth, not a generic status label. If the history shows the transfer as processing or confirming, the exchange has detected it and is waiting on its confirmation requirement — give it the required time. If it shows completed but the balance is still wrong, verify the address, network, memo and amount on a block explorer, then contact official support with the transaction ID. Status labels differ by platform, so follow what your own deposit page shows."
       }
     }
   ]
@@ -151,10 +159,10 @@
 
   <main class="container page">
     <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../../index.html">Home</a> <span class="sep">›</span> <a href="../../../wallets-safety/">Wallets &amp; Safety</a> <span class="sep">›</span> <a href="../">Transfers</a> <span class="sep">›</span> <span class="current">Deposit Confirmed but Not Showing</span></nav>
-    <h1>Crypto Deposit Confirmed but Not Showing on Exchange? What to Check First</h1>
-    <p class="updated">Last updated: 13 September 2026 · Confirmation counts below are typical figures as of that date; the deposit page on your exchange shows the number that applies to you</p>
+    <h1>Crypto Deposit Confirmed but Not Credited? 6 Things to Check First</h1>
+    <p class="updated">Last updated: 14 September 2026 · Deposit requirements vary by exchange and network, and change over time; the deposit page on your exchange shows the number that applies to you</p>
 
-    <p class="lede">Your transaction says <strong>&ldquo;confirmed&rdquo;</strong> on the block explorer, but your exchange balance still shows zero. The single most useful thing to understand is that <strong>confirmed on the blockchain and credited to your account are two different events</strong>. The blockchain confirmed that your transfer reached the exchange&rsquo;s deposit address; it has not said that the exchange has moved it into your individual account. The first thing to rule out is whether the exchange is simply still waiting on confirmations — in that case the balance appears on its own. If it is not that, there is a specific mistake to identify, and the sooner you identify which one, the better your odds of recovery. The mistake most people make is contacting support with only a screenshot. Work from the transaction ID instead.</p>
+    <p class="lede">Your transaction says <strong>&ldquo;confirmed&rdquo;</strong> on the block explorer, but your exchange balance still shows zero. The single most useful thing to understand is that <strong>confirmed on the blockchain and credited to your account are two different events</strong>. A blockchain confirmation means the transaction was successfully recorded on-chain and sent to the destination address. It does <strong>not</strong> necessarily mean the exchange has recognised and credited it to your account. The first thing to rule out is whether the exchange is simply still waiting on confirmations — in that case the balance appears on its own. If it is not that, there is a specific mistake to identify, and the sooner you identify which one, the better your odds of recovery. The mistake most people make is contacting support with only a screenshot. Work from the transaction ID instead.</p>
 
     <div class="summary-box">
       <h2>The short version</h2>
@@ -177,8 +185,9 @@
     <p>&ldquo;Confirmed&rdquo; means stage 2 finished. The exchange still has its own stage 3 to complete, and it is deliberately more cautious than the network. A transaction with a single confirmation can, in theory, still be reorganised away if the chain briefly splits. So an exchange waits for more confirmations than the network technically needs before it touches your balance. That gap between stage 2 and stage 3 is the reason behind most of this guide.</p>
     <p>This is also why you should look at your <strong>deposit history page</strong>, not just the balance. The history page usually shows the deposit as &ldquo;processing&rdquo; or &ldquo;confirming&rdquo; even when the balance has not moved yet — a sign that the exchange has already seen your transaction and is waiting on confirmations, which means you usually just have to wait.</p>
 
-    <h2>Start here: five checks in the right order</h2>
-    <p>Run these before anything else, because each one points to a different answer.</p>
+    <h2>Start here: six things to check in order</h2>
+    <div class="callout"><p><strong>First: does the deposit already show in your exchange&rsquo;s deposit history as &ldquo;processing&rdquo; or &ldquo;confirming&rdquo;?</strong> If yes, the exchange has already detected the transaction — do not start troubleshooting the address or network yet. Skip ahead to checking the required confirmations below.</p></div>
+    <p>If it does not show at all, run these five checks before anything else, because each one points to a different answer.</p>
     <div class="table-wrap">
       <table class="compare">
         <caption>What to check when a deposit is confirmed on-chain but not credited</caption>
@@ -221,37 +230,34 @@
     <p>The address and network checks are the ones people rush. An address that starts and ends the same way on an explorer can still be on a different network, because Ethereum and many other chains use addresses that all begin with &ldquo;0x&rdquo;.</p>
 
     <h2>Case 1: it just needs more confirmations</h2>
-    <p>If the address, network, memo and amount are all correct, the deposit almost certainly just needs time. Each exchange sets its own confirmation requirement per coin and per network, and it changes over time. Typical figures as of September 2026:</p>
+    <p>If the address, network, memo and amount are all correct, the deposit almost certainly just needs time. Each exchange sets its own confirmation requirement per coin and per network, and it changes over time. Rather than guessing a number, check what your exchange actually requires:</p>
     <div class="table-wrap">
       <table class="compare">
-        <caption>Typical exchange-side confirmation requirements, by network</caption>
+        <caption>What to check, by network, instead of a fixed number</caption>
         <thead>
         <tr>
           <th>Network</th>
-          <th>Confirmations an exchange typically waits for</th>
-          <th>Rough time per block</th>
+          <th>What you should check</th>
         </tr>
         </thead>
         <tbody>
         <tr>
           <td>Bitcoin (BTC)</td>
-          <td>typically 2&ndash;6</td>
-          <td>~10 minutes</td>
+          <td>The deposit page may require multiple confirmations</td>
         </tr>
         <tr>
           <td>Ethereum (ETH &amp; ERC-20 tokens)</td>
-          <td>about 12&ndash;24</td>
-          <td>~12 seconds</td>
+          <td>The requirement varies by exchange and token</td>
         </tr>
         <tr>
           <td>Tron (TRC-20, e.g. USDT)</td>
-          <td>roughly 20</td>
-          <td>~3 seconds</td>
+          <td>Usually credits quickly once the platform&rsquo;s required confirmations are reached</td>
         </tr>
         </tbody>
       </table>
     </div>
-    <p class="table-note">These are the exchange&rsquo;s risk threshold, not the network&rsquo;s own finality, and they are approximate and subject to change. The exact number for your asset and network is shown on your exchange&rsquo;s deposit page. Larger deposits can also be routed to a manual review, which adds time on top of confirmations.</p>
+    <div class="callout"><p><strong>Do not rely on a generic confirmation number from another website. The number shown on your exchange&rsquo;s deposit page is the one that matters.</strong></p></div>
+    <p>Larger deposits can also be routed to a manual review, which adds time on top of confirmations.</p>
     <p>If the deposit history shows &ldquo;processing&rdquo; and the explorer shows a rising confirmation count, the correct action is usually to do nothing for a while — refreshing the balance every thirty seconds does not speed it up. Many platforms suggest waiting roughly 30 to 60 minutes after the on-chain confirmations have clearly passed the deposit page&rsquo;s requirement before opening a ticket.</p>
 
     <h2>Case 2: wrong network — the addresses looked the same</h2>
@@ -273,7 +279,7 @@
 
     <h2>Case 5: you sent to the token&rsquo;s contract address</h2>
     <p>This is an under-discussed mistake. On a block explorer, every token has a <strong>contract address</strong> — the smart contract that implements the token — and it is easy to copy that instead of your own deposit address, because both are long strings shown on the same page. Your deposit address and the token&rsquo;s contract address are not the same thing.</p>
-    <p>Sending tokens <em>to</em> the contract address delivers them to the contract itself, and a standard token contract generally has no owner who can send them back. This is usually unrecoverable, which is why the address check is the one worth an extra ten seconds. Compare the full address from your exchange&rsquo;s deposit page with the one in the explorer, not just the first and last few characters.</p>
+    <p>Sending tokens <em>to</em> the contract address delivers them to the contract itself, and this is often unrecoverable. The issue is not simply whether the contract has an &ldquo;owner&rdquo;; many token contracts are not designed with a function that lets accidentally received tokens be withdrawn. This is why the address check is worth an extra ten seconds. Compare the full address from your exchange&rsquo;s deposit page with the one in the explorer, not just the first and last few characters.</p>
 
     <h2>Case 6: deposits suspended, maintenance, or a compliance hold</h2>
     <p>Sometimes the delay has nothing to do with your transaction. An exchange can temporarily suspend deposits for a specific asset or network during a wallet upgrade, a network hard fork, or congestion. Check the exchange&rsquo;s status page or the deposit page for any notice. Separately, an account under KYC review or a deposit that triggers a compliance flag can be held until the exchange completes its checks.</p>
@@ -289,7 +295,7 @@
       <li><strong>Memo or destination tag</strong>, if one was required.</li>
       <li><strong>Your account UID or email</strong> on the exchange.</li>
     </ul>
-    <p>A complete evidence set usually gets resolved faster than a single &ldquo;where is my money&rdquo; message with no transaction ID.</p>
+    <p>A complete evidence set usually gets resolved faster than a single &ldquo;where is my money&rdquo; message with no transaction ID. Do not include your password, OTP, seed phrase or private key in any message — support does not need them to trace a deposit.</p>
 
     <h2>What not to do while you wait</h2>
     <ul class="check-list">
@@ -299,18 +305,18 @@
       <li><strong>Do not trust a screenshot as proof of a deposit</strong> — verify the transaction ID on the explorer yourself.</li>
     </ul>
 
-    <h2>India notes: a deposit is not a sale</h2>
-    <p>For Indian users, it is worth separating two ideas that get tangled up here. A deposit into your own exchange account is a transfer of crypto you already own, not a sale, so it generally does not by itself create a taxable gain. What it does create is a <strong>record</strong>: the transaction ID, amount, network and date become part of your cost-basis and later reporting trail, which matters when you eventually sell or convert. There is a practical reason to keep it — the exchange you deposit into has no record of what you originally paid for the crypto, so if you later sell there, its reports may treat your cost basis as zero unless you keep your own purchase records.</p>
+    <h2>India users: keep the TXID and original purchase records</h2>
+    <p>For Indian users, it is worth separating two ideas that get tangled up here. A deposit into your own exchange account is a transfer of crypto you already own, not a sale, so it generally does not by itself create a taxable gain. What it does create is a <strong>record</strong>: the transaction ID, amount, network and date become part of your cost-basis and later reporting trail, which matters when you eventually sell or convert. There is a practical reason to keep it — the receiving exchange may not automatically know your original acquisition cost, so you should keep your own purchase records for later tax reporting.</p>
     <p>The India angle also shapes behaviour: if you move USDT on Tron for the lower fees, the wrong-network and missing-memo checks above matter especially. The same deposit checks apply whether you are moving between two exchanges or from a wallet you control. Our <a href="../../../crypto/crypto-tax-india/">crypto tax in India</a> guide covers what happens when you do sell or convert, and the <a href="../">transfers hub</a> has the broader pre-send checklist.</p>
 
     <h2>Bottom line: a rule you can reuse</h2>
-    <p>When a deposit shows confirmed but your balance does not move, you are really answering one question: <strong>did the exchange fail to credit a correct deposit, or did I send something the exchange cannot credit automatically?</strong> If the address, network, memo and amount are all correct, the answer is almost always the first one — wait out the confirmations. If any of them is wrong, the answer is the second one — contact support with the transaction ID, and be honest with yourself about which cases are actually recoverable. Wrong network and missing memo are usually fixable with patience; wrong address and the token&rsquo;s contract address usually are not. That distinction is worth knowing before you send, which is exactly what our <a href="../crypto-transfer-checklist/">crypto transfer checklist</a> walks through, and what the <a href="../../../exchanges/binance/withdrawal-pending-india/">withdrawal side of the same problem</a> looks like when the money is moving the other way.</p>
+    <p>When a deposit shows confirmed but your balance does not move, you are really answering one question: <strong>did the exchange fail to credit a correct deposit, or did I send something the exchange cannot credit automatically?</strong> If the address, network, memo and amount are all correct, the answer is almost always the first one — wait out the confirmations. If any of them is wrong, the answer is the second one — contact support with the transaction ID, and be honest with yourself about which cases are actually recoverable. A missing memo or tag is often recoverable through support. A wrong-network deposit <em>may</em> be recoverable if the exchange controls the destination address and supports recovery on that network, but recovery is never guaranteed. A wrong address or the token&rsquo;s contract address is usually not recoverable. That distinction is worth knowing before you send, which is exactly what our <a href="../crypto-transfer-checklist/">crypto transfer checklist</a> walks through, and what the <a href="../../../exchanges/binance/withdrawal-pending-india/">withdrawal side of the same problem</a> looks like when the money is moving the other way.</p>
 
     <h2>Frequently asked questions</h2>
     <h3>My deposit shows confirmed on the block explorer but my exchange balance is zero. Is my money lost?</h3>
     <p>A confirmed transaction does not by itself mean the funds are lost. It means the transfer reached the exchange's deposit address, and the exchange still has to run its own crediting step, which can include waiting for additional confirmations. Run the checks on this page in order: correct address, correct network, memo or tag present, and amount above the minimum. If those are all correct, the deposit normally credits once the confirmation requirement is met; if one is wrong, it usually needs a support ticket with the transaction ID.</p>
     <h3>How many confirmations does an exchange need before crediting a deposit?</h3>
-    <p>It depends on the network and the exchange. As of September 2026, typical exchange-side figures are 2 to 6 confirmations for Bitcoin, around 12 to 24 for Ethereum and ERC-20 tokens, and roughly 20 for Tron TRC-20. These are the exchange's risk threshold, not the network's own finality, and they change over time. The number that actually applies to you is shown on your exchange's deposit page for that coin and network.</p>
+    <p>It depends on the network and the exchange, and the requirement changes over time. The number that matters is shown on your exchange's deposit page for that coin and network — do not rely on a generic figure from another website. As a rough guide, Bitcoin deposits can need several confirmations, Ethereum and ERC-20 tokens often need a dozen or more, and Tron TRC-20 typically credits quickly once the platform's required number is reached.</p>
     <h3>I forgot the memo or destination tag on my deposit. Can the exchange still credit it?</h3>
     <p>Usually yes, but it will not happen automatically. For assets that use a shared deposit address, such as XRP, XLM, EOS, ATOM, HBAR or TON, the memo or tag is what routes the transfer to your individual account. If it was missing or wrong, the funds can sit uncredited until support identifies the transaction. Contact the exchange with the transaction ID, the exact amount, the sender and receiving addresses, and the correct memo or tag. Recovery may involve a fee and is not guaranteed.</p>
     <h3>I sent USDT on the wrong network to an exchange. Can I get it back?</h3>
@@ -319,6 +325,8 @@
     <p>Exchanges set a minimum because crediting very small deposits costs them more than the deposit is worth, and tiny amounts can be swallowed by network fees. If you send below the stated minimum, the transaction may still confirm on-chain but your account may not be credited automatically. Check the minimum on the deposit page before sending, and if you have already sent below it, contact support with the transaction ID.</p>
     <h3>Is depositing crypto into my own exchange account a taxable event in India?</h3>
     <p>Moving crypto you already own into your own account is generally not by itself a sale, so it does not usually create a taxable gain on its own. What matters is keeping the record: the deposit's transaction ID, amount, network and date become part of your cost-basis and later reporting trail. India's tax treatment of virtual digital assets has specific rules, so see our <a href="../../../crypto/crypto-tax-india/">India crypto tax guide</a> or obtain professional advice for your own situation.</p>
+    <h3>Binance or OKX says my deposit is completed, but the balance still has not updated. What should I do?</h3>
+    <p>Treat the exchange's own deposit history as the source of truth, not a generic status label. If the history shows the transfer as processing or confirming, the exchange has detected it and is waiting on its confirmation requirement — give it the required time. If it shows completed but the balance is still wrong, verify the address, network, memo and amount on a block explorer, then contact official support with the transaction ID. Status labels differ by platform, so follow what your own deposit page shows.</p>
 
     <div class="cta-box">
       <h2><img src="../../../assets/binance-logo.png" alt="Binance" width="24" height="24" style="vertical-align:-5px;margin-right:9px">Depositing to Binance?</h2>
