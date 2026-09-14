@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crypto Tools: USDT to INR &amp; India Crypto Tax Calculator</title>
+  <meta name="description" content="Simple USDT to INR converter and an India crypto tax estimator based on Section 115BBH. Estimates only — verify with a qualified professional.">
+  <link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="48" fill="%231F3A5F"/><text x="50" y="68" font-size="54" font-weight="bold" text-anchor="middle" fill="%23E88A1A" font-family="Arial">R</text></svg>'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="canonical" href="https://coinraahi.com/tools/">
+  <meta property="og:site_name" content="CoinRaahi">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://coinraahi.com/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://coinraahi.com/assets/og-image.png">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a href="../index.html" class="logo" aria-label="CoinRaahi home">
+        <svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true">
+          <circle cx="16" cy="16" r="15" fill="#1F3A5F"/>
+          <path d="M16 6 L21 21 L16 17.5 L11 21 Z" fill="#E88A1A"/>
+        </svg>
+        <span><span class="coin">Coin</span><span class="raahi">Raahi</span></span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+            <ul class="nav-links">
+        <li class="has-dropdown"><a href="../start-here/">Start Here</a>
+          <ul class="dropdown-menu">
+            <li><a href="../start-here/crypto-basics/">Crypto Basics</a></li>
+            <li><a href="../start-here/beginner-roadmap/">Beginner Roadmap</a></li>
+            <li><a href="../start-here/common-questions/">Common Questions</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown"><a href="../exchanges/">Exchanges</a>
+          <ul class="dropdown-menu">
+            <li><a href="../exchanges/binance/">Binance</a></li>
+            <li><a href="../exchanges/coindcx/">CoinDCX</a></li>
+            <li><a href="../exchanges/coinswitch/">CoinSwitch</a></li>
+            <li><a href="../exchanges/wazirx/">WazirX</a></li>
+            <li><a href="../exchanges/comparisons/">Exchange Comparisons</a></li>
+            <li><a href="../exchanges/account-kyc/">KYC &amp; Account</a></li>
+            <li><a href="../exchanges/fees-withdrawals/">Fees &amp; Withdrawals</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown"><a href="../crypto/">Crypto</a>
+          <ul class="dropdown-menu">
+            <li><a href="../crypto/bitcoin/">Bitcoin</a></li>
+            <li><a href="../crypto/ethereum/">Ethereum</a></li>
+            <li><a href="../crypto/stablecoins/">Stablecoins</a></li>
+            <li><a href="../crypto/blockchain-basics/">Blockchain Basics</a></li>
+          </ul>
+        </li>
+        <li><a href="../crypto/crypto-tax-india/">Tax in India</a></li>
+        <li class="has-dropdown"><a href="../assets-rwa/">Stocks, Gold &amp; RWA</a>
+          <ul class="dropdown-menu">
+            <li><a href="../assets-rwa/us-stocks-etfs/">US Stocks &amp; ETFs</a></li>
+            <li><a href="../assets-rwa/tokenised-stocks/">Tokenised Stocks</a></li>
+            <li><a href="../assets-rwa/gold/">Gold</a></li>
+            <li><a href="../assets-rwa/tokenised-assets/">Tokenised Assets</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown"><a href="../wallets-safety/">Wallets &amp; Safety</a>
+          <ul class="dropdown-menu">
+            <li><a href="../wallets-safety/wallet-basics/">Wallet Basics</a></li>
+            <li><a href="../wallets-safety/transfers/">Transfers</a></li>
+            <li><a href="../wallets-safety/account-security/">Account Security</a></li>
+            <li><a href="../wallets-safety/scam-prevention/">Scam Prevention</a></li>
+          </ul>
+        </li>
+        <li><a href="../tools/">Tools</a></li>
+        <li><a href="../search/">Search</a></li>
+      </ul>
+    </div>
+  </header>
+
+    <main>
+    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../index.html">Home</a> <span class="sep">›</span> <span class="current">Tools</span></nav>
+    <h1>Crypto Tools for India</h1>
+    <p class="updated">Last updated: 14 September 2026</p>
+
+    <p class="lede">Two quick calculators for Indian crypto users: a USDT-to-INR converter and a simple capital-gains tax estimator based on Section 115BBH. These are estimates, not tax advice.</p>
+
+    <h2>USDT to INR converter</h2>
+    <p>Enter the USDT amount and the current USDT price in rupees shown by your exchange (not a market tracker alone). The result is the approximate INR value before any fee, spread or TDS.</p>
+    <div class="callout">
+      <p><label for="usdtAmt"><strong>USDT amount</strong></label></p>
+      <p><input id="usdtAmt" type="number" step="any" min="0" placeholder="e.g. 100" style="width:100%;max-width:320px;padding:8px 10px;border:1px solid var(--border,#ddd);border-radius:6px;font-size:16px;"></p>
+      <p><label for="usdtRate"><strong>USDT price in ₹ (from your exchange)</strong></label></p>
+      <p><input id="usdtRate" type="number" step="any" min="0" placeholder="e.g. 86.50" style="width:100%;max-width:320px;padding:8px 10px;border:1px solid var(--border,#ddd);border-radius:6px;font-size:16px;"></p>
+      <p><button type="button" class="btn btn-primary" onclick="calcUsdt()">Convert</button></p>
+      <p>Approximate value: <strong id="usdtOut">₹0</strong></p>
+    </div>
+
+    <h2>India crypto tax estimator</h2>
+    <p>Under Section 115BBH, a gain on virtual digital assets is generally taxed at 30% plus applicable cess, and only the cost of acquisition is deductible &mdash; losses cannot generally be set off. This tool applies 30% + 4% cess (an effective 31.2%) to your sale value minus cost, for a rough figure.</p>
+    <div class="callout">
+      <p><label for="saleVal"><strong>Sale value (₹)</strong></label></p>
+      <p><input id="saleVal" type="number" step="any" min="0" placeholder="e.g. 15000" style="width:100%;max-width:320px;padding:8px 10px;border:1px solid var(--border,#ddd);border-radius:6px;font-size:16px;"></p>
+      <p><label for="costVal"><strong>Cost / acquisition (₹)</strong></label></p>
+      <p><input id="costVal" type="number" step="any" min="0" placeholder="e.g. 10000" style="width:100%;max-width:320px;padding:8px 10px;border:1px solid var(--border,#ddd);border-radius:6px;font-size:16px;"></p>
+      <p><button type="button" class="btn btn-primary" onclick="calcTax()">Estimate tax</button></p>
+      <p>Capital gain: <strong id="gainOut">₹0</strong></p>
+      <p>Estimated tax (30% + 4% cess): <strong id="taxOut">₹0</strong></p>
+    </div>
+
+    <h2>What these estimates leave out</h2>
+    <ul class="check-list">
+      <li>The 1% TDS already deducted is typically adjusted against your final tax, not added on top.</li>
+      <li>Your actual tax can differ based on your slab, cess and any specific rules or thresholds.</li>
+      <li>Recovery tokens, airdrops and certain transfers can have their own treatment.</li>
+    </ul>
+    <p>Use these numbers only as a starting point and confirm with a qualified professional. See our <a href="crypto/crypto-tax-india/">crypto tax in India</a> guide.</p>
+
+    <h2>Frequently asked questions</h2>
+    <h3>Is 31.2% the exact crypto tax in India?</h3>
+    <p>No. 30% plus 4% cess is a common shorthand; your actual liability can differ based on your situation. Treat 31.2% as an estimate.</p>
+    <h3>Does the USDT to INR converter include fees?</h3>
+    <p>No. Enter the effective rate your platform quotes and consider any spread or fee separately.</p>
+    <h3>Is this tax advice?</h3>
+    <p>No. This is an educational estimate only. Confirm with a qualified professional.</p>
+
+    <script>
+    function inr(n){ return "₹" + n.toLocaleString("en-IN", {maximumFractionDigits:2}); }
+    function calcUsdt(){
+      var a = parseFloat(document.getElementById("usdtAmt").value) || 0;
+      var r = parseFloat(document.getElementById("usdtRate").value) || 0;
+      document.getElementById("usdtOut").textContent = inr(a * r);
+    }
+    function calcTax(){
+      var s = parseFloat(document.getElementById("saleVal").value) || 0;
+      var c = parseFloat(document.getElementById("costVal").value) || 0;
+      var g = Math.max(0, s - c);
+      var t = g * 0.312;
+      document.getElementById("gainOut").textContent = inr(g);
+      document.getElementById("taxOut").textContent = inr(t);
+    }
+    </script>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand">
+          <a href="../index.html" class="logo">
+            <svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true">
+              <circle cx="16" cy="16" r="15" fill="#E88A1A"/>
+              <path d="M16 6 L21 21 L16 17.5 L11 21 Z" fill="#1F3A5F"/>
+            </svg>
+            <span><span class="coin" style="color:#fff">Coin</span><span class="raahi">Raahi</span></span>
+          </a>
+          <p>Practical guides to crypto and global digital assets, written for India.</p>
+          <p class="contact"><a href="mailto:hello@coinraahi.com">hello@coinraahi.com</a></p>
+        </div>
+        <div class="footer-col">
+          <h4>Start Here</h4>
+          <ul>
+            <li><a href="../start-here/crypto-basics/">Crypto Basics</a></li>
+            <li><a href="../start-here/beginner-roadmap/">Beginner Roadmap</a></li>
+            <li><a href="../start-here/common-questions/">Common Questions</a></li>
+            <li><a href="../tools/">Tools</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Exchanges</h4>
+          <ul>
+            <li><a href="../exchanges/binance/">Binance</a></li>
+            <li><a href="../exchanges/coindcx/">CoinDCX</a></li>
+            <li><a href="../exchanges/coinswitch/">CoinSwitch</a></li>
+            <li><a href="../exchanges/wazirx/">WazirX</a></li>
+            <li><a href="../exchanges/comparisons/">Comparisons</a></li>
+            <li><a href="../exchanges/account-kyc/">KYC &amp; Account</a></li>
+            <li><a href="../exchanges/fees-withdrawals/">Fees &amp; Withdrawals</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Crypto</h4>
+          <ul>
+            <li><a href="../crypto/bitcoin/">Bitcoin</a></li>
+            <li><a href="../crypto/ethereum/">Ethereum</a></li>
+            <li><a href="../crypto/stablecoins/">Stablecoins</a></li>
+            <li><a href="../crypto/blockchain-basics/">Blockchain Basics</a></li>
+            <li><a href="../crypto/crypto-tax-india/">Tax in India</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Stocks, Gold &amp; RWA</h4>
+          <ul>
+            <li><a href="../assets-rwa/us-stocks-etfs/">US Stocks &amp; ETFs</a></li>
+            <li><a href="../assets-rwa/tokenised-stocks/">Tokenised Stocks</a></li>
+            <li><a href="../assets-rwa/gold/">Gold</a></li>
+            <li><a href="../assets-rwa/tokenised-assets/">Tokenised Assets</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Wallets &amp; Safety</h4>
+          <ul>
+            <li><a href="../wallets-safety/wallet-basics/">Wallet Basics</a></li>
+            <li><a href="../wallets-safety/transfers/">Transfers</a></li>
+            <li><a href="../wallets-safety/account-security/">Account Security</a></li>
+            <li><a href="../wallets-safety/scam-prevention/">Scam Prevention</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../editorial-policy.html">Editorial Policy</a></li>
+            <li><a href="../affiliate-disclosure.html">Affiliate Disclosure</a></li>
+            <li><a href="../risk-disclosure.html">Risk Disclosure</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+            <li><a href="../privacy.html">Privacy Policy</a></li>
+            <li><a href="../disclaimer.html">Disclaimer</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="risk">Cryptocurrency and tokenised assets can be highly volatile and involve significant market, custody and counterparty risk. You may lose some or all of the money you invest. In India, income from the transfer of qualifying virtual digital assets is generally subject to the special tax regime under Section 115BBH, while 1% TDS may apply to qualifying transfers under Section 194S, subject to applicable rules and thresholds. CoinRaahi provides educational information only and does not provide financial, investment, legal or tax advice.</p>
+        <div class="legal">
+          <span>&copy; 2026 CoinRaahi. Not financial advice.</span>
+          <span>
+            <a href="../disclaimer.html">Disclaimer</a>
+            <a href="../privacy.html">Privacy</a>
+            <a href="../editorial-policy.html">Editorial Policy</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
