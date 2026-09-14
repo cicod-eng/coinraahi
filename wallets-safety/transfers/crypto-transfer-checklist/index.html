@@ -270,7 +270,7 @@
     <h3>Situation B: you sent to an exchange</h3>
     <p>This is harder. The exchange controls the private keys, not you. Even if the funds technically reached an address controlled by the exchange, recovery depends on whether the exchange supports that network internally, whether it offers unsupported-deposit recovery, the amount, and its operational policy. Do not assume recovery is guaranteed.</p>
     <h3>Situation C: the networks are incompatible</h3>
-    <p>If the destination does not correspond to an address you control, or the receiving system cannot access the network used, recovery may be impossible. The phrase &ldquo;wrong network&rdquo; covers very different technical situations. That is why a proper diagnosis requires the transaction hash.</p>
+    <p>If the destination does not correspond to an address you control, or the receiving system cannot access the network used, recovery may be impossible. The phrase &ldquo;wrong network&rdquo; covers very different technical situations. That is why a proper diagnosis requires the transaction hash. For the step-by-step version of each situation, see <a href="usdt-wrong-network-recovery/">what determines whether you can get wrong-network USDT back</a>.</p>
 
     <h2>Case 5: you sent to the wrong address</h2>
     <p>If the blockchain transaction is confirmed to a completely wrong address, there is usually no central mechanism that can reverse it. Possible exceptions are narrow: you know the recipient, the address belongs to a platform willing and able to help, or the transaction is part of a recoverable smart-contract process. But ordinary blockchain transfers are designed to be final. This is why address verification matters before sending.</p>
