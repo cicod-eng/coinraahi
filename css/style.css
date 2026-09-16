@@ -127,6 +127,7 @@ h1, h2, h3, h4 {
   letter-spacing: -0.02em;
 }
 .logo-mark { width: 30px; height: 30px; flex: 0 0 auto; }
+.logo-img { height: 34px; width: auto; flex: 0 0 auto; }
 .logo .coin { color: var(--blue); }
 .logo .raahi { color: var(--saffron); }
 
