@@ -494,6 +494,8 @@ table.compare .warn { color: var(--saffron-dark); font-weight: 600; }
 .page ul { color: var(--muted); margin: 0 0 16px 22px; }
 .page li { margin-bottom: 8px; }
 .page .updated { font-size: 13px; color: var(--muted); margin-bottom: 8px; }
+.page .byline { font-size: 14px; color: var(--muted); margin-bottom: 6px; }
+.page .byline a { color: var(--blue); font-weight: 600; }
 
 /* ============ 面包屑（Hub 页） ============ */
 .breadcrumb { font-size: 13px; color: var(--muted); margin: 6px 0 20px; display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
@@ -530,6 +532,13 @@ table.compare .warn { color: var(--saffron-dark); font-weight: 600; }
 .cta-box .btn { color: #fff; }
 .cta-disclosure { font-size: 12px; color: rgba(255,255,255,0.55); margin-top: 16px; line-height: 1.55; }
 .cta-disclosure a { color: rgba(255,255,255,0.75); text-decoration: underline; }
+
+/* ============ 作者署名框 ============ */
+.author-box { display: flex; gap: 14px; align-items: flex-start; margin: 30px 0 8px; padding: 18px 20px; border: 1px solid var(--border); border-radius: var(--radius); background: var(--card); }
+.author-box .author-name { font-size: 14px; font-weight: 600; color: var(--ink); margin: 0 0 4px; }
+.author-box .author-name a { color: var(--blue); }
+.author-box .author-desc { font-size: 13.5px; color: var(--muted); margin: 0; line-height: 1.6; }
+.author-box .author-desc a { color: var(--blue); font-weight: 600; }
 
 .page .check-list { list-style: none; margin: 0 0 16px; }
 .page .check-list li { position: relative; padding-left: 26px; margin-bottom: 10px; }
