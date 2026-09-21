@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>USDT to INR Calculator: Convert Tether to Rupees</title>
+  <meta name="description" content="Convert USDT to INR and INR to USDT. Enter your exchange's rate for an accurate figure — in India USDT often trades above the official USD/INR rate. Estimate only.">
+  <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="canonical" href="https://coinraahi.com/tools/usdt-to-inr/">
+  <meta property="og:site_name" content="CoinRaahi">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://coinraahi.com/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://coinraahi.com/assets/og-image.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "USDT to INR Calculator",
+    "url": "https://coinraahi.com/tools/usdt-to-inr/",
+    "applicationCategory": "FinanceApplication",
+    "operatingSystem": "Any",
+    "description": "Convert USDT to INR and INR to USDT using your exchange's live rate.",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "INR" }
+  }
+  </script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a href="../../index.html" class="logo" aria-label="CoinRaahi home">
+        <img src="../../assets/logo.svg" alt="CoinRaahi" class="logo-img">
+      </a>
+
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links">
+        <li class="has-dropdown"><a href="../../start-here/">Start Here</a>
+          <ul class="dropdown-menu">
+            <li><a href="../../start-here/crypto-basics/">Crypto Basics</a></li>
+            <li><a href="../../start-here/beginner-roadmap/">Beginner Roadmap</a></li>
+            <li><a href="../../start-here/common-questions/">Common Questions</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown"><a href="../../exchanges/">Exchanges</a>
+          <ul class="dropdown-menu">
+            <li><a href="../../exchanges/binance/">Binance</a></li>
+            <li><a href="../../exchanges/coindcx/">CoinDCX</a></li>
+            <li><a href="../../exchanges/coinswitch/">CoinSwitch</a></li>
+            <li><a href="../../exchanges/wazirx/">WazirX</a></li>
+            <li><a href="../../exchanges/comparisons/">Exchange Comparisons</a></li>
+            <li><a href="../../exchanges/account-kyc/">KYC &amp; Account</a></li>
+            <li><a href="../../exchanges/fees-withdrawals/">Fees &amp; Withdrawals</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown"><a href="../../crypto/">Crypto</a>
+          <ul class="dropdown-menu">
+            <li><a href="../../crypto/bitcoin/">Bitcoin</a></li>
+            <li><a href="../../crypto/ethereum/">Ethereum</a></li>
+            <li><a href="../../crypto/stablecoins/">Stablecoins</a></li>
+            <li><a href="../../crypto/blockchain-basics/">Blockchain Basics</a></li>
+          </ul>
+        </li>
+        <li><a href="../../crypto/crypto-tax-india/">Tax in India</a></li>
+        <li class="has-dropdown"><a href="../../assets-rwa/">Stocks, Gold &amp; RWA</a>
+          <ul class="dropdown-menu">
+            <li><a href="../../assets-rwa/us-stocks-etfs/">US Stocks &amp; ETFs</a></li>
+            <li><a href="../../assets-rwa/tokenised-stocks/">Tokenised Stocks</a></li>
+            <li><a href="../../assets-rwa/gold/">Gold</a></li>
+            <li><a href="../../assets-rwa/tokenised-assets/">Tokenised Assets</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown"><a href="../../wallets-safety/">Wallets &amp; Safety</a>
+          <ul class="dropdown-menu">
+            <li><a href="../../wallets-safety/wallet-basics/">Wallet Basics</a></li>
+            <li><a href="../../wallets-safety/transfers/">Transfers</a></li>
+            <li><a href="../../wallets-safety/account-security/">Account Security</a></li>
+            <li><a href="../../wallets-safety/scam-prevention/">Scam Prevention</a></li>
+          </ul>
+        </li>
+        <li><a href="../../tools/">Tools</a></li>
+        <li><a href="../../search/">Search</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../index.html">Home</a> <span class="sep">›</span> <a href="../../tools/">Tools</a> <span class="sep">›</span> <span class="current">USDT to INR</span></nav>
+    <h1>USDT to INR Calculator</h1>
+    <p class="updated">Last updated: 22 September 2026</p>
+
+    <p class="lede">Convert USDT to INR, or INR to USDT, using the rate your exchange actually quotes. The result is the approximate value before any fee, spread or TDS.</p>
+
+    <div class="callout">
+      <p><label for="amt"><strong>Amount</strong></label></p>
+      <p><input id="amt" type="number" step="any" min="0" placeholder="e.g. 100" style="width:100%;max-width:320px;padding:8px 10px;border:1px solid var(--border,#ddd);border-radius:6px;font-size:16px;"></p>
+      <p><label for="rate"><strong>USDT price in ₹ (from your exchange)</strong></label></p>
+      <p><input id="rate" type="number" step="any" min="0" placeholder="e.g. 98.90" style="width:100%;max-width:320px;padding:8px 10px;border:1px solid var(--border,#ddd);border-radius:6px;font-size:16px;"></p>
+      <p style="margin-bottom:4px;"><label><input type="radio" name="dir" value="usdt2inr" checked> USDT → INR</label></p>
+      <p style="margin-bottom:8px;"><label><input type="radio" name="dir" value="inr2usdt"> INR → USDT</label></p>
+      <p>
+        <button type="button" class="btn btn-primary" onclick="calc()">Convert</button>
+        <button type="button" class="btn btn-secondary" onclick="shareLink()">Copy share link</button>
+      </p>
+      <p id="out" style="font-size:18px;"><strong>₹0.00</strong></p>
+      <p class="table-note" id="note"></p>
+    </div>
+
+    <h2>Which rate should I enter?</h2>
+    <p>Use the price your exchange or P2P listing shows right now — not a market tracker alone. In India, USDT often trades a few percent <em>above</em> the official USD/INR rate because of local demand. Entering the official rate will understate what you actually pay. See our <a href="../../crypto/stablecoins/usdt-premium-india/">USDT premium data</a> for the current gap.</p>
+
+    <h2>What this does not include</h2>
+    <ul class="check-list">
+      <li>Exchange or P2P fees and the buy/sell spread.</li>
+      <li>Withdrawal fees if you later move the USDT out.</li>
+      <li>The 1% TDS that may apply to certain transfers under Section 194S.</li>
+    </ul>
+
+    <h2>Frequently asked questions</h2>
+    <h3>Is 1 USDT always worth ₹1 × the dollar rate?</h3>
+    <p>No. USDT aims to track USD, but its rupee price on Indian exchanges depends on local demand and can sit above the official USD/INR rate.</p>
+    <h3>Does this calculator include fees?</h3>
+    <p>No. Enter your exchange's effective quote and treat any fee or spread separately.</p>
+
+    <script>
+    function inr(n){ return "₹" + n.toLocaleString("en-IN", {maximumFractionDigits:2}); }
+    function getParam(k){ var v = new URLSearchParams(location.search).get(k); return v==null||v==="" ? NaN : parseFloat(v); }
+    function calc(){
+      var a = parseFloat(document.getElementById("amt").value) || 0;
+      var r = parseFloat(document.getElementById("rate").value) || 0;
+      var dir = document.querySelector('input[name="dir"]:checked').value;
+      var out = document.getElementById("out"), note = document.getElementById("note");
+      if (a <= 0 || r <= 0) { out.innerHTML = "<strong>Enter an amount and a rate.</strong>"; note.textContent = ""; return; }
+      if (dir === "usdt2inr") {
+        out.innerHTML = "<strong>" + inr(a*r) + "</strong>";
+        note.textContent = a + " USDT × ₹" + r + " = " + inr(a*r) + " (before fees).";
+      } else {
+        var usdt = a / r;
+        out.innerHTML = "<strong>" + usdt.toLocaleString("en-IN",{maximumFractionDigits:4}) + " USDT</strong>";
+        note.textContent = "₹" + a + " ÷ ₹" + r + " = " + usdt.toLocaleString("en-IN",{maximumFractionDigits:4}) + " USDT (before fees).";
+      }
+    }
+    function shareLink(){
+      var a = document.getElementById("amt").value, r = document.getElementById("rate").value;
+      var dir = document.querySelector('input[name="dir"]:checked').value;
+      var u = new URL(location.origin + location.pathname);
+      var p = new URLSearchParams();
+      if (a) p.set("amount", a);
+      if (r) p.set("rate", r);
+      if (dir === "inr2usdt") p.set("dir", "inr2usdt");
+      u.search = p.toString();
+      navigator.clipboard.writeText(u.toString()).then(function(){
+        alert("Link copied: " + u.toString());
+      });
+    }
+    (function(){
+      var a = getParam("amount"), r = getParam("rate");
+      if (!isNaN(a)) document.getElementById("amt").value = a;
+      if (!isNaN(r)) document.getElementById("rate").value = r;
+      if (getParam("dir") === "inr2usdt") document.querySelector('input[value="inr2usdt"]').checked = true;
+      if (!isNaN(a) || !isNaN(r)) calc();
+    })();
+    </script>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand">
+          <a href="../../index.html" class="logo">
+            <svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true">
+              <circle cx="16" cy="16" r="15" fill="#E88A1A"/>
+              <path d="M16 6 L21 21 L16 17.5 L11 21 Z" fill="#1F3A5F"/>
+            </svg>
+            <span><span class="coin" style="color:#fff">Coin</span><span class="raahi">Raahi</span></span>
+          </a>
+          <p>Practical guides to crypto and global digital assets, written for India.</p>
+          <p class="contact"><a href="mailto:hello@coinraahi.com">hello@coinraahi.com</a></p>
+        </div>
+        <div class="footer-col">
+          <h4>Start Here</h4>
+          <ul>
+            <li><a href="../../start-here/crypto-basics/">Crypto Basics</a></li>
+            <li><a href="../../start-here/beginner-roadmap/">Beginner Roadmap</a></li>
+            <li><a href="../../start-here/common-questions/">Common Questions</a></li>
+            <li><a href="../../tools/">Tools</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Exchanges</h4>
+          <ul>
+            <li><a href="../../exchanges/binance/">Binance</a></li>
+            <li><a href="../../exchanges/coindcx/">CoinDCX</a></li>
+            <li><a href="../../exchanges/coinswitch/">CoinSwitch</a></li>
+            <li><a href="../../exchanges/wazirx/">WazirX</a></li>
+            <li><a href="../../exchanges/comparisons/">Comparisons</a></li>
+            <li><a href="../../exchanges/account-kyc/">KYC &amp; Account</a></li>
+            <li><a href="../../exchanges/fees-withdrawals/">Fees &amp; Withdrawals</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Crypto</h4>
+          <ul>
+            <li><a href="../../crypto/bitcoin/">Bitcoin</a></li>
+            <li><a href="../../crypto/ethereum/">Ethereum</a></li>
+            <li><a href="../../crypto/stablecoins/">Stablecoins</a></li>
+            <li><a href="../../crypto/blockchain-basics/">Blockchain Basics</a></li>
+            <li><a href="../../crypto/crypto-tax-india/">Tax in India</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Stocks, Gold &amp; RWA</h4>
+          <ul>
+            <li><a href="../../assets-rwa/us-stocks-etfs/">US Stocks &amp; ETFs</a></li>
+            <li><a href="../../assets-rwa/tokenised-stocks/">Tokenised Stocks</a></li>
+            <li><a href="../../assets-rwa/gold/">Gold</a></li>
+            <li><a href="../../assets-rwa/tokenised-assets/">Tokenised Assets</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Wallets &amp; Safety</h4>
+          <ul>
+            <li><a href="../../wallets-safety/wallet-basics/">Wallet Basics</a></li>
+            <li><a href="../../wallets-safety/transfers/">Transfers</a></li>
+            <li><a href="../../wallets-safety/account-security/">Account Security</a></li>
+            <li><a href="../../wallets-safety/scam-prevention/">Scam Prevention</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="../../about.html">About</a></li>
+            <li><a href="../../how-we-review.html">How We Review</a></li>
+            <li><a href="../../editorial-policy.html">Editorial Policy</a></li>
+            <li><a href="../../corrections.html">Corrections</a></li>
+            <li><a href="../../affiliate-disclosure.html">Affiliate Disclosure</a></li>
+            <li><a href="../../risk-disclosure.html">Risk Disclosure</a></li>
+            <li><a href="../../contact.html">Contact</a></li>
+            <li><a href="../../privacy.html">Privacy Policy</a></li>
+            <li><a href="../../disclaimer.html">Disclaimer</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="risk">Cryptocurrency and tokenised assets can be highly volatile and involve significant market, custody and counterparty risk. You may lose some or all of the money you invest. In India, income from the transfer of qualifying virtual digital assets is generally subject to the special tax regime under Section 115BBH, while 1% TDS may apply to qualifying transfers under Section 194S, subject to applicable rules and thresholds. CoinRaahi provides educational information only and does not provide financial, investment, legal or tax advice.</p>
+        <div class="legal">
+          <span>&copy; 2026 CoinRaahi. Not financial advice.</span>
+          <span>
+            <a href="../../disclaimer.html">Disclaimer</a>
+            <a href="../../privacy.html">Privacy</a>
+            <a href="../../editorial-policy.html">Editorial Policy</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../js/main.js"></script>
+</body>
+</html>

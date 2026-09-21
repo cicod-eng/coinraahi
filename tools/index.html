@@ -84,65 +84,39 @@
     <main>
     <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../index.html">Home</a> <span class="sep">›</span> <span class="current">Tools</span></nav>
     <h1>Crypto Tools for India</h1>
-    <p class="updated">Last updated: 14 September 2026</p>
+    <p class="updated">Last updated: 22 September 2026</p>
 
-    <p class="lede">Two quick calculators for Indian crypto users: a USDT-to-INR converter and a simple capital-gains tax estimator based on Section 115BBH. These are estimates, not tax advice.</p>
+    <p class="lede">Free calculators and checkers for Indian crypto users. Each gives an estimate or a starting point — not financial or tax advice.</p>
 
-    <h2>USDT to INR converter</h2>
-    <p>Enter the USDT amount and the current USDT price in rupees shown by your exchange (not a market tracker alone). The result is the approximate INR value before any fee, spread or TDS.</p>
-    <div class="callout">
-      <p><label for="usdtAmt"><strong>USDT amount</strong></label></p>
-      <p><input id="usdtAmt" type="number" step="any" min="0" placeholder="e.g. 100" style="width:100%;max-width:320px;padding:8px 10px;border:1px solid var(--border,#ddd);border-radius:6px;font-size:16px;"></p>
-      <p><label for="usdtRate"><strong>USDT price in ₹ (from your exchange)</strong></label></p>
-      <p><input id="usdtRate" type="number" step="any" min="0" placeholder="e.g. 86.50" style="width:100%;max-width:320px;padding:8px 10px;border:1px solid var(--border,#ddd);border-radius:6px;font-size:16px;"></p>
-      <p><button type="button" class="btn btn-primary" onclick="calcUsdt()">Convert</button></p>
-      <p>Approximate value: <strong id="usdtOut">₹0</strong></p>
+    <div class="card-grid">
+      <div class="card">
+        <div class="card-icon orange"><svg viewBox="0 0 24 24"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+        <h3><a href="usdt-to-inr/">USDT to INR Calculator</a></h3>
+        <p>Convert USDT to INR or INR to USDT using your exchange's rate, before fees and spread.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon blue"><svg viewBox="0 0 24 24"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+        <h3><a href="crypto-tax-calculator/">Crypto Tax Calculator</a></h3>
+        <p>Estimate 30% capital-gains tax and adjust for 1% TDS already deducted.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon blue"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></div>
+        <h3><a href="withdrawal-checker/">Withdrawal Pending Checker</a></h3>
+        <p>Answer two questions to find which stage a stuck withdrawal is in, and what to do next.</p>
+      </div>
     </div>
 
-    <h2>India crypto tax estimator</h2>
-    <p>Under Section 115BBH, a gain on virtual digital assets is generally taxed at 30% plus applicable cess, and only the cost of acquisition is deductible &mdash; losses cannot generally be set off. This tool applies 30% + 4% cess (an effective 31.2%) to your sale value minus cost, for a rough figure.</p>
-    <div class="callout">
-      <p><label for="saleVal"><strong>Sale value (₹)</strong></label></p>
-      <p><input id="saleVal" type="number" step="any" min="0" placeholder="e.g. 15000" style="width:100%;max-width:320px;padding:8px 10px;border:1px solid var(--border,#ddd);border-radius:6px;font-size:16px;"></p>
-      <p><label for="costVal"><strong>Cost / acquisition (₹)</strong></label></p>
-      <p><input id="costVal" type="number" step="any" min="0" placeholder="e.g. 10000" style="width:100%;max-width:320px;padding:8px 10px;border:1px solid var(--border,#ddd);border-radius:6px;font-size:16px;"></p>
-      <p><button type="button" class="btn btn-primary" onclick="calcTax()">Estimate tax</button></p>
-      <p>Capital gain: <strong id="gainOut">₹0</strong></p>
-      <p>Estimated tax (30% + 4% cess): <strong id="taxOut">₹0</strong></p>
+    <h2>Data</h2>
+    <div class="card-grid">
+      <div class="card">
+        <div class="card-icon orange"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 13l3-3 4 4 5-5"/></svg></div>
+        <h3><a href="../crypto/stablecoins/usdt-premium-india/">USDT Premium in India</a></h3>
+        <p>Tracked USDT/INR prices versus the official USD/INR rate, plus a premium checker.</p>
+      </div>
     </div>
 
-    <h2>What these estimates leave out</h2>
-    <ul class="check-list">
-      <li>The 1% TDS already deducted is typically adjusted against your final tax, not added on top.</li>
-      <li>Your actual tax can differ based on your slab, cess and any specific rules or thresholds.</li>
-      <li>Recovery tokens, airdrops and certain transfers can have their own treatment.</li>
-    </ul>
-    <p>Use these numbers only as a starting point and confirm with a qualified professional. See our <a href="crypto/crypto-tax-india/">30% crypto tax</a> guide.</p>
-
-    <h2>Frequently asked questions</h2>
-    <h3>Is 31.2% the exact crypto tax in India?</h3>
-    <p>No. 30% plus 4% cess is a common shorthand; your actual liability can differ based on your situation. Treat 31.2% as an estimate.</p>
-    <h3>Does the USDT to INR converter include fees?</h3>
-    <p>No. Enter the effective rate your platform quotes and consider any spread or fee separately.</p>
-    <h3>Is this tax advice?</h3>
-    <p>No. This is an educational estimate only. Confirm with a qualified professional.</p>
-
-    <script>
-    function inr(n){ return "₹" + n.toLocaleString("en-IN", {maximumFractionDigits:2}); }
-    function calcUsdt(){
-      var a = parseFloat(document.getElementById("usdtAmt").value) || 0;
-      var r = parseFloat(document.getElementById("usdtRate").value) || 0;
-      document.getElementById("usdtOut").textContent = inr(a * r);
-    }
-    function calcTax(){
-      var s = parseFloat(document.getElementById("saleVal").value) || 0;
-      var c = parseFloat(document.getElementById("costVal").value) || 0;
-      var g = Math.max(0, s - c);
-      var t = g * 0.312;
-      document.getElementById("gainOut").textContent = inr(g);
-      document.getElementById("taxOut").textContent = inr(t);
-    }
-    </script>
+    <h2>How to read these tools</h2>
+    <p>Each calculator works from the numbers <em>you</em> enter, using simple, disclosed formulas. The premium page adds tracked data with an &ldquo;as of&rdquo; date. Nothing here is a live quote, and none of it is tax or investment advice.</p>
   </main>
 
   <footer class="site-footer">

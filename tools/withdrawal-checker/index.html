@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crypto Withdrawal Pending? 3-Step Checker</title>
+  <meta name="description" content="A three-step self-check for a crypto withdrawal that is pending or not showing: find out which stage it is stuck in — platform, blockchain, or receiving side — and what to do next.">
+  <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="canonical" href="https://coinraahi.com/tools/withdrawal-checker/">
+  <meta property="og:site_name" content="CoinRaahi">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://coinraahi.com/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://coinraahi.com/assets/og-image.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "Diagnose a pending crypto withdrawal",
+    "url": "https://coinraahi.com/tools/withdrawal-checker/",
+    "step": [
+      { "@type": "HowToStep", "name": "Check for a transaction hash (TXID)", "text": "If there is no TXID, the withdrawal is still at the platform stage and has not been sent to the blockchain. If there is a TXID, move to the next step." },
+      { "@type": "HowToStep", "name": "Check the TXID on a block explorer", "text": "If the transaction is not yet confirmed on-chain, it is pending in the mempool. If it is confirmed but the funds have not arrived, move to the next step." },
+      { "@type": "HowToStep", "name": "Check the receiving platform", "text": "A transaction that is confirmed on-chain but not credited is stuck on the receiving platform's side. Contact support with the TXID, network, amount, address and time." }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a href="../../index.html" class="logo" aria-label="CoinRaahi home">
+        <img src="../../assets/logo.svg" alt="CoinRaahi" class="logo-img">
+      </a>
+
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links">
+        <li class="has-dropdown"><a href="../../start-here/">Start Here</a>
+          <ul class="dropdown-menu">
+            <li><a href="../../start-here/crypto-basics/">Crypto Basics</a></li>
+            <li><a href="../../start-here/beginner-roadmap/">Beginner Roadmap</a></li>
+            <li><a href="../../start-here/common-questions/">Common Questions</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown"><a href="../../exchanges/">Exchanges</a>
+          <ul class="dropdown-menu">
+            <li><a href="../../exchanges/binance/">Binance</a></li>
+            <li><a href="../../exchanges/coindcx/">CoinDCX</a></li>
+            <li><a href="../../exchanges/coinswitch/">CoinSwitch</a></li>
+            <li><a href="../../exchanges/wazirx/">WazirX</a></li>
+            <li><a href="../../exchanges/comparisons/">Exchange Comparisons</a></li>
+            <li><a href="../../exchanges/account-kyc/">KYC &amp; Account</a></li>
+            <li><a href="../../exchanges/fees-withdrawals/">Fees &amp; Withdrawals</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown"><a href="../../crypto/">Crypto</a>
+          <ul class="dropdown-menu">
+            <li><a href="../../crypto/bitcoin/">Bitcoin</a></li>
+            <li><a href="../../crypto/ethereum/">Ethereum</a></li>
+            <li><a href="../../crypto/stablecoins/">Stablecoins</a></li>
+            <li><a href="../../crypto/blockchain-basics/">Blockchain Basics</a></li>
+          </ul>
+        </li>
+        <li><a href="../../crypto/crypto-tax-india/">Tax in India</a></li>
+        <li class="has-dropdown"><a href="../../assets-rwa/">Stocks, Gold &amp; RWA</a>
+          <ul class="dropdown-menu">
+            <li><a href="../../assets-rwa/us-stocks-etfs/">US Stocks &amp; ETFs</a></li>
+            <li><a href="../../assets-rwa/tokenised-stocks/">Tokenised Stocks</a></li>
+            <li><a href="../../assets-rwa/gold/">Gold</a></li>
+            <li><a href="../../assets-rwa/tokenised-assets/">Tokenised Assets</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown"><a href="../../wallets-safety/">Wallets &amp; Safety</a>
+          <ul class="dropdown-menu">
+            <li><a href="../../wallets-safety/wallet-basics/">Wallet Basics</a></li>
+            <li><a href="../../wallets-safety/transfers/">Transfers</a></li>
+            <li><a href="../../wallets-safety/account-security/">Account Security</a></li>
+            <li><a href="../../wallets-safety/scam-prevention/">Scam Prevention</a></li>
+          </ul>
+        </li>
+        <li><a href="../../tools/">Tools</a></li>
+        <li><a href="../../search/">Search</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../index.html">Home</a> <span class="sep">›</span> <a href="../../tools/">Tools</a> <span class="sep">›</span> <span class="current">Withdrawal Checker</span></nav>
+    <h1>Withdrawal Pending? 3-Step Checker</h1>
+    <p class="updated">Last updated: 22 September 2026</p>
+
+    <p class="lede">A withdrawal that looks stuck is almost always stuck in one of three places. Answer two short questions to find out which one — and what to do next.</p>
+
+    <div id="step1" class="callout">
+      <p><strong>Step 1 — Do you have a transaction hash (TXID) for this withdrawal?</strong></p>
+      <p>Look in the withdrawal history of the sending platform. A TXID is a long string of letters and numbers that appears once the platform has broadcast the transaction.</p>
+      <p>
+        <button type="button" class="btn btn-primary" onclick="goto('noTxid')">No — there is no TXID</button>
+        <button type="button" class="btn btn-secondary" onclick="goto('hasTxid')">Yes — I have a TXID</button>
+      </p>
+    </div>
+
+    <div id="step2" class="callout" hidden>
+      <p><strong>Step 2 — Is the TXID confirmed on a block explorer?</strong></p>
+      <p>Paste the TXID into a block explorer for the network you used (e.g. Etherscan for ERC-20, Tronscan for TRC-20, a Bitcoin explorer for BTC).</p>
+      <p>
+        <button type="button" class="btn btn-secondary" onclick="goto('pending')">Not confirmed yet (pending)</button>
+        <button type="button" class="btn btn-primary" onclick="goto('confirmed')">Confirmed, but funds not credited</button>
+        <button type="button" class="btn btn-ghost" onclick="goto('reset')">Start over</button>
+      </p>
+    </div>
+
+    <div id="noTxid" class="callout" hidden>
+      <p><strong>Platform stage — the withdrawal has not been sent to the blockchain.</strong></p>
+      <p>If there is no TXID, the transaction is still inside the sending platform (awaiting approval, security review, or processing). This is the most common case and usually resolves on its own within the platform's stated time.</p>
+      <ul class="check-list">
+        <li>Check for an approval or verification step (email/SMS/2FA) you may have missed.</li>
+        <li>Do not send the same withdrawal again immediately — wait for the stated processing window.</li>
+        <li>If it stays stuck past the platform's stated time, contact support and quote the withdrawal ID (not a TXID, since none exists yet).</li>
+      </ul>
+      <p><a href="../../exchanges/binance/withdrawal-pending-india/">Binance withdrawal pending</a> guide &middot; <a href="../../wallets-safety/transfers/crypto-transfer-checklist/">transfer checklist</a></p>
+      <p><button type="button" class="btn btn-ghost" onclick="goto('reset')">Start over</button></p>
+    </div>
+
+    <div id="pending" class="callout" hidden>
+      <p><strong>Blockchain stage — broadcast but not yet confirmed.</strong></p>
+      <p>The transaction is on the network, waiting to be included in a block. Confirmation time depends on the network and the fee set by the sender, not on the exchange.</p>
+      <ul class="check-list">
+        <li>Note the network — a TRC-20 transfer and an ERC-20 transfer can take very different times.</li>
+        <li>Do not send again: a pending transaction will still go through once confirmed.</li>
+        <li>Watch the explorer for the first confirmation, then re-check the destination.</li>
+      </ul>
+      <p><a href="../../wallets-safety/transfers/usdt-wrong-network-recovery/">Sent on the wrong network?</a> guide</p>
+      <p><button type="button" class="btn btn-ghost" onclick="goto('reset')">Start over</button></p>
+    </div>
+
+    <div id="confirmed" class="callout" hidden>
+      <p><strong>Receiving-platform stage — confirmed on-chain but not credited.</strong></p>
+      <p>The funds have left the sender and are confirmed on the blockchain, but the receiving platform or wallet has not credited them. This is now a receiving-side issue, not a network issue.</p>
+      <ul class="check-list">
+        <li>Confirm the address and network match what the receiving side expects.</li>
+        <li>Check the receiving side's minimum deposit and any required memo/tag.</li>
+        <li>Contact the receiving platform's support with: TXID, network, amount, receiving address, and the time of the transfer.</li>
+      </ul>
+      <p><a href="../../wallets-safety/transfers/deposit-confirmed-not-showing/">Deposit confirmed but not showing</a> guide</p>
+      <p><button type="button" class="btn btn-ghost" onclick="goto('reset')">Start over</button></p>
+    </div>
+
+    <h2>The three stages at a glance</h2>
+    <div class="table-wrap">
+      <table class="compare">
+        <caption>Where a stuck withdrawal usually sits</caption>
+        <tr><th>Stage</th><th>Signal</th><th>Whose side is it?</th></tr>
+        <tr><td>Platform</td><td>No TXID yet</td><td>Sending platform</td></tr>
+        <tr><td>Blockchain</td><td>TXID exists but pending</td><td>Network (fee/load)</td></tr>
+        <tr><td>Receiving</td><td>TXID confirmed but not credited</td><td>Receiving platform/wallet</td></tr>
+      </table>
+    </div>
+    <p class="table-note">&ldquo;Confirmed on-chain&rdquo; does not always mean &ldquo;credited to the account&rdquo; — the receiving platform still has to process it.</p>
+
+    <script>
+    function goto(id){
+      document.getElementById("step1").hidden = true;
+      document.getElementById("step2").hidden = true;
+      ["noTxid","pending","confirmed"].forEach(function(x){ document.getElementById(x).hidden = true; });
+      if (id === "hasTxid") { document.getElementById("step2").hidden = false; }
+      else if (id === "reset") { document.getElementById("step1").hidden = false; }
+      else { document.getElementById(id).hidden = false; }
+      window.scrollTo({top: document.querySelector("main").offsetTop, behavior:"smooth"});
+    }
+    </script>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand">
+          <a href="../../index.html" class="logo">
+            <svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true">
+              <circle cx="16" cy="16" r="15" fill="#E88A1A"/>
+              <path d="M16 6 L21 21 L16 17.5 L11 21 Z" fill="#1F3A5F"/>
+            </svg>
+            <span><span class="coin" style="color:#fff">Coin</span><span class="raahi">Raahi</span></span>
+          </a>
+          <p>Practical guides to crypto and global digital assets, written for India.</p>
+          <p class="contact"><a href="mailto:hello@coinraahi.com">hello@coinraahi.com</a></p>
+        </div>
+        <div class="footer-col">
+          <h4>Start Here</h4>
+          <ul>
+            <li><a href="../../start-here/crypto-basics/">Crypto Basics</a></li>
+            <li><a href="../../start-here/beginner-roadmap/">Beginner Roadmap</a></li>
+            <li><a href="../../start-here/common-questions/">Common Questions</a></li>
+            <li><a href="../../tools/">Tools</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Exchanges</h4>
+          <ul>
+            <li><a href="../../exchanges/binance/">Binance</a></li>
+            <li><a href="../../exchanges/coindcx/">CoinDCX</a></li>
+            <li><a href="../../exchanges/coinswitch/">CoinSwitch</a></li>
+            <li><a href="../../exchanges/wazirx/">WazirX</a></li>
+            <li><a href="../../exchanges/comparisons/">Comparisons</a></li>
+            <li><a href="../../exchanges/account-kyc/">KYC &amp; Account</a></li>
+            <li><a href="../../exchanges/fees-withdrawals/">Fees &amp; Withdrawals</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Crypto</h4>
+          <ul>
+            <li><a href="../../crypto/bitcoin/">Bitcoin</a></li>
+            <li><a href="../../crypto/ethereum/">Ethereum</a></li>
+            <li><a href="../../crypto/stablecoins/">Stablecoins</a></li>
+            <li><a href="../../crypto/blockchain-basics/">Blockchain Basics</a></li>
+            <li><a href="../../crypto/crypto-tax-india/">Tax in India</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Stocks, Gold &amp; RWA</h4>
+          <ul>
+            <li><a href="../../assets-rwa/us-stocks-etfs/">US Stocks &amp; ETFs</a></li>
+            <li><a href="../../assets-rwa/tokenised-stocks/">Tokenised Stocks</a></li>
+            <li><a href="../../assets-rwa/gold/">Gold</a></li>
+            <li><a href="../../assets-rwa/tokenised-assets/">Tokenised Assets</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Wallets &amp; Safety</h4>
+          <ul>
+            <li><a href="../../wallets-safety/wallet-basics/">Wallet Basics</a></li>
+            <li><a href="../../wallets-safety/transfers/">Transfers</a></li>
+            <li><a href="../../wallets-safety/account-security/">Account Security</a></li>
+            <li><a href="../../wallets-safety/scam-prevention/">Scam Prevention</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="../../about.html">About</a></li>
+            <li><a href="../../how-we-review.html">How We Review</a></li>
+            <li><a href="../../editorial-policy.html">Editorial Policy</a></li>
+            <li><a href="../../corrections.html">Corrections</a></li>
+            <li><a href="../../affiliate-disclosure.html">Affiliate Disclosure</a></li>
+            <li><a href="../../risk-disclosure.html">Risk Disclosure</a></li>
+            <li><a href="../../contact.html">Contact</a></li>
+            <li><a href="../../privacy.html">Privacy Policy</a></li>
+            <li><a href="../../disclaimer.html">Disclaimer</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="risk">Cryptocurrency and tokenised assets can be highly volatile and involve significant market, custody and counterparty risk. You may lose some or all of the money you invest. In India, income from the transfer of qualifying virtual digital assets is generally subject to the special tax regime under Section 115BBH, while 1% TDS may apply to qualifying transfers under Section 194S, subject to applicable rules and thresholds. CoinRaahi provides educational information only and does not provide financial, investment, legal or tax advice.</p>
+        <div class="legal">
+          <span>&copy; 2026 CoinRaahi. Not financial advice.</span>
+          <span>
+            <a href="../../disclaimer.html">Disclaimer</a>
+            <a href="../../privacy.html">Privacy</a>
+            <a href="../../editorial-policy.html">Editorial Policy</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../js/main.js"></script>
+</body>
+</html>
