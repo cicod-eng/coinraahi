@@ -54,10 +54,10 @@ Key India tax references used throughout (all hedged, verify with a professional
 
 ## Static / policy pages
 
-- About: https://coinraahi.com/about.html
-- Editorial Policy: https://coinraahi.com/editorial-policy.html
-- Affiliate Disclosure: https://coinraahi.com/affiliate-disclosure.html
-- Risk Disclosure: https://coinraahi.com/risk-disclosure.html
-- Contact: https://coinraahi.com/contact.html
-- Privacy Policy: https://coinraahi.com/privacy.html
-- Disclaimer: https://coinraahi.com/disclaimer.html
+- About: https://coinraahi.com/about/
+- Editorial Policy: https://coinraahi.com/editorial-policy/
+- Affiliate Disclosure: https://coinraahi.com/affiliate-disclosure/
+- Risk Disclosure: https://coinraahi.com/risk-disclosure/
+- Contact: https://coinraahi.com/contact/
+- Privacy Policy: https://coinraahi.com/privacy/
+- Disclaimer: https://coinraahi.com/disclaimer/
