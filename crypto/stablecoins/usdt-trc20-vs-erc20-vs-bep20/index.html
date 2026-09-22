@@ -223,7 +223,10 @@
     <h2>A better comparison</h2>
     <div class="table-wrap">
       <table class="compare">
+        <thead>
         <tr><th>Question</th><th>ERC20</th><th>TRC20</th><th>BNB Smart Chain / &ldquo;BEP20&rdquo;</th></tr>
+        </thead>
+        <tbody>
         <tr><td>Blockchain</td><td>Ethereum</td><td>TRON</td><td>BNB Smart Chain</td></tr>
         <tr><td>Tether official USD₮ issuance currently listed?</td><td>Yes</td><td>Yes</td><td>Verify exact token; Tether&rsquo;s current BSC section does not list USD₮</td></tr>
         <tr><td>Typical address style</td><td><code>0x&hellip;</code></td><td><code>T&hellip;</code></td><td><code>0x&hellip;</code></td></tr>
@@ -232,6 +235,7 @@
         <tr><td>Common wallet ecosystem</td><td>Ethereum / EVM</td><td>TRON</td><td>EVM / BSC</td></tr>
         <tr><td>Main beginner risk</td><td>high cost / incorrect network</td><td>wrong TRON network / address handling</td><td>assuming every USDT-labelled token is native Tether USD₮</td></tr>
         <tr><td>What to verify first</td><td>Receiver supports ERC20 USDT</td><td>Receiver supports TRC20 USDT</td><td>Receiver supports exact BSC token/network</td></tr>
+        </tbody>
       </table>
     </div>
     <p>This is a better table than <em>&ldquo;ERC20 = expensive, TRC20 = cheap, BEP20 = cheapest&rdquo;</em>, because fees change. <strong>Compatibility and token identity do not.</strong></p>
@@ -260,12 +264,16 @@
     <p>Fees are dynamic. A more durable comparison is:</p>
     <div class="table-wrap">
       <table class="compare">
+        <thead>
         <tr><th>Transfer situation</th><th>What determines cost?</th></tr>
+        </thead>
+        <tbody>
         <tr><td>Exchange &rarr; wallet</td><td>Exchange withdrawal fee</td></tr>
         <tr><td>Wallet &rarr; wallet on Ethereum</td><td>Ethereum network gas</td></tr>
         <tr><td>Wallet &rarr; wallet on BSC</td><td>BSC gas paid in BNB</td></tr>
         <tr><td>Wallet &rarr; wallet on TRON</td><td>TRON network resource/fee mechanism</td></tr>
         <tr><td>Cross-chain movement</td><td>May involve bridge/exchange plus multiple network costs</td></tr>
+        </tbody>
       </table>
     </div>
     <p>Before every transfer, look at the <strong>current withdrawal preview</strong>. That is more useful than an article&rsquo;s six-month-old fee number.</p>

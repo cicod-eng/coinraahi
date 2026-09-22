@@ -160,10 +160,14 @@
     <div class="table-wrap">
       <table class="compare">
         <caption>Where a stuck withdrawal usually sits</caption>
+        <thead>
         <tr><th>Stage</th><th>Signal</th><th>Whose side is it?</th></tr>
+        </thead>
+        <tbody>
         <tr><td>Platform</td><td>No TXID yet</td><td>Sending platform</td></tr>
         <tr><td>Blockchain</td><td>TXID exists but pending</td><td>Network (fee/load)</td></tr>
         <tr><td>Receiving</td><td>TXID confirmed but not credited</td><td>Receiving platform/wallet</td></tr>
+        </tbody>
       </table>
     </div>
     <p class="table-note">&ldquo;Confirmed on-chain&rdquo; does not always mean &ldquo;credited to the account&rdquo; — the receiving platform still has to process it.</p>
